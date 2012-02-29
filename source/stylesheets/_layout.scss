@@ -1,0 +1,141 @@
+#hd, #bd {
+  width:950px;
+  margin:0 auto;
+}
+
+#toolbar {
+  color:#fff;
+  height:30px;
+  margin-bottom:10px;
+  background: #ffb608;
+  background: -webkit-gradient(linear, 0 0, 0 bottom, from(#ffd266), to(#ffb608));
+  background: -webkit-linear-gradient(#ffd266, #ffb608);
+  background: -moz-linear-gradient(#ffd266, #ffb608);
+  background: -ms-linear-gradient(#ffd266, #ffb608);
+  background: -o-linear-gradient(#ffd266, #ffb608);
+  background: linear-gradient(#ffd266, #ffb608);
+  a {
+    color:#fff;
+  }
+  .inner {
+    @extend #hd;
+    position:relative;
+  }
+  .link, .function {
+    @include clearfix;
+    position:absolute;
+    top:3px;
+    li {
+      float:left;
+      border-right:1px solid #fff;
+      padding:0 5px;
+      margin-right:5px;
+      line-height:20px;
+    }
+    li.last {
+      border:none;
+    }
+  }
+  .link {
+    left:0;
+  }
+  .function {
+    right:0;
+  }
+}
+
+#header {
+  @include clearfix;
+  #logo, .search {
+    float:left;
+  }
+  .ad {
+    float:right;
+  }
+  #logo {
+    padding:6px 0;
+    text-indent:-9999px;
+    background: url(/images/logo.png) no-repeat left center;
+    width:285px;
+    height:68px;
+    a {
+      width:285px;
+      height:68px;
+      display:block;
+    }
+  }
+  .search {
+    padding-left:10px;
+    a {
+      color:#666;
+    }
+    > ul {
+      margin:5px 0;
+      li {
+        border-right:1px solid #666;
+        padding-right:5px;
+      }
+    }
+    .last {
+      border:none;
+    }
+    ul {
+      @include clearfix;
+      li {
+        float:left;
+        margin-right:5px;
+      }
+    }
+    dl {
+      @include clearfix;
+      margin:5px 0;
+      dt,dd {
+        float:left;
+        
+      }
+    }
+  }
+}
+
+#navi {
+  @include clearfix;
+  li {
+    float:left;
+    height:45px;
+    width:105.5px;
+    line-height:45px;
+    text-align:center;
+    font-size:16px;
+    border-top:4px solid #a6a6a6;
+  }
+}
+
+#ft {
+  color:#666;
+  background: #ececec;
+  padding:20px 0;
+  margin-top:10px;
+  a {
+    color:#666;
+  }
+  .inner {
+    @extend #hd;
+    text-align:center;
+  }
+  ul {
+    display:table;
+    margin:0 auto;
+    li {
+      @include inline-block;
+      border-right:1px solid #666;
+      padding-right:5px;
+      margin-right:5px;
+    }
+    li.last {
+      border:none;
+    }
+  }
+  p {
+    margin:5px 0;
+  }
+}
