@@ -1,0 +1,74 @@
+#hd
+  #toolbar
+    %ul.link
+      %li=link_to "回首頁", "#", :title => "回首頁", :class => "home"
+      %li=link_to "簡體版", "#", :title => "簡體版"
+      %li=link_to "部落格首頁", "#", :title => "部落格首頁"
+      %li=link_to "回討論區", "#", :title => "回討論區"
+    %ul.function
+      %li 
+        Hi~
+        =lorem.name
+        =image_tag( lorem.image("20"), :alt => "" )
+      %li 您有0則新留言
+      %li=link_to "登出", "#", :title => "登出"
+      %li=link_to "Facebook登入", "#", :title => "Facebook登入"
+  #header
+    #logo
+    .search
+    .ad
+  %ul#navi
+    %li=link_to "TOP100", "#", :title => "TOP100"
+    %li=link_to "專欄精選", "#", :title => "專欄精選"
+    %li=link_to "綜合", "#", :title => "綜合"
+    %li=link_to "流行彩妝", "#", :title => "流行彩妝"
+    %li=link_to "美容保養", "#", :title => "美容保養"
+    %li=link_to "時尚潮流", "#", :title => "時尚潮流"
+    %li=link_to "生活休閒", "#", :title => "生活休閒"
+    %li=link_to "美食旅遊", "#", :title => "美食旅遊"
+    %li=link_to "醫學美容", "#", :title => "醫學美容"  
+#bd
+  #section_top
+    #promo
+      .main_ad
+        .inner
+      .ad
+    .sidebar
+      .block.admin
+      .block.hot
+  #section_text_ad
+    %ul
+      %li=link_to "廣告標題，總共十一個字", "#", :title => "廣告標題，總共十一個字"
+      %li=link_to "廣告標題，總共十一個字", "#", :title => "廣告標題，總共十一個字"
+      %li=link_to "廣告標題，總共十一個字", "#", :title => "廣告標題，總共十一個字"
+      %li=link_to "廣告標題，總共十一個字", "#", :title => "廣告標題，總共十一個字" 
+  #section_main
+    #main
+      .hot
+        %ul.tabmenu
+          %li=link_to "今日熱門", "#", :title => "今日熱門"
+          %li=link_to "最新文章", "#", :title => "最新文章"
+          %li=link_to "近期熱門", "#", :title => "近期熱門"
+        .content
+          .entry
+    .sidebar
+      .block.rank
+      .block.news
+  #section_ad
+    .ad
+    .ad_s
+      .entry
+#ft
+  %ul
+    %li=link_to "回首頁", "/", :title => "回首頁"
+    %li=link_to "設成首頁", "#", :title => "設成首頁"
+    %li=link_to "簡體版", "#", :title => "簡體版"
+    %li=link_to "服務台", "#", :title => "服務台"
+    %li=link_to "修改會員資料", "#", :title => "修改會員資料"
+    %li=link_to "加入會員", "#", :title => "加入會員"
+    %li=link_to "新手上路", "#", :title => "新手上路"
+    %li=link_to "廣告刊登", "#", :title => "廣告刊登"
+    %li=link_to "贈獎須知", "#", :title => "贈獎須知"
+    %li=link_to "服務條款", "#", :title => "服務條款"
+    %li=link_to "SITEMAP", "#", :title => "SITEMAP"
+    %li=link_to "人才招募", "#", :title => "人才招募"
