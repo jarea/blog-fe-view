@@ -17,6 +17,8 @@ $gutter-width: 1em;
 $side-gutter-width: $gutter-width;
 
 @include global-reset;
+@import "layout";
+@import "home";
 
 
 body {
