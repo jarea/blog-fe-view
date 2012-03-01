@@ -1,5 +1,7 @@
 @import "compass";
 @include global-reset;
+@import "layout";
+@import "home";
 
 @import "icons";
 @import "section_main";
