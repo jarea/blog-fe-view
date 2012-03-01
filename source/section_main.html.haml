@@ -38,11 +38,11 @@
               .postContent=link_to "惠妮驟逝瑪麗亞凱莉淚崩!!張善為祭祖遭沖天炮炸傷!!", "#", :title=>"主標題"
               .more=link_to "看更多", "#", :title=>"看更多", :class=>"icons-lookmore"
   .sidebar
-    .rank
+    .block.rank
       .SidebarT
         .tab.week 本週人氣排行
-        .tab.active=link_to "TOP 100","#"
-        .tab=link_to "部落客","#"
+        .tab.top=link_to "TOP 100","#", :class=>"icons-top100_bg"
+        .tab.bloger=link_to "部落客","#", :class=>"icons-bloger_bg"
       .SidebarC
         %ul
           -5.times do
@@ -53,18 +53,19 @@
                 .postTitle=link_to "保養 | 素顏也有好氣色","#", :title=>""
                 .postInfo=link_to "臉部保養|TOP100|FG小編","#", :title=>""
                 .postContent 這篇很心機!!!!只擦保養品看起來就有上妝的修飾效果…
-              .lookmore=link_to "共500篇文章>","#", :title=>"看更多"
+              .more=link_to "看更多","#", :title=>"看更多", :class=>"icons-lookmore"
           -# .statTime
             -# 統計時間 101/01/01~101/01/01
           -# .lookmore=link_to "更多XXX>", "#", :title=>"看更多"    k.news
-    .news
-      .SidebarT 最新訊息
-      .SidebarC  
-        %ul
-          %li
-            .newsImg=link_to image_tag(lorem.image("150x100"),:alt=>""),"#",:title=>""
-            .postAd
-            -5.times do
-              %p=link_to "免費試用超夯美妝新品","#",:title=>""
-              
+    .block.news
+      .SidebarT
+        .tab.week 最新訊息
+      .SidebarC
+        .inner  
+          %ul
+            -2.times do
+              %li
+                .newsImg=link_to image_tag(lorem.image("165x150"),:alt=>""),"#",:title=>""
+                -5.times do
+                  .postAd=link_to "免費試用超夯美妝新品","#",:title=>""    
 

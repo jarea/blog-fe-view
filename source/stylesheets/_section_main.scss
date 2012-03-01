@@ -1,6 +1,11 @@
+#section_main{
+  width:950px;
+  padding:10px;  
+}
+
 #main{
-  width:60%;
-  padding:10px;
+  @include clearfix;
+  width:620px;
   float:left;
 }
  
@@ -22,14 +27,16 @@ a{
 #content{
   display:block;
   float:left;
-  width:300px;
+  width:280px;
   height:100px;
-  padding:10px 10px 20px 5px;
+  padding:10px 10px 15px 5px;
   border-bottom:1px dashed #ffcc66;
 }
 .SectionMainC{
-  height:850px;
-  padding-left:10px;
+  .entry{
+    padding:5px 0 5px 10px;  
+  }
+  height:830px;
   border:1px solid #dcdcdc;
   @include border-top-right-radius(6px);
   @include border-bottom-right-radius(6px);
@@ -72,7 +79,6 @@ a{
 }
  
 .postInfo{
-  // padding:2px 0;
   a{
     font-size:12px;
     color:#613d1a;
@@ -124,27 +130,14 @@ a{
   margin-top:10px;
   padding:10px;
   border:1px solid #dcdcdc;
-  height:100px;
+  height:110px;
   @include border-radius(6px);
   li{
-    width:300px;
+    width:280px;
     float:left;
-    padding:0 10px;
+    padding:0 5px;
   }
 }
-
-// .lookmore{
-  // float:right;
-  // a{
-    // font-size:10px;
-    // color:#666;
-    // background-color:#f7f7f7;
-    // padding:2px 5px;
-    // height:10px;
-    // border:1px solid #dcdcdc;
-    // @include border-radius(10px);
-  // }
-// }
  
 .postSubTitle{
   margin-top:5px;
@@ -160,43 +153,78 @@ a{
 }
  
  
+#section_main{
+  @include clearfix;
+  .sidebar{
+    width:320px;
+    float:right;
+  }
  
- 
-.sidebar{
-  display:inline-block;
-  padding:10px;
-}
- 
-.SidebarT{
-  .tab{
-    float:left;
-    margin-right:3px;
-    padding:8px 20px;
+  .SidebarT{
+    .tab{
+      float:left;
+      margin-right:10px;
+      padding-left:5px;
+      border:1px solid #dcdcdc;
+    }
+    
+    .week, .top, .bloger{
+      border:none;
+      padding-top:10px;
+      float:left;
+      a{
+        text-align:center;
+        line-height:25px;
+        display:block;
+        width:90px;
+        height:25px; 
+      }
+    }
+   
+    .week{
+      width:310px;
+      height:25px;
+      // padding:5px 5px 10px 5px;
+      background:#ffb608;
+      background: -webkit-gradient(linear, 0 0, 0 bottom, from(#ffd266), to(#ffb608));
+      background: -webkit-linear-gradient(#ffd266, #ffb608);
+      background: -moz-linear-gradient(#ffd266, #ffb608);
+      background: -ms-linear-gradient(#ffd266, #ffb608);
+      background: -o-linear-gradient(#ffd266, #ffb608);
+      background: linear-gradient(#ffd266, #ffb608);
+      border:1px solid #dcdcdc;
+      @include border-top-left-radius(6px);
+      @include border-top-right-radius(6px);
+    }
+  }
+  .SidebarC{
+    float:right;
+    width:310px;
+    padding:5px 5px 10px 5px;
     border:1px solid #dcdcdc;
+    @include border-bottom-left-radius(6px);
+    @include border-bottom-right-radius(6px);
   }
-  .week{
-    border:none;
-  }
-}
-
-.SidebarC{
-  float:right;
-  width:320px;
-  border:1px solid #dcdcdc;
-  @include border-radius(6px);
 }
 
 #sidebar_content{
   float:left;
   display:block;
-  width:300px;
-  height:100px;
-  padding:10px 10px 20px 5px;
+  padding:10px 5px 10px 0px;
   border-bottom:1px dashed #ffcc66;
 }
 
 .newsImg{
+  background-color:#fff;
   float:left;
-  padding:5px;
+  padding:5px 5px 5px 2px;
 }
-
+.postAd{
+  padding:10px 0px 2px 0;
+  border-bottom:1px dashed #ffcc66;
+}
+.news{
+  li{
+    padding-bottom:5px;
+  }
+}
