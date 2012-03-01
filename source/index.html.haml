@@ -34,7 +34,7 @@
             %li=link_to "2012", "#", :title => "2012"
     .ad=link_to image_tag( lorem.image("385x85"), :alt => "" ), "#"
   %ul#navi
-    %li=link_to "TOP100", "#", :title => "TOP100"
+    %li.first=link_to "TOP100", "#", :title => "TOP100"
     %li=link_to "專欄精選", "#", :title => "專欄精選"
     %li=link_to "綜合", "#", :title => "綜合"
     %li=link_to "流行彩妝", "#", :title => "流行彩妝"
@@ -48,7 +48,18 @@
     #promo
       .main_ad
         .inner
+          .img
+            =image_tag( lorem.image("400x300"), :alt => "" )
+            .gray
+            %h2=link_to "不敗的選擇！紅色系穿搭特輯～～", "#", :title => "不敗的選擇！紅色系穿搭特輯～～"
+          .words
+            %h2=link_to "不敗的選擇！紅色系穿搭特輯～～", "#", :title => "不敗的選擇！紅色系穿搭特輯～～"
+            %p 
+              話說保養妝是霧面粉嫩的效果，因為我是超乾肌，喜歡擦完保養品後臉超油亮滋潤的fu，不太習慣擦完保養品後臉上還是乾爽的感覺，所以我個人是不會每天都用這個保養妝。
+              %br
+              話說保養妝是霧面粉嫩的效果，因為我是超乾肌，喜歡擦完保養品後臉超油亮滋潤的fu。
       .ad
+        =link_to image_tag( lorem.image("620x90"), :alt => "" ), "#"
     .sidebar
       .block.admin
       .block.hot

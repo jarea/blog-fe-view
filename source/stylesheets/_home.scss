@@ -1,0 +1,63 @@
+#section_top {
+  @include clearfix;
+  #promo {
+    float:left;
+    width:620px;
+  }
+  .sidebar {
+    width:320px;
+    float:right;
+  }
+}
+
+#promo {
+  .inner {
+    @include clearfix;
+    @include border-radius(6px);
+    border:1px solid #ccc;
+    padding:10px;
+  }
+  .main_ad {
+    .words {
+      float:right;
+      width:190px;
+      h2 {
+        @include border-radius(4px);
+        background:#faf8f2;
+        font-size:18px;
+        line-height:20px;
+        padding:10px;
+      }
+      p {
+        margin:10px 0;
+        line-height:1.3em;
+      }
+    }
+    .img {
+      float:left;
+      position:relative;
+      width:400px;
+      height:300px;
+      .gray {
+        position:absolute;
+        bottom:0;
+        left:0;
+        width:400px;
+        height:50px;
+        background:rgba(0,0,0,0.4);
+      }
+      h2 {
+        position:absolute;
+        left:10px;
+        bottom:10px;
+        font-size:18px;
+        a {
+          color:#fff;
+        }
+      }
+    }
+  }
+  .ad {
+    margin:10px 0;
+  }
+}

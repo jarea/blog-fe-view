@@ -5,7 +5,7 @@
 
 #toolbar {
   color:#fff;
-  height:30px;
+  height:35px;
   margin-bottom:10px;
   background: #ffb608;
   background: -webkit-gradient(linear, 0 0, 0 bottom, from(#ffd266), to(#ffb608));
@@ -24,7 +24,7 @@
   .link, .function {
     @include clearfix;
     position:absolute;
-    top:3px;
+    top:5px;
     li {
       float:left;
       border-right:1px solid #fff;
@@ -99,14 +99,47 @@
 
 #navi {
   @include clearfix;
+  margin-bottom:20px;
+  a {
+    display:block;
+    width:104.4px;
+    height:45px;
+    color:#666;
+    &:hover {
+      color:#ff7800;
+    }
+  }
   li {
     float:left;
     height:45px;
-    width:105.5px;
+    width:104.4px;
     line-height:45px;
     text-align:center;
     font-size:16px;
+    border-right:1px solid #ddd;
+    border-bottom:1px solid #ddd;
     border-top:4px solid #a6a6a6;
+    background: #eee;
+    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#fefefe), to(#eee));
+    background: -webkit-linear-gradient(#fefefe, #eee);
+    background: -moz-linear-gradient(#fefefe, #eee);
+    background: -ms-linear-gradient(#fefefe, #eee);
+    background: -o-linear-gradient(#fefefe, #eee);
+    background: linear-gradient(#fefefe, #eee);
+    &:hover {
+      border-top:4px solid #ff8c00;
+      background:url(/images/bg-navi_hover.png);
+    }
+  }
+  li.first {
+    border-left:1px solid #ddd;
+  }
+  li.active {
+    background:#fff;
+    border-bottom:none;
+    a {
+      color:#ff7800;
+    }
   }
 }
 
