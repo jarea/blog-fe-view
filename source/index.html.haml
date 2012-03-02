@@ -38,7 +38,13 @@
     %li=link_to "專欄精選", "#", :title => "專欄精選"
     %li=link_to "綜合", "#", :title => "綜合"
     %li=link_to "流行彩妝", "#", :title => "流行彩妝"
-    %li=link_to "美容保養", "#", :title => "美容保養"
+    %li.active
+      =link_to "美容保養", "#", :title => "美容保養"
+      %ul
+        %li=link_to "時尚潮流", "#", :title => "時尚潮流"
+        %li=link_to "生活休閒", "#", :title => "生活休閒"
+        %li=link_to "美食旅遊", "#", :title => "美食旅遊"
+        %li.last=link_to "醫學美容", "#", :title => "醫學美容"
     %li=link_to "時尚潮流", "#", :title => "時尚潮流"
     %li=link_to "生活休閒", "#", :title => "生活休閒"
     %li=link_to "美食旅遊", "#", :title => "美食旅遊"
