@@ -1,0 +1,13 @@
+.user {
+  .user_index {
+    @include clearfix;
+  }
+  #main {
+    float:left;
+    width:700px;
+  }
+  .sidebar {
+    float:right;
+    width:240px;
+  }
+}

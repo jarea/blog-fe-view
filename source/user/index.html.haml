@@ -1,6 +1,48 @@
 ---
   layout: user
 ---
+.user_index
 
-.test
-  部落格內容...
+  #main
+    .inner
+      .entries
+        -5.times do
+          .entry
+            %h2
+              =link_to "部落格文章標題標題標題標題", "#", :title => "部落格文章標題標題標題標題"
+              %span 熱門文章
+            %p.date
+              發表於 2012.01.01
+            =image_tag( lorem.image("300x400"), :alt => "" )
+            %p.text
+              部落格文章內容摘要部落格文章內容摘要，部落格文章內容摘要，部落格文章內容摘要，部落格文章內容摘要部落格文章內容摘要部落格文章內容摘要，部落格文章內容摘要部落格文章內容摘要，部落格文章內容摘要
+            %p.more=link_to "繼續閱讀", "#", :title => "繼續閱讀"
+            %ul.count
+              %li=link_to "引用（100)", "#", "引用"
+              %li=link_to "回應（100)", "#", "回應"
+  .sidebar
+    .inner
+      .block.profile
+        %h3 個人資訊
+        .section_top
+        .section_links
+        .section_calendar
+      .block.article
+        %h3 最新文章
+      .block.category
+        %h3 文章分類
+      .block.all
+        %h3 所有文章彙整
+      .block.comment
+        %h3 最新迴響
+      .block.search
+        %h3 搜尋這個網誌
+      .block.follows
+        %h3 我的關注
+      .block.link
+        %h3 連結區
+        %ul
+          -5.times do
+            %li=link_to "連結標題標題標題", "#", :title => "連結標題標題標題"
+      .block.view
+        %h3 參觀人氣
