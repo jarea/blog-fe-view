@@ -99,17 +99,17 @@
 
 #navi {
   @include clearfix;
-  margin-bottom:20px;
-  a {
-    display:block;
-    width:104.4px;
-    height:45px;
-    color:#666;
-    &:hover {
-      color:#ff7800;
+  padding-bottom:30px;
+  > li {
+    > a {
+      display:block;
+      width:104.4px;
+      height:45px;
+      color:#666;
+      &:hover {
+        color:#ff7800;
+      }
     }
-  }
-  li {
     float:left;
     height:45px;
     width:104.4px;
@@ -130,14 +130,35 @@
       border-top:4px solid #ff8c00;
       background:url(/images/bg-navi_hover.png);
     }
+    ul {
+      position:absolute;
+      margin:5px 0 0 10px;
+      li {
+        float:left;
+        border-right:1px solid #999;
+        padding-right:5px;
+        margin-right:5px;
+        a {
+          font-size:13px;
+          color:#666;
+          &:hover {
+            color:#ff7800;
+          }
+        }
+      }
+      li.last {
+        border:none;
+      }
+    }
   }
   li.first {
     border-left:1px solid #ddd;
   }
-  li.active {
+  > li.active {
     background:#fff;
+    border-top:4px solid #ff8c00;
     border-bottom:none;
-    a {
+    > a {
       color:#ff7800;
     }
   }

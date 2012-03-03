@@ -39,9 +39,10 @@
 # page "/path/to/file.html", :layout => :otherlayout
 # 
 # A path which all have the same layout
-# with_layout :admin do
-#   page "/admin/*"
+# with_layout :user do
+  # page "/user/*"
 # end
+page "/user/*", :layout => "user"
 
 # Proxy (fake) files
 # page "/this-page-has-no-template.html", :proxy => "/template-file.html" do
