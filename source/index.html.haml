@@ -61,7 +61,35 @@
       .ad
         =link_to image_tag( lorem.image("620x90"), :alt => "" ), "#"
     .sidebar
-      .block.admin
+      .block
+        .admin
+          .avatar
+            =link_to image_tag( lorem.image("91x91"), :alt => "" ), "#"
+          .welcome
+            Hi
+            %a=link_to "賴小美賴小美賴小美賴小美賴小", "#", :title => "賴小美賴小美賴小美賴小美賴小"
+            %br
+            你現在是
+            %a=link_to "部落客", "#", :title => "部落客"
+          %ul
+            %li
+              .newPostBtn
+                %img{:src => "images/new_post_icon.png"}
+                %a=link_to "發表新文章", "#", :title => "發表新文章"
+            %li
+              .backend
+                %img{:src => "images/backend_icon.png"}
+                %a=link_to "管理後台", "#", :title => "管理後台"
+          .links
+            %a=link_to "回我的網誌", "#", :title => "回我的網誌"
+            │
+            %a=link_to "暫做(0)", "#", :title => "暫做(0)"
+            │
+            %a=link_to "暫做(0)", "#", :title => "暫做(0)"
+        .notice
+          %img{:src => "images/notice_icon.png"}
+          .text
+            %a=link_to "內容內容內容內容內容內容內容內容內容內容", "#", :title => "內容內容內容內容內容內容內容內容內容內容"
       .block.hot
   #section_text_ad
     %ul

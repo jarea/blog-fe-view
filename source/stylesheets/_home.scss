@@ -61,3 +61,97 @@
     margin:10px 0;
   }
 }
+
+/*以下魚丸寫的*/
+#bd {
+  #section_top {
+    .sidebar {
+      float:right;
+      width:320px;
+      .block {
+        height:145px;
+        border:1px solid #CCCCCC;
+        border-radius:6px;
+        overflow:hidden;
+        padding:10px;
+        .admin {
+          .avatar {
+            float:left;
+            position:relative;
+            height:91px;
+            width:91px;
+          }
+          .welcome {
+            float:right;
+            width:195px;
+            overflow:hidden;
+            white-space:nowrap;
+          }
+          ul {
+            li {
+              float:left;
+              margin:0px;
+              width:103px;
+              height:37px;
+              .newPostBtn {
+                float:left;
+                height:18px;
+                width:90px;
+                border:1px solid #aecff1;
+                border-radius:5px;
+                overflow:hidden;
+                margin:8px;
+                padding:3px;
+                @include background-image(linear-gradient(top, #f5faff, #e2f0ff));
+              }
+              .backend {
+                float:left;
+                height:18px;
+                width:78px;
+                border:1px solid #aecff1;
+                border-radius:5px;
+                overflow:hidden;
+                margin:8px;
+                padding:3px;
+                @include background-image(linear-gradient(top, #f5faff, #e2f0ff));
+              }
+            }
+          }
+        .links {
+          margin-left:100px;
+          a {
+            color:#666666;
+            text-decoration: none;
+          }
+          a:hover {
+            color:#005580;
+            text-decoration: underline;
+          }
+        }
+      .notice {
+        overflow:hidden;
+        white-space:nowrap;
+        float:left;
+        img {
+          margin-top:20px;
+          float:left;
+          display:inline;
+        }
+        .text {
+          display:inline;
+          a {
+            color:#666666;
+            text-decoration: none;
+          }
+          a:hover {
+            color:#005580;
+            text-decoration: underline;
+          }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+/*以上魚丸寫的*/
