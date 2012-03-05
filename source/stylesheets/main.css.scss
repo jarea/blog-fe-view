@@ -20,6 +20,7 @@ $side-gutter-width: $gutter-width;
 @import "layout";
 @import "home";
 @import "album";
+@import "article";
 
 body {
   font-family: $font-family;

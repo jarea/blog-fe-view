@@ -1,16 +1,19 @@
 #main-article
   #articleHead
-    .articleTitle 不敗的選擇!!紅色穿搭特輯!!紅色穿搭特輯!!
-    .hotImg
+    .headTitle
+      .articleTitle 不敗的選擇!!紅色穿搭特輯!!紅色穿搭特輯!!
+      .hotImg
     .postTime
-      發表於
-      .postDate 2012/01/01
-    .articleShare 
-      分享
-      .shareFb
-      .shareGoogle
+      %ul
+        %li.word 發表於
+        %li.postDate 2012/01/01
+  .articleShare 
+    %ul
+      %li.shareWord 分享
+      %li.shareFb=link_to image_tag(url("/images/share_fb.png"), :alt=>""),"#"
+      %li.hareGg=link_to image_tag(url("/images/share_gg.png"), :alt=>""),"#"
   #articleContent
-    .mainImg= image_tag( lorem.image("410x630"), :alt=>"")
+    .Img= image_tag( lorem.image("410x630"), :alt=>"", :class=>"mainImg")
     .mainContent
       -4.times do
         .paragraph
@@ -19,7 +22,37 @@
               話說保養妝是霧面粉嫩的效果因為我是超乾肌喜歡擦完保養品後臉超油亮滋潤的fu...
   #articleBottom
     .catLinks
+      %dl.catContent
+        %dt
+          全站分類:
+          %dd
+            %a{:href=>"#"} 時尚流行
+        %dt
+          個人分類:
+          %dd
+            %a{:href=>"#"} 穿搭
+        %dt
+          此分類上一篇:
+          %dd
+            %a{:href=>"#"} 穿搭。師大夜市不要消失之戰利品穿搭文
+        %dt
+          此分類下一篇:
+          %dd
+            %a{:href=>"#"} 穿搭。師大夜市不要消失之戰利品穿搭文
+      %ul.quote
+        %li=link_to "引用(100)","#"
+        %li
+          |
+        %li=link_to "回覆(1000)","#"
     .tags
+      .tagImg 文字標籤
+      .tagWord
+        %ul
+          %li=link_to "時尚流行","#"
+          %li 、
+          %li=link_to "美妝","#"
+          %li 、
+          %li=link_to "旅遊","#"
     .moreArticles
       %p 閱讀相關文章：
       .article
@@ -27,9 +60,13 @@
           -5.times do
             %li
               %a{:href=>"#", :title=>"素顏也有好氣色", :class=>""}
-                .pic= image_tag lorem.image("90", :alt=>"", :class=>"moreImg")
-                .word 保養 | 素顏也有好氣色！美妝品血淚試用心得分享
+                .pic= image_tag lorem.image("90", :alt=>"")
+                .word
+                  保養 | ~素顏~也有好氣色！美妝品血淚試用心得分享！
     .copyLink
+      %input{:name=>"textArea", :type=>"text", :class=>"inputLink"}
+      %button
+        複製引用網址
   #articleReply
     .replyHead
       .memberInfo

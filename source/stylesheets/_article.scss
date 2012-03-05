@@ -1,0 +1,157 @@
+#main-article{
+  @include clearfix;
+  padding:10px;
+  width:700px;
+}
+#articleHead{
+  padding:10px 20px 10px 10px;
+  .headTitle{
+    float:left;
+    .articleTitle{
+      font-size:18px;
+      color:#286bcc;
+      float:left;
+      line-height:20px;
+      padding-right:10px;
+    }
+    .hotImg{
+      display:inline-block;
+      width:87px;
+      height:20px;
+      background: url(/images/hotarticle.png) no-repeat;
+    }
+  }
+  .postTime{
+    color:#b4b4b4;
+    float:right;
+    li{
+      float:left;
+    }
+  }
+}
+
+#main-article{
+  .articleShare{
+    clear:both;
+    padding:5px 0 30px 10px;
+    li{
+      float:left;
+      margin-right:5px;
+      .shareWord{
+        color:#666;
+        line-height:21px;
+      }
+      .shareFb{
+        float:left;
+        width:68px;
+        height:21px;
+      }
+      .shareGg{
+        width:60px;
+        height:21px;  
+      }
+    }
+  }  
+}
+
+#articleBottom{
+  .catLinks{
+    @include clearfix;
+    padding:20px 10px;
+    dl{
+      float:left;
+      width:50%;
+      dt{
+        float:left;
+        color:#969696;
+      }
+    }
+  }
+  ul.quote{
+    float:right;
+    padding-top:50px;
+    li{
+      color:#969696;
+      padding-right:3px;
+      float:left;
+    }
+  }
+  .tags{
+    display:inline-block;
+    width:98%;
+    padding:5px;
+    background-color:#f0f0f0;
+    border:1px solid #dcdcdc;
+    
+    .tagImg{
+      font-size:11px;
+      line-height:19px;
+      color:#666;
+      width:64px;
+      height:19px;
+      float:left;
+      padding-left:5px;
+      background: url(/images/tag_bg.png) no-repeat;
+      display:block;
+    }
+    .tagWord{
+      li{
+        color:#613d1a;
+        float:left;
+        a{
+          color:#613d1a;
+        }
+      }
+    }
+  }
+  .moreArticles{
+    p{
+      padding:10px;
+      color:#969696;
+    }
+    .article{
+      @include clearfix;
+      padding-bottom:20px;
+      li{
+        float:left;
+        width:110px;  
+        padding:5px 10px;
+        border-right:1px dashed #ffc57f;
+        a{
+          .pic{
+            text-align:center;
+            img{
+              padding:3px;
+              border:1px solid #dcdcdc;
+            } 
+          }
+        }
+      }
+    }
+  }
+  .copyLink{
+    margin-bottom:20px;
+    .inputLink{
+      width:500px;
+      margin-right:10px;
+    }
+    button{
+      color:#5a5a5a;
+      padding:0 15px;
+    }
+  }  
+}
+
+#articleContent{
+  .mainImg{
+    padding:10px;
+  }
+  .mainContent{
+    padding:0 0 50px 0;
+    .paragraph{
+      padding:10px;
+      color:#666;
+    }
+  }
+}
+    
