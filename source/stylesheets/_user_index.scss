@@ -5,6 +5,42 @@
   #main {
     float:left;
     width:700px;
+    .entry {
+      padding:20px;
+      border-bottom:1px dotted #ffc06d;
+      h2 {
+        font-size:18px;
+        span {
+          @include inline-block;
+          width:87px;
+          height:20px;
+          background:url(/images/icon-hot.png) no-repeat;
+          text-indent:-9999px;
+          margin-left:10px;
+        }
+      }
+      .date {
+        text-align:right;
+        color:#ccc;
+      }
+      img {
+        margin:15px 0;
+      }
+      .more {
+        margin:5px 0;
+      }
+      .count {
+        @include clearfix;
+        li {
+          float:right;
+          margin-left:5px;
+          padding-left:5px;
+        }
+        .comment {
+          border-left:1px solid #ccc;
+        }
+      }
+    }
   }
   .sidebar {
     float:right;
