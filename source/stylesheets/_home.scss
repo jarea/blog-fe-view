@@ -132,12 +132,15 @@
         white-space:nowrap;
         float:left;
         img {
-          margin-top:20px;
+          margin-top:10px;
           float:left;
           display:inline;
         }
         .text {
+          float:right;
           display:inline;
+          width:250px;
+          margin-top:10px;
           a {
             color:#666666;
             text-decoration: none;
