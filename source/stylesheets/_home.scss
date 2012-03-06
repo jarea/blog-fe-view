@@ -61,3 +61,145 @@
     margin:10px 0;
   }
 }
+
+/*以下魚丸寫的*/
+#bd {
+  #section_top {
+    .sidebar {
+      float:right;
+      width:320px;
+      .block {
+        border:1px solid #CCCCCC;
+        border-radius:6px;
+        overflow:hidden;
+        padding:10px;
+        .admin {
+          .avatar {
+            float:left;
+            position:relative;
+            height:91px;
+            width:91px;
+          }
+          .welcome {
+            float:right;
+            width:195px;
+            overflow:hidden;
+            white-space:nowrap;
+          }
+          ul {
+            li {
+              float:left;
+              margin:0px;
+              width:103px;
+              height:37px;
+              .newPostBtn {
+                float:left;
+                height:18px;
+                width:90px;
+                border:1px solid #aecff1;
+                border-radius:5px;
+                overflow:hidden;
+                margin:8px;
+                padding:3px;
+                @include background-image(linear-gradient(top, #f5faff, #e2f0ff));
+              }
+              .backend {
+                float:left;
+                height:18px;
+                width:78px;
+                border:1px solid #aecff1;
+                border-radius:5px;
+                overflow:hidden;
+                margin:8px;
+                padding:3px;
+                @include background-image(linear-gradient(top, #f5faff, #e2f0ff));
+              }
+            }
+          }
+        .links {
+          margin-left:100px;
+          a {
+            color:#666666;
+            text-decoration: none;
+          }
+          a:hover {
+            color:#005580;
+            text-decoration: underline;
+          }
+        }
+      .notice {
+        overflow:hidden;
+        white-space:nowrap;
+        float:left;
+        img {
+          margin-top:10px;
+          float:left;
+          display:inline;
+        }
+        .text {
+          float:right;
+          display:inline;
+          width:250px;
+          margin-top:10px;
+          a {
+            color:#666666;
+            text-decoration: none;
+          }
+          a:hover {
+            color:#005580;
+            text-decoration: underline;
+          }
+            }
+          }
+        }
+      }
+      .block {
+        .hot {
+          .subject {
+            border-radius:6px 6px 0 0;
+            height:30px;
+            margin:-10px;
+            @include background-image(linear-gradient(top, #ffd369, #ffb502));
+            p {
+              position:relative;
+              top:5px;
+              left:10px;
+              color:white;
+              font-size:16px;
+            }
+          }
+          ul {
+            padding:20px 0px;
+            height:195px;
+            li {
+              width:300px;
+              height:107px;
+              display:block;
+              .img {
+                padding:3px;
+                border:1px solid #CCCCCC;
+                background-color:white;
+                float:left;
+              }
+              .word {
+                float:right;
+                width:165px;
+                .title {
+                padding:5px 0;
+                font-size:15px;
+                }
+                .intro {
+                  padding:5px;
+                }
+              }
+            }
+          }
+        }
+      }
+    .mTop {
+      margin-top:15px;
+    }
+    }
+  }
+}
+/*以上魚丸寫的*/
