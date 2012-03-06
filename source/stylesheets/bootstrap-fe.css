@@ -2065,7 +2065,7 @@ button.btn.small, input[type="submit"].btn.small {
 }
 .nav > li > a:hover {
   text-decoration: none;
-  background-color: #eeeeee;
+  /*background-color: #eeeeee;*/
 }
 .nav-list {
   padding-left: 14px;
@@ -2137,10 +2137,10 @@ button.btn.small, input[type="submit"].btn.small {
   border-color: #eeeeee #eeeeee #dddddd;
 }
 .nav-tabs > .active > a, .nav-tabs > .active > a:hover {
-  color: #555555;
-  background-color: #ffffff;
-  border: 1px solid #ddd;
-  border-bottom-color: transparent;
+  color: #ff7800;
+  /*background-color: #ffffff;*/
+  /*border: 1px solid #ddd;
+  border-bottom-color: transparent;*/
   cursor: default;
 }
 .nav-pills > li > a {
@@ -2518,7 +2518,7 @@ button.btn.small, input[type="submit"].btn.small {
 }
 .navbar .nav > li > a:hover {
   background-color: transparent;
-  color: #ffffff;
+  /*color: #ffffff;*/
   text-decoration: none;
 }
 .navbar .nav .active > a, .navbar .nav .active > a:hover {
