@@ -4,8 +4,42 @@
     %meta{:charset => "utf-8"}
     = stylesheet_link_tag 'main'
     = stylesheet_link_tag 'bootstrap-fe.css'
-  %body
-    #header
-      這是個人部落格
-    #main
-      = yield
+  %body.user
+    #toolbar
+      .inner
+        %ul.function
+          %li.first 
+            Hi~
+            =lorem.name
+          %li=link_to "回我的網誌", "#", :title => "回我的網誌"
+          %li=link_to "發表新文章", "#", :title => "發表新文章"
+          %li=link_to "管理後台", "#", :title => "管理後台"
+          %li.last=link_to "訊息", "#", :title => "訊息"
+        %ul.link
+          %li=link_to "部落格首頁", "#", :title => "部落格首頁", :class => "home"
+          %li=link_to "回討論區", "#", :title => "回討論區"
+          %li.last=link_to "FG首頁", "#", :title => "FG首頁"
+    #hd
+      .banner
+        %h1=link_to "部落格標題文字", "#", :title => "部落格標題文字"
+        %p 部落格敘述文字部落格敘述文字，部落格敘述文字，部落格敘述文字，部落格敘述文字部落格敘述文字
+    #bd
+      .inner
+        = yield
+    #ft
+      .inner
+        %ul
+          %li=link_to "回首頁", "/", :title => "回首頁"
+          %li=link_to "設成首頁", "#", :title => "設成首頁"
+          %li=link_to "簡體版", "#", :title => "簡體版"
+          %li=link_to "服務台", "#", :title => "服務台"
+          %li=link_to "修改會員資料", "#", :title => "修改會員資料"
+          %li=link_to "加入會員", "#", :title => "加入會員"
+          %li=link_to "新手上路", "#", :title => "新手上路"
+          %li=link_to "廣告刊登", "#", :title => "廣告刊登"
+          %li=link_to "贈獎須知", "#", :title => "贈獎須知"
+          %li=link_to "服務條款", "#", :title => "服務條款"
+          %li=link_to "SITEMAP", "#", :title => "SITEMAP"
+          %li.last=link_to "人才招募", "#", :title => "人才招募"
+        %p
+          風尚數位科技股份有限公司版權所有 2012 FashionGuide All Right Reserved

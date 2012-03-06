@@ -1,0 +1,44 @@
+.user {
+  #toolbar {
+    @include clearfix;
+    margin:0;
+    .function, .link {
+      position:static;
+    }
+    .function {
+      float:left;
+      background:url(/images/bg-user_function.png) no-repeat left bottom;
+      padding:8px 200px 7px 0;
+      color:#666;
+      a {
+        color:#666;
+      }
+      li {
+        border-right:1px solid #666;
+      }
+      li.first {
+        padding-left:30px;
+      }
+    }
+    .link {
+      float:right;
+      padding:8px;
+    }
+  }
+  #hd .banner {
+    height:400px;
+    background:url(/images/bg-banner.png) no-repeat;
+    color:#fff;
+    a {
+      color:#fff;
+    }
+    h1 {
+      padding:100px 0 0 20px;
+      width:400px;
+    }
+    p {
+      padding:10px 20px;
+      width:400px;
+    }
+  }
+}
