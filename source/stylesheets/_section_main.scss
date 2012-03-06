@@ -32,6 +32,9 @@ a{
         background: -o-linear-gradient(#fff, #ebebeb);
         background: linear-gradient(#fff, #ebebeb);
       }
+      li{
+        margin-bottom:0px;
+      }
       li.active a{
         color:#fff;
         background:#ffb608;
@@ -125,7 +128,7 @@ a{
   font-size:12px;
   // padding:2px 0;
 }
-.more{
+.lookmore{
   margin-top:5px;
   a{
     font-size:10px;
@@ -224,7 +227,6 @@ a{
       float:left;
     }
     ul{
-      float:right;
       padding:5px 3px 0 0;
     }
   }
@@ -286,6 +288,7 @@ a{
   @include border-bottom-left-radius(6px);
   @include border-bottom-right-radius(6px);
   margin-top:10px;
+  padding-bottom:10px;
 }
 .clear{
   @include clearfix;
