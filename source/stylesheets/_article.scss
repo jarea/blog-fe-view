@@ -115,8 +115,11 @@
       li{
         float:left;
         width:110px;  
-        padding:5px 10px;
+        padding:5px 15px 5px 10px;
         border-right:1px dashed #ffc57f;
+        &:hover{
+          background-color:#f0f0f0;
+        }
         a{
           .pic{
             text-align:center;
@@ -132,12 +135,12 @@
   .copyLink{
     margin-bottom:20px;
     .inputLink{
-      width:500px;
+      width:580px;
       margin-right:10px;
     }
     button{
       color:#5a5a5a;
-      padding:0 15px;
+      font-size:11px;
     }
   }  
 }
@@ -151,7 +154,90 @@
     .paragraph{
       padding:10px;
       color:#666;
+      p{
+        line-height:22px;
+      }
     }
   }
 }
-    
+ 
+#articleReply{
+  .reply{
+    ul{
+      padding:5px 0px 20px 0px;
+    }
+    .member{
+      color:#5a5a5a;
+      padding:10px 0;
+    }
+    li{
+      float:left;
+      margin-right:10px;
+    }
+    .replyFb{
+      @include border-radius(3px);
+      background-color:#1b48a8;
+      padding:10px;
+      width:100px;
+      a{
+        text-align:center;
+        color:#fff;
+        display:block;
+      }
+    }
+    .replyMe{
+      @extend .replyFb;
+      background-color:#6b6b6b;
+    }
+    .replyComments{
+      padding:20px 0;
+    }
+  }
+} 
+
+li.comments{
+  color:#5a5a5a;
+  padding:20px 10px 5px 20px;
+  margin-bottom:10px;
+  background:#f0f0f0;
+  width:95%;
+  .leftSide{
+    float:left;
+    margin-right:20px;
+    img{
+      padding:3px;
+      border:1px solid #DCDCDC;
+    }
+    .stars{
+      text-align:center;
+      img{
+        border:none;
+      }
+    }
+  }
+  .rightSide{
+    .content{
+      float:left;
+      .replied{
+        width:440px;
+        margin:10px 0 10px 30px;
+        padding:20px;
+        background:#fff;
+        border:1px solid #dcdcdc;
+      }
+    }
+    .userInfo{
+      clear:both;
+      padding:10px 0px 5px 5px;
+      float:right;
+      li{
+        float:left;
+        color:#969696;
+      }
+    }
+    .stair{
+      float:right;
+      padding-right:10px;
+    }
+  }
+}  

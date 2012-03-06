@@ -15,7 +15,7 @@
   #articleContent
     .Img= image_tag( lorem.image("410x630"), :alt=>"", :class=>"mainImg")
     .mainContent
-      -4.times do
+      -6.times do
         .paragraph
           -3.times do
             %p 
@@ -69,67 +69,69 @@
         複製引用網址
   #articleReply
     .replyHead
-      .memberInfo
       .reply
         %ul
-          %li=link_to "Facebook回應","#"
-          %li=link_to "我要回應","#"
-        .comments
+          %li.replyFb=link_to "Facebook回應","#"
+          %li.replyMe=link_to "我要回應","#"
+          %ul.member
+            %li= image_tag(url("/images/stars.png"), :alt=>"")
+            %li=link_to "會員年資","#"
+            %li=link_to "發言資歷","#"
+            %li=link_to "UID非會員","#"
+        .replyComments
           %ul
-            %li.commentsReplied
+            %li.comments
               .leftSide
-                .pic= image_tag lorem.image("90", :alt=>"", :class=>"moreImg")
-                .stars
+                .pic= image_tag lorem.image("90", :alt=>"")
+                .stars= image_tag(url("/images/stars.png"), :alt=>"")
               .rightSide
                 .content
                   .reply
                     真的!!超可愛的!!!!真的!!超可愛的!!!!
-                  .replied
-                    這次的分享不只有T恤噢!!還有可愛外套!!!!
-                .stair 2樓
+                    %br
+                      真的!!超可愛的!!!!真的!!超可愛的!!!!
+                    .replied
+                      這次的分享不只有T恤噢!!還有可愛外套!!!!
+                .stair 1樓
                 .userInfo
                   %ul
                     %li=link_to "無敵好吃寶咖咖","#"
                     %li
                       於
-                      .replyDate 2012/01/01
-                      .replyTime 00:00 AM
+                    %li.replyDate 2012/01/01 00:00 AM
                     %li=link_to "回應","#"
                     %li.bar
                       |
                     %li=link_to "檢舉","#"
-            %li.comment                
+            %li.comments               
               .leftSide
-                .pic= image_tag lorem.image("90", :alt=>"", :class=>"moreImg")
-                .stars
+                .pic= image_tag lorem.image("90", :alt=>"")
+                .stars= image_tag(url("/images/stars.png"), :alt=>"")
               .rightSide
                 .content
-                  這次的分享不只有T恤噢!!還有可愛外套!!!!
-                  這次的分享不只有T恤噢!!還有可愛外套!!!!
+                  -2.times do
+                    這次的分享不只有T恤噢!!還有可愛外套!!!!
+                    %br
+                      這次的分享不只有T恤噢!!還有可愛外套!!!!
                 .stair 2樓
                 .userInfo
                   %ul
                     %li=link_to "無敵好吃寶咖咖","#"
-                    %li
-                      於
-                      .replyDate 2012/01/01
-                      .replyTime 00:00 AM
+                    %li.replyDate 2012/01/01 00:00 AM
                     %li=link_to "回應","#"
                     %li.bar
                       |
                     %li=link_to "檢舉","#"
-            %li.whisper                
+            %li.comments               
               .leftSide
-                悄悄話
+                .content
+                  悄悄話
               .rightSide
-                .stair 2樓
-                .userInfo
+                .stair 3樓
+                .userInfo.whisper
                   %ul
                     %li 悄悄話
-                    %li
-                      於
-                      .replyDate 2012/01/01
-                      .replyTime 00:00 AM
+                    %li.replyDate 2012/01/01 00:00 AM
                     %li=link_to "回應","#"
                     %li.bar
                       |
