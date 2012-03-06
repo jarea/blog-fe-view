@@ -1,0 +1,38 @@
+#main-album
+  #SubFunction
+    .BackToBlog
+      .back 回
+      .BackToWord=link_to "天真無邪賴小美的網誌","#"
+    .functions
+      %ul
+        %li=link_to "新增相簿","#"
+        %li.line
+          |
+        %li=link_to "上傳照片","#"
+        %li.line
+          |
+        %li=link_to "相簿排序","#"
+        %li.line
+          |
+        %li=link_to "相簿管理","#"
+  .userTitle 天真無邪賴小美的相簿  共100本
+  .albums
+    -4.times do
+      %ul
+        -4.times do
+          %li.album
+            .albumCover=link_to image_tag(lorem.image("140"), :alt=>""),"#", :title=>"北海道美食之旅", :class=>"albumImg"
+            %a{:href=>"#"}
+              .albumName ~北海道6天7夜吃不停之旅~
+              .albumNums 100張照片
+  .pagination
+    %ul
+      %li=link_to "第一頁","#"
+      %li=link_to "上一頁","#"
+      %li.active=link_to "1","#"
+      %li=link_to "2","#"
+      %li=link_to "3","#"
+      %li=link_to "4","#"
+      %li=link_to "5","#"
+      %li=link_to "下一頁","#"
+      %li=link_to "最後一頁","#"
