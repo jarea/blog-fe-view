@@ -13,13 +13,13 @@
       %li.shareFb=link_to image_tag(url("/images/share_fb.png"), :alt=>""),"#"
       %li.hareGg=link_to image_tag(url("/images/share_gg.png"), :alt=>""),"#"
   #articleContent
-    .Img= image_tag( lorem.image("410x630"), :alt=>"", :class=>"mainImg")
+    .pic= image_tag( lorem.image("410x630"), :alt=>"")
     .mainContent
       -6.times do
         .paragraph
           -3.times do
             %p 
-              話說保養妝是霧面粉嫩的效果因為我是超乾肌喜歡擦完保養品後臉超油亮滋潤的fu...
+              話說保養妝是霧面粉嫩的效果!!因為我是超乾肌>"<..喜歡擦完保養品後臉超油亮滋潤的fu...
   #articleBottom
     .catLinks
       %dl.catContent
@@ -85,7 +85,7 @@
                 .pic= image_tag lorem.image("90", :alt=>"")
                 .stars= image_tag(url("/images/stars.png"), :alt=>"")
               .rightSide
-                .content
+                .replyContent
                   .reply
                     真的!!超可愛的!!!!真的!!超可愛的!!!!
                     %br
@@ -108,7 +108,7 @@
                 .pic= image_tag lorem.image("90", :alt=>"")
                 .stars= image_tag(url("/images/stars.png"), :alt=>"")
               .rightSide
-                .content
+                .replyContent
                   -2.times do
                     這次的分享不只有T恤噢!!還有可愛外套!!!!
                     %br
@@ -122,9 +122,9 @@
                     %li.bar
                       |
                     %li=link_to "檢舉","#"
-            %li.comments               
+            %li.comments.whisper               
               .leftSide
-                .content
+                .replyContent
                   悄悄話
               .rightSide
                 .stair 3樓
@@ -136,4 +136,5 @@
                     %li.bar
                       |
                     %li=link_to "檢舉","#"
-                    
+=partial "/_partials/user_sidebar"
+      

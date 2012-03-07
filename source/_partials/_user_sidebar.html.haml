@@ -1,0 +1,87 @@
+.sidebar
+  .inner
+    .block.profile
+      .inner
+        %h3 個人資訊
+        .section
+          %ul
+            %li 
+              部落格標題標題標題
+              %span.edit=link_to "編輯內容", "#", :title => "編輯內容"
+            %li=image_tag( lorem.image("130x100"), :alt => "")
+            %li 
+              暱稱：
+              = lorem.name
+              %span.edit=link_to "編輯內容", "#", :title => "編輯內容"
+        .section
+          %ul.link
+            %li=link_to "首頁", "#", :title => "首頁"
+            %li=link_to "關於我", "#", :title => "關於我"
+            %li=link_to "相簿", "#", :title => "相簿"
+            %li=link_to "個人Fashion Show", "#", :title => "個人Fashion Show"
+            %li=link_to "私密留言", "#", :title => "私密留言"
+            %li=link_to "信箱", "#", :title => "信箱"
+          %ul.function
+            %li=link_to "RSS訂閱", "#", :title => "RSS訂閱", :class => "btn"
+            %li=link_to "我要關注", "#", :title => "我要關注", :class => "btn"
+        .section_calendar
+          月曆
+    .block.article
+      .inner
+        %h3 最新文章
+        %ul
+          -5.times do
+            %li=link_to "穿搭。師大夜市不要消失之戰利品穿搭文", "#", :title => "穿搭。師大夜市不要消失之戰利品穿搭文"
+    .block.category
+      .inner
+        %h3 文章分類
+        %ul
+          -5.times do
+            %li=link_to "穿搭。師大夜市不要消失之戰利品穿搭文", "#", :title => "穿搭。師大夜市不要消失之戰利品穿搭文"
+    .block.all
+      .inner
+        %h3 所有文章彙整
+        %select.span2
+          %option 文章彙集
+    .block.comment
+      .inner
+        %h3 最新迴響
+        %dl
+          -5.times do
+            %dt 
+              01/01
+              =link_to "user暱稱", "#" , :title => "user暱稱"
+              ：
+            %dd
+              =link_to "留言內容留言內容留言內容，留言內容...", "#" , :title => "留言內容留言內容留言內容，留言內容"
+    .block.search
+      .inner
+        %h3 搜尋這個網誌
+        %form.form-inline
+          %input{:type => "text", :class => "input-small"}
+          %input{:type => "submit", :class => "btn", :value => "搜尋"}
+          %ul
+            %li.checkbox.inline
+              %input{:type => "checkbox"} 標題
+            %li.checkbox.inline
+              %input{:type => "checkbox"} 內容
+    .block.follows
+      .inner
+        %h3 我的關注
+        %ul
+          -5.times do
+            %li=link_to "連結標題標題標題", "#", :title => "連結標題標題標題"
+    .block.link
+      .inner
+        %h3 連結區
+        %ul
+          -5.times do
+            %li=link_to "連結標題標題標題", "#", :title => "連結標題標題標題"
+    .block.view
+      .inner
+        %h3 參觀人氣
+        %dl
+          %dt 本日人氣：
+          %dd 1005
+          %dt 累積人氣：
+          %dd 324516

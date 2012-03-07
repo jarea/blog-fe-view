@@ -1,9 +1,9 @@
 #main-article{
-  @include clearfix;
-  padding:10px;
+  float:left;
   width:700px;
 }
 #articleHead{
+  margin-top:10px;
   padding:10px 20px 10px 10px;
   .headTitle{
     float:left;
@@ -15,6 +15,7 @@
       padding-right:10px;
     }
     .hotImg{
+      float:left;
       display:inline-block;
       width:87px;
       height:20px;
@@ -33,7 +34,7 @@
 #main-article{
   .articleShare{
     clear:both;
-    padding:5px 0 30px 10px;
+    padding:10px 0 30px 10px;
     li{
       float:left;
       margin-right:5px;
@@ -85,12 +86,12 @@
     
     .tagImg{
       font-size:11px;
-      line-height:19px;
+      line-height:20px;
       color:#666;
       width:64px;
-      height:19px;
+      height:20px;
       float:left;
-      padding-left:5px;
+      padding-left:7px;
       background: url(/images/tag_bg.png) no-repeat;
       display:block;
     }
@@ -141,13 +142,15 @@
     button{
       color:#5a5a5a;
       font-size:11px;
+      line-height:17px;
     }
   }  
 }
 
 #articleContent{
-  .mainImg{
-    padding:10px;
+  img{
+    border:1px solid #dcdcdc;
+    margin:10px;
   }
   .mainContent{
     padding:0 0 50px 0;
@@ -216,7 +219,7 @@ li.comments{
     }
   }
   .rightSide{
-    .content{
+    .replyContent{
       float:left;
       .replied{
         width:440px;
