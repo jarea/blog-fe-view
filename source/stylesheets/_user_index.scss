@@ -1,3 +1,6 @@
+.user #bd .inner{
+  @include clearfix;
+}
 .user {
   .user_index {
     @include clearfix;
