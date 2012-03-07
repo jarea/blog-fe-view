@@ -9,10 +9,6 @@
   float:left;
 }
  
-a{
-  text-decoration:none;
-  font-size:13px;
-}
 #main{
   .mainContent{
     .nav-tabs{
@@ -31,6 +27,16 @@ a{
         background: -ms-linear-gradient(#fff, #ebebeb);
         background: -o-linear-gradient(#fff, #ebebeb);
         background: linear-gradient(#fff, #ebebeb);
+        &:hover{
+          color:#fff;
+          background:#ffb608;
+          background: -webkit-gradient(linear, 0 0, 0 bottom, from(#ffd266), to(#ffb608));
+          background: -webkit-linear-gradient(#ffd266, #ffb608);
+          background: -moz-linear-gradient(#ffd266, #ffb608);
+          background: -ms-linear-gradient(#ffd266, #ffb608);
+          background: -o-linear-gradient(#ffd266, #ffb608);
+          background: linear-gradient(#ffd266, #ffb608);
+        }
       }
       li{
         margin-bottom:0px;
@@ -62,8 +68,6 @@ a{
     }
   }
 }
-
-
 
 .content{
   display:block;
@@ -126,7 +130,10 @@ a{
 }
 .postContent{
   font-size:12px;
-  // padding:2px 0;
+  a{
+    text-decoration:none;
+    font-size:13px;
+  }
 }
 .lookmore{
   margin-top:5px;
@@ -202,22 +209,53 @@ a{
 
 .sidebar{
   .rank{
+    li.hover{
+      color:#ff7800;
+      display:inline-block;
+      border:none;
+      width:90px;
+      line-height:25px;
+      padding:0;
+      text-align:center;
+    }
     .nav-tabs{
       border:none;
       margin-bottom:0px;
-      .active{
+      li.active a{
         background:none;
-      }
-    }
-    .top, .bloger{
-      float:left;
-      a{
+        color:#ff7800;
         display:inline-block;
         border:none;
         width:90px;
         line-height:25px;
         padding:0;
         text-align:center;
+        background: url(/images/icons/top100_bg.png) no-repeat;
+      }
+    }
+    .top{
+      margin-left:25px;
+    }
+    .top, .bloger{
+      a{
+        color:#5a5a5a;
+        display:inline-block;
+        border:none;
+        width:90px;
+        line-height:25px;
+        padding:0;
+        text-align:center;
+        background: url(/images/icons/bloger_bg.png) no-repeat;
+        &:hover{
+          color:#ff7800;
+          display:inline-block;
+          border:none;
+          width:90px;
+          line-height:25px;
+          padding:0;
+          text-align:center;
+          background: url(/images/icons/top100_bg.png) no-repeat;
+        }
       }
     }
     .ranking{
@@ -227,7 +265,7 @@ a{
       float:left;
     }
     ul{
-      padding:5px 3px 0 0;
+      padding:5px 3px 0 10px;
     }
   }
 }
@@ -249,7 +287,7 @@ a{
   li{
     float:left;
     color:#bababa;
-    padding:5px;
+    padding:5px 5px 5px 0;
   }
   .lookmore{
     a{
