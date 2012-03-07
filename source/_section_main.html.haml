@@ -56,8 +56,8 @@
       .clear.nav.nav-tabs
         .ranking 本週人氣排行
         %ul{:class=>"nav nav-tabs"}
-          %li.active.top=link_to "TOP 100","#top", :class=>"icons-top100_bg", "data-toggle" => "tab"
-          %li.bloger=link_to "部落客","#bloger", :class=>"icons-bloger_bg", "data-toggle" => "tab"
+          %li.active.top=link_to "TOP 100","#top", "data-toggle" => "tab"
+          %li.bloger=link_to "部落客","#bloger", "data-toggle" => "tab"
       .tab-content.SidebarC
         #top.active{:class => "tab-pane"}
           %ul
