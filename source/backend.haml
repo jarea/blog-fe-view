@@ -1,0 +1,26 @@
+!!! 5
+%html
+  %head
+    %meta{:charset => "utf-8"}
+    = stylesheet_link_tag 'backend'
+  %body
+    #hd
+      #header
+        .logo= image_tag("../images/banner.png", :alt => "FG 部落格管理後台")
+        .user-links
+          %ul
+            %li.first Hi
+            %li= link_to("Jason Chen", "#", :title => "Jason Chen", :class => "icons-hd_heart")
+            %li= link_to("回到我的網誌", "#", :title => "回到我的網誌", :class => "icons-hd_home")
+            %li= link_to("登出", "#", :title => "登出", :class => "icons-hd_logout")
+            %li= link_to("FG 首頁", "#", :title => "FG 首頁")
+      %p.welcome
+        welcome to fashionguide backend
+      %ul#breadcrumb
+        %li=link_to "部落格", "#", :title => ""
+        %li.last.active=link_to "文章列表管理", "#", :title => ""
+    #bd
+      .inner
+        = yield
+    #footer
+      %p.bk-copyrights Copyright © 2012 Fashionguide 風尚數位科技

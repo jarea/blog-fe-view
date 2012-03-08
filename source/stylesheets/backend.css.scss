@@ -1,0 +1,57 @@
+@import "compass";
+
+$link-color:         #0388a6;
+$link-hover-color:   #009ce0;
+$link-focus-color:   false;
+$link-active-color:  false;
+$link-visited-color: false;
+
+$font-color:  #2a2a2a;
+$font-family: sans-serif;
+$base-font-size:   12px;
+$base-line-height: 18px;
+
+$total-cols: 12;
+$col-width: 4em;
+$gutter-width: 1em;
+$side-gutter-width: $gutter-width;
+
+@include global-reset;
+@import "bootstrap-bk";
+@import "icons";
+@import "bk_header";
+@import "bk_menu";
+@import "bk_managelist";
+@import "bk_post";
+@import "bk_footer";
+
+body {
+  font-family: $font-family;
+  color: $font-color; 
+  background-color:#fffbf7;
+}
+
+a {
+  @include link-colors($link-color, $link-hover-color, $link-focus-color, $link-active-color, $link-visited-color);
+}
+
+#bd .inner {
+  @include clearfix;
+}
+
+h2.heading {
+  @include border-radius(6px 6px 0 0);
+  background:#fd858d;
+  color:#fff;
+  font-size:15px;
+  padding:0 20px;
+}
+
+.frame {
+  background:#fff;
+  @include border-radius(6px);
+  border:1px solid #fee3e3;
+  .inner {
+    padding:20px;
+  }
+}
