@@ -43,6 +43,7 @@
   # page "/user/*"
 # end
 page "/user/*", :layout => "user"
+page "/backend/*", :layout => "backend"
 
 # Proxy (fake) files
 # page "/this-page-has-no-template.html", :proxy => "/template-file.html" do
