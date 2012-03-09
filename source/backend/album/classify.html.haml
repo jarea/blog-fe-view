@@ -1,0 +1,55 @@
+=partial "/_partials/bk_menu"
+
+.frame.album
+  %h2.heading
+    %ul
+      %Li
+        .word=link_to "後台首頁"
+        %span.word  / 
+      %li
+        .word=link_to "相簿管理"
+        %span.word  / 
+      %li.now 相簿分類設定
+  .inner
+    %table.table.tableAlbum
+      %thead
+        %tr
+          %th
+            %input{:type=>"checkbox"}
+          %th
+            相本名稱
+          %th
+            所屬全站分類
+          %th
+            相片數
+          %th
+            狀態
+          %th
+            相本順序
+            %span.info=link_to "說明","#"
+          %th
+            編輯
+      -7.times do
+        %tbody
+          %tr.albumList
+            %td
+              %input{:type=>"checkbox"}
+            %td.classWord
+              國小同學會
+            %td.classWord
+              同學聚會
+            %td.nums
+              3000
+            %td.albumStat
+              %ul
+                %li.stat= image_tag(url("/images/icons/friends.png"),:alt=>"")
+                %li.nums 朋友    
+            %td.albumSort
+              .sortOption  
+                .sort=link_to image_tag(url("/images/icons/arrow_down.png"),:alt=>""),"#"
+                .sort=link_to image_tag(url("/images/icons/arrow_up.png"),:alt=>""),"#"
+            %td.edit=link_to "編輯","#"
+      %tfoot
+        %tr
+          %td{:colspan =>"8"}
+            .pagination            
