@@ -1,7 +1,15 @@
 =partial "/_partials/bk_menu"
 
 .frame.manage-list
-  %h2.heading 文章管理列表
+  %h2.heading 
+    %ul
+      %li
+        .word=link_to "後台首頁"
+        %span.word  / 
+      %li
+        .word=link_to "文章管理"
+        %span.word  / 
+      %li.now 文章列表
   .inner
     .toolbar
       .form-search

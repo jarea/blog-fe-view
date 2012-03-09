@@ -1,7 +1,15 @@
 =partial "/_partials/bk_menu"
   
 .frame.comment
-  %h2.heading 個人分類管理
+  %h2.heading 
+    %ul
+      %li
+        .word=link_to "後台首頁"
+        %span.word  / 
+      %li
+        .word=link_to "文章管理"
+        %span.word  / 
+      %li.now 回覆管理
   .inner
     %ul.nav.nav-tabs
       %li.active
