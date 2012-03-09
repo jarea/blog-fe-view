@@ -1,0 +1,142 @@
+.album{
+  width:85%;
+  float:right;
+}
+
+h2.heading {
+  @include border-radius(6px 6px 0 0);
+  background:#fd858d;
+  color:#fff;
+  font-size:15px;
+  padding:0 20px;
+  line-height:36px;
+  li{
+    line-height:36px;
+  }
+  .word{
+    float:left;
+    color:#fedddd;
+    a{
+      color:#fedddd;
+    }
+  }
+  .now{
+    color:#fff;
+  }
+}
+.tableAlbum{
+  .info{
+    a{
+      text-indent:-9999px;
+      vertical-align:middle;
+      width:20px;
+      height:20px;
+      background:url(/images/info.png) no-repeat center;
+      display:inline-block;
+    }
+  }
+  td{
+    text-align:center;
+  }
+  thead th{
+    border-right:1px solid #eee;
+    text-align:center;
+    color:#903232;
+  }
+  .tbody{
+    padding:20px 0;
+    border-bottom:1px solid #e4e4e4;
+  }
+  tfoot td, thead tr {
+    background:url(/images/bg_table.png) repeat-x center;
+  }
+  tfoot td {
+    padding: 0 8px;
+  }
+  td.edit a {
+    display:block;
+    background:url(/images/edit.png) no-repeat center;
+    width:20px;
+    height:20px;
+    text-indent:-9999px;
+    margin-left:15px;
+    vertical-align:middle;
+  }
+  .check{
+    vertical-align:middle;
+    text-align:center;
+  }
+  .albumInfo{
+    width:50%;
+    li{
+      float:left;
+      padding-right:5px;
+    }
+    li.stat a{
+      width:18px;
+      height:15px;
+    }
+    li.albumTitle a{
+      color:#9a9929;
+      font-size:15px;
+    }
+    .albumDescribe{
+      color:#565656;
+      margin-top:20px;
+      padding:5px 0;
+      text-align:left;
+    }
+  }
+  .albumSort{
+    vertical-align:middle;
+    .sortOption{ 
+      .sort a{
+          float:left;
+          padding:0 10px;
+          text-align:center;
+      }
+    }
+  }
+  .albumCover{
+    padding:3px;
+    border:1px solid #dcdcdc;
+  }
+  td.edit, .nums{
+    vertical-align:middle;
+    color:#888;
+    font-size:13px;
+  }
+  tfoot{
+    .pagination{
+      float:right;
+      margin-right:20px;
+      ul{
+        padding:4px 0;
+        a{
+          margin:3px;
+          border:none;
+          border-radius:0px;
+          padding:0 5px;
+        }
+      }
+    }
+  }
+  .albumStat{
+    text-align:center;
+    li{
+      float:left;
+      line-height:13px;
+      padding:0 5px;
+    } 
+  }
+  .classWord{
+    font-size:13px;
+    color:#565656;
+  }
+  tr.albumList{
+    padding:10px 8px;
+  }
+}
+.table td{
+  vertical-align:middle;
+}
