@@ -8,7 +8,7 @@
   %h2.heading 引用管理表
   .inner
     .toolbar
-      %ul
+      %ul.blankLine
         %li.btn=link_to "檢舉廣告引用", "#", :title => "檢舉廣告引用"
         %li.btn.delete=link_to "刪除", "#", :title => "刪除"
     %table.table.table-striped
@@ -67,7 +67,7 @@
         %tr
           %td{:colspan => "8"}
             %span.total
-              文章數（3）
+              引用數（3）
             .pagination
               %ul
                 %li=link_to "第一頁", "#", :title => "第一頁"
