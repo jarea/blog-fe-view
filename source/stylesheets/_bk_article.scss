@@ -1,0 +1,61 @@
+.category {
+  .toolbar {
+    ul {
+      float:right;
+    }
+  }
+  table.add {
+    th {
+      text-align:center;
+      background:#dbb3b3;
+      color:#fff;
+    }
+    td,th.submit {
+      background:#f8f3f3;
+    }
+  }
+}
+
+.comment {
+  .toolbar {
+    ul {
+      float:right;
+    }
+  }
+  table {
+    .name, .heading {
+      color:#9a9929
+    }
+    td.text {
+      text-align:left;
+      .heading {
+        font-size:15px;
+        line-height:1.5em;
+      }
+      .text {
+        padding:10px 0;
+        color:#888;
+      }
+      textarea {
+        width:99%;
+      }
+      .function {
+        @include clearfix;
+        margin-top:5px;
+        padding-top:10px;
+        border-top:1px dotted #ccc;
+        ul {
+          @include clearfix;
+          float:right;
+          li {
+            float:left;
+            margin-left:10px;
+          }
+          li.checkbox {
+            padding-top:5px;
+          }
+        }
+      }
+    }
+  }
+}
