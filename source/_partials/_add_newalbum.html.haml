@@ -1,0 +1,39 @@
+.frame.addNewOne
+  %table.table.tableAddnew
+    %thead
+      %tr
+        %th.albumName
+          相本名稱
+        %th.albumDes
+          相本敘述
+        %th.albumCat
+          全站分類
+        %th.albumStat
+          狀態
+        %th.checkbtn
+    %tbody
+      %tr
+        %td
+          %input.input1{:type=>"text"}
+        %td
+          %textarea.input2{:type=>"text", :row=>"3"}
+        %td
+          %select.select
+            %option 不分類
+            %option 流行彩妝
+            %option 美容保養
+            %option 時尚潮流
+            %option 美食旅遊
+            %option 美容保養
+            %option 生活休閒
+            %option 醫學美容
+        %td
+          %select.select
+            %option 開放
+            %option 密碼
+            %option 隱藏
+            %option 好友
+        %td{:rowspan=>"2"}
+          .btn 確定
+          .btn 取消
+            
