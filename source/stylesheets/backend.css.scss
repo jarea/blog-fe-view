@@ -23,12 +23,9 @@ $side-gutter-width: $gutter-width;
 @import "bk_menu";
 @import "bk_post";
 @import "bk_footer";
-<<<<<<< HEAD
 @import "bk_album";
-=======
 @import "bk_table";
 @import "bk_article";
->>>>>>> develop
 
 body {
   font-family: $font-family;
