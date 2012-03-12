@@ -1,0 +1,99 @@
+=partial "/_partials/bk_menu"
+
+.frame.category
+  %h2.heading 個人分類管理
+  .inner
+    .toolbar
+      %ul
+        %li.btn=link_to "新增分類", "#", :title => "新增分類"
+        %li.btn=link_to "全站分類", "#", :title => "全站分類"
+        %li.btn
+          =link_to "狀態", "#", :title => "狀態"
+          %span.arrow=link_to "", "#"
+        %li.btn.delete=link_to "刪除", "#", :title => "刪除"
+    =partial "/_partials/bk_add"
+    %table.table.table-striped
+      %thead
+        %tr
+          %th
+            %input{:type => "checkbox"}
+          %th 個人分類名稱
+          %th 全站分類名稱
+          %th 文章篇數
+          %th 狀態
+          %th
+            分類順序
+            %span.info=link_to "說明", "#", :title => "說明"
+          %th 編輯
+      %tbody
+        %tr
+          %td
+            %input{:type => "checkbox"}
+          %td 閑情所寄
+          %td 音樂
+          %td 100
+          %td 禁止回應
+          %th 
+            %ul
+              %li=link_to "上", "#"
+              %li=link_to "下", "#"
+          %td.edit=link_to "編輯", "#", :title => "編輯"
+        %tr
+          %td
+            %input{:type => "checkbox"}
+          %td 夢裏落花
+          %td 日記
+          %td 100
+          %td 限好友
+          %th 
+          %td.edit=link_to "編輯", "#", :title => "編輯"
+        %tr
+          %td
+            %input{:type => "checkbox"}
+          %td 猶記多情
+          %td 創作
+          %td 20
+          %td 開放
+          %th 
+          %td.edit=link_to "編輯", "#", :title => "編輯"
+        %tr
+          %td
+            %input{:type => "checkbox"}
+          %td 閑情所寄
+          %td 音樂
+          %td 38
+          %td 禁止回應
+          %th 
+          %td.edit=link_to "編輯", "#", :title => "編輯"
+        %tr
+          %td
+            %input{:type => "checkbox"}
+          %td 夢裏落花
+          %td 日記
+          %td 209
+          %td 限好友
+          %th 
+          %td.edit=link_to "編輯", "#", :title => "編輯"
+        %tr
+          %td
+            %input{:type => "checkbox"}
+          %td 猶記多情
+          %td 創作
+          %td 100
+          %td 開放
+          %th 
+          %td.edit=link_to "編輯", "#", :title => "編輯"
+      %tfoot
+        %tr
+          %td{:colspan => "7"}
+            %span.total
+              文章數（3）
+            .pagination
+              %ul
+                %li=link_to "第一頁", "#", :title => "第一頁"
+                %li=link_to "Prev", "#", :title => "Prev"
+                %li.active=link_to "1", "#", :title => "1"
+                %li=link_to "2", "#", :title => "2"
+                %li=link_to "3", "#", :title => "3"
+                %li=link_to "Next", "#", :title => "Next"
+                %li=link_to "最終頁", "#", :title => "最終頁"

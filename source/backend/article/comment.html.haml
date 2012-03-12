@@ -1,0 +1,71 @@
+=partial "/_partials/bk_menu"
+
+:javascript
+  $(function () {
+  $('.nav-tabs').tab()
+  })
+  
+.frame.comment
+  %h2.heading 個人分類管理
+  .inner
+    %ul.nav.nav-tabs
+      %li.active
+        %a{:href => "#all"} 所有留言
+      %li
+        %a{:href => "#setup"} 回應設定
+    .tab-content
+      #home.tab-pane.active
+        .toolbar
+          %p.btn.btn-admin=link_to "加入管理者黑名單", "#", :title => "加入管理者黑名單"
+          %ul
+            %li.btn=link_to "設定黑名單", "#", :title => "設定黑名單"
+            %li.btn=link_to "檢舉廣告留言", "#", :title => "檢舉廣告留言"
+            %li.btn
+              =link_to "設定悄悄話", "#", :title => "設定悄悄話"
+              %span.arrow=link_to "", "#"
+            %li.btn.delete=link_to "刪除", "#", :title => "刪除"
+        %table.table.table-striped
+          %thead
+            %tr
+              %th{:width => "5%"}
+                %input{:type => "checkbox"}
+              %th{:width => "15%"} 
+                留言人
+              %th{:width => "80%"} 
+                留言內容
+          %tbody
+            -5.times do
+              %tr
+                %td
+                  %input{:type => "checkbox"}
+                %td 
+                  %p 2012/01/05 23:29
+                  =image_tag( lorem.image("90"), :alt => "" )
+                  %p.name=lorem.name
+                %td.text
+                  %p.heading 留言標題標題標題標題標題
+                  %p.text
+                    高達80％的亞洲女性都希望自己有更加白皙的肌膚，如何快速又有效的達到美白，歐蕾大中華區公關協理候天姿告訴我們，在短時間內為肌膚提供大量營養液，就能加強護理；護理時間集中、護膚成分濃度高，透過超強滲透力，就能讓肌膚明顯獲得改善。
+                  %textarea{:placeholder => "請在此輸入回覆"}
+                  .function
+                    %ul
+                      %li.checkbox.inline 
+                        %input{:type => "checkbox"} 悄悄話回覆
+                      %li.inline=link_to "確認", "#", :title => "確認", :class => "btn"
+                      %li.inline=link_to "取消", "#", :title => "取消", :class => "btn btn-cancel"
+          %tfoot
+            %tr
+              %td{:colspan => "3"}
+                %span.total
+                  留言數（3）
+                .pagination
+                  %ul
+                    %li=link_to "第一頁", "#", :title => "第一頁"
+                    %li=link_to "Prev", "#", :title => "Prev"
+                    %li.active=link_to "1", "#", :title => "1"
+                    %li=link_to "2", "#", :title => "2"
+                    %li=link_to "3", "#", :title => "3"
+                    %li=link_to "Next", "#", :title => "Next"
+                    %li=link_to "最終頁", "#", :title => "最終頁"
+      #profile.tab-pane ...
+      

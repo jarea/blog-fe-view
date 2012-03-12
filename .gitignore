@@ -10,3 +10,5 @@ config/airbrake.yml
 lib/tasks/import.rake
 config/deploy/*.rb
 .DS_Store
+
+/.project
