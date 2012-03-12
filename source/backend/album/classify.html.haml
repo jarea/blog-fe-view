@@ -10,6 +10,19 @@
         .word=link_to "相簿管理"
         %span.word  / 
       %li.now 相簿分類設定
+  
+  .addNewAlbum
+    %ul.buttons
+      %li.btn.addBtn 新增相本
+      %ul.btnRight
+        %li.btn.btnStat
+          全站分類
+          %span.arrow=link_to "","#"
+        %li.btn.btnStat
+          狀態
+          %span.arrow=link_to "","#"
+        %li.btn.delete=link_to "","#"
+    =partial "/_partials/add_newalbum"
   .inner
     %table.table.tableAlbum
       %thead
