@@ -1,0 +1,17 @@
+%table.table.add.table-bordered
+  %tr
+    %th 分類名稱
+    %th 全站分類
+    %th 狀態
+    %th.submit{:rowspan => "2"} 
+      %input{:type => "submit", :class => "btn", :value => "確定"}
+      %input{:type => "reset", :class => "btn", :value => "取消"}
+  %tr
+    %td
+      %input{:type => "text"}
+    %td
+      %select
+        %option 請選擇分類
+    %td
+      %select.span2
+        %option 開放

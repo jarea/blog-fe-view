@@ -21,9 +21,10 @@ $side-gutter-width: $gutter-width;
 @import "icons";
 @import "bk_header";
 @import "bk_menu";
-@import "bk_managelist";
 @import "bk_post";
 @import "bk_footer";
+@import "bk_table";
+@import "bk_article";
 
 body {
   font-family: $font-family;
@@ -51,6 +52,9 @@ h2.heading {
   background:#fff;
   @include border-radius(6px);
   border:1px solid #fee3e3;
+  width:85%;
+  float:right;
+  margin-right:20px;
   .inner {
     padding:20px;
   }

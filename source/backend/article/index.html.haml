@@ -46,6 +46,7 @@
           %th
             回應
             %span.arrow=link_to "", "#"
+          %th 回應數
           %th 編輯
       %tbody
         %tr
@@ -57,6 +58,7 @@
           %td 閑情所寄
           %td 開放
           %td 禁止回應
+          %td 10
           %td.edit=link_to "編輯", "#", :title => "編輯"
         %tr
           %td
@@ -67,6 +69,7 @@
           %td 夢裏落花
           %td 隱藏
           %td 限好友
+          %td 1
           %td.edit=link_to "編輯", "#", :title => "編輯"
         %tr
           %td
@@ -77,6 +80,7 @@
           %td 猶記多情
           %td 密碼
           %td 開放
+          %td 20
           %td.edit=link_to "編輯", "#", :title => "編輯"
         %tr
           %td
@@ -87,6 +91,7 @@
           %td 閑情所寄
           %td 開放
           %td 禁止回應
+          %td 0
           %td.edit=link_to "編輯", "#", :title => "編輯"
         %tr
           %td
@@ -97,6 +102,7 @@
           %td 夢裏落花
           %td 隱藏
           %td 限好友
+          %td 10
           %td.edit=link_to "編輯", "#", :title => "編輯"
         %tr
           %td
@@ -107,10 +113,11 @@
           %td 猶記多情
           %td 密碼
           %td 開放
+          %td 19
           %td.edit=link_to "編輯", "#", :title => "編輯"
       %tfoot
         %tr
-          %td{:colspan => "8"}
+          %td{:colspan => "9"}
             %span.total
               文章數（3）
             .pagination

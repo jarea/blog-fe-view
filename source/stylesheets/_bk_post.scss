@@ -12,8 +12,6 @@ form {
 }
 
 .post {
-  width:85%;
-  float:right;
   form {
     .title, .category {
       @include clearfix;
