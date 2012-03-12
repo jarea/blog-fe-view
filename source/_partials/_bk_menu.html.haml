@@ -6,4 +6,8 @@
     %li=link_to "部落格設定","#", :title =>"部落格設定",:class =>"icons-setup"
     %li=link_to "匯入/備份","#", :title =>"匯入/備份",:class =>"icons-backup"
     %li=link_to "樣式管理","#", :title =>"樣式管理",:class =>"icons-template"
-    %li=link_to "相簿","#", :title =>"相簿",:class =>"icons-album"
+    %ul.albumManage
+      %li.manage=link_to "相簿管理","#", :title =>"相簿管理",:class =>"icons-album"
+      %li.albumSub.active=link_to "編輯相本","#"
+      %li.albumSub=link_to "相簿分類設定","#"
+      %li.albumSub=link_to "上傳影音或相片","#"
