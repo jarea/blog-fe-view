@@ -12,7 +12,7 @@ $color:#fffbf7;
       display:inline-block;
       line-height:12px;
       height:15px;
-      width:100px;
+      width:90px;
       margin:5px 0;
       padding:5px 5px 5px 30px;
       &:hover{
@@ -30,6 +30,31 @@ $color:#fffbf7;
     border-right:1px solid #DDD;
     @include border-top-right-radius(6px); 
   }
+  ul.albumManage{
+    @include border-radius(6px);
+    border:1px solid #903232;
+    li.manage{
+      @include border-top-left-radius(6px);
+      @include border-top-right-radius(6px);
+      background:#903232;
+      a{
+        background: url("/images/icons/album_hover.png") no-repeat;
+        color:#fff;
+        text-decoration:none;
+        font-size:13px;
+      }
+    }
+    li.albumSub a{
+      width:100px;
+      text-align:left;
+      padding:5px;
+      &:hover{
+        width:90%;
+        color:#903232;
+        background:#f4eaea;
+      }
+    }
+  }
 }
 
 .textbox{
@@ -38,6 +63,4 @@ $color:#fffbf7;
 .open > .dropdown-toggle, .dropdown.open > .dropdown-toggle{
   background-color:darken($color, 20%);  
 }
-.icons-post{
-  
-}
+
