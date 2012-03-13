@@ -1,7 +1,12 @@
 =partial "/_partials/bk_menu"
 
 .frame.post
-  %h2.heading 發表文章
+  %h2.heading
+    %ul
+      %li
+        .word=link_to "後台首頁"
+        %span.word  / 
+      %li.now 發表文章
   .inner
     %form
       .title

@@ -115,12 +115,6 @@ li.albumTitle a{
     li{
       float:left;
     }
-    .arrow a {
-      @include inline-block;
-      background:url(/images/arrow_dropdown.png) no-repeat center;
-      width:16px;
-      height:16px;
-    }
   }
   .btn.delete{
     background:url(/images/delete.png) no-repeat center #eae9e9;
