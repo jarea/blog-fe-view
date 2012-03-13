@@ -2,9 +2,10 @@ $color:#fffbf7;
 
 #menu{
   width:10%;
-  padding:20px;
+  padding:0 20px 20px 20px;
   float:left;
   li{
+    padding:5px 0;
     a{
       color:#903232;
       text-decoration:none;
@@ -12,14 +13,19 @@ $color:#fffbf7;
       display:inline-block;
       line-height:12px;
       height:15px;
-      width:90px;
+      width:100px;
       margin:5px 0;
       padding:5px 5px 5px 30px;
       &:hover{
         color:#fff;
-        background-color:#903232;
+        background:#903232;
       }
     }
+  }
+  li.copy{
+    border-top:1px dashed #c2c2c2;
+    border-bottom:1px dashed #c2c2c2;
+    padding:10px 0;
   }
   .tab-content{
     background-color:#fff;
@@ -38,7 +44,7 @@ $color:#fffbf7;
       @include border-top-right-radius(6px);
       background:#903232;
       a{
-        background: url("/images/icons/album_hover.png") no-repeat;
+        background: url(/images/icons/album_hover.png) no-repeat;
         color:#fff;
         text-decoration:none;
         font-size:13px;
@@ -47,9 +53,10 @@ $color:#fffbf7;
     li.albumSub a{
       width:100px;
       text-align:left;
-      padding:5px;
+      padding:0 5px;
       &:hover{
-        width:90%;
+        width:100px;
+        height:15px;
         color:#903232;
         background:#f4eaea;
       }
