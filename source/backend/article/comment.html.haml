@@ -1,9 +1,4 @@
 =partial "/_partials/bk_menu"
-
-:javascript
-  $(function () {
-  $('.nav-tabs').tab()
-  })
   
 .frame.comment
   %h2.heading 個人分類管理
@@ -68,4 +63,7 @@
                     %li=link_to "Next", "#", :title => "Next"
                     %li=link_to "最終頁", "#", :title => "最終頁"
       #profile.tab-pane ...
-      
+    :javascript
+      $(function () {
+      $('.nav-tabs').tab()
+      })

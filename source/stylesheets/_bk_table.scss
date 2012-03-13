@@ -68,7 +68,7 @@
     width:20px;
     height:20px;
     text-indent:-9999px;
-    margin-left:15px;
+    margin:0 auto;
   }
   .total {
     float:left;
@@ -92,7 +92,7 @@
   text-indent:-9999px;
 }
 
-span.arrow a {
+span.arrow {
   @include inline-block;
   background:url(/images/arrow_dropdown.png) no-repeat center;
   width:16px;
