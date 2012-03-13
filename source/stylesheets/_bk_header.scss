@@ -46,26 +46,4 @@ $link-visited-color: false;
     text-align:center;
     padding:5px 0;
   }
-  #breadcrumb {
-    @include clearfix;
-    background:$hd-color;
-    padding:5px 25px;
-    li {
-      float:left;
-      background:url(/images/arrow_breadcrumb.png) right center no-repeat;
-      padding-right:15px;
-      margin-right:3px;
-      a {
-        color:#fd9ba2;
-      }
-    }
-    li.last {
-      background:none;
-    }
-    li.active {
-      a {
-        color:#903232;
-      }
-    }
-  }
 }

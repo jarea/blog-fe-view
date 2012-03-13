@@ -3,7 +3,9 @@
   %head
     %meta{:charset => "utf-8"}
     = stylesheet_link_tag 'backend'
+    = javascript_include_tag 'bootstrap.js'
     = javascript_include_tag 'bootstrap.min.js'
+    = javascript_include_tag("https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js")
   %body
     #hd
       #header
@@ -17,9 +19,6 @@
             %li= link_to("FG 首頁", "#", :title => "FG 首頁")
       %p.welcome
         welcome to fashionguide backend
-      %ul#breadcrumb
-        %li=link_to "部落格", "#", :title => ""
-        %li.last.active=link_to "文章列表管理", "#", :title => ""
     #bd
       .inner
         = yield
