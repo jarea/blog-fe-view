@@ -25,6 +25,8 @@ $side-gutter-width: $gutter-width;
 @import "bk_footer";
 @import "bk_table";
 @import "bk_article";
+@import "bk_album";
+
 
 body {
   font-family: $font-family;
@@ -46,6 +48,20 @@ h2.heading {
   color:#fff;
   font-size:15px;
   padding:0 20px;
+  line-height:36px;
+  li{
+    line-height:36px;
+  }
+  .word{
+    float:left;
+    color:#fedddd;
+    a{
+      color:#fedddd;
+    }
+  }
+  .now{
+    color:#fff;
+  }
 }
 
 .frame {

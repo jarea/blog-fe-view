@@ -1,0 +1,32 @@
+-# 新增相本
+%table.table.add.table-bordered
+  %tr
+    %th 相本名稱
+    %th 相本敘述
+    %th 全站分類
+    %th 狀態
+    %th.submit{:rowspan => "2"} 
+      %input{:type => "submit", :class => "btn", :value => "確定"}
+      %input{:type => "reset", :class => "btn", :value => "取消"}
+  %tr
+    %td
+      %input{:type => "text"}
+    %td
+      %textarea.input2{:type => "text", :row=>"3"}
+    %td
+      %select.span2
+        %option 不分類
+        %option 流行彩妝
+        %option 美容保養
+        %option 時尚潮流
+        %option 美食旅遊
+        %option 美容保養
+        %option 生活休閒
+        %option 醫學美容
+    %td
+      %select.span2
+        %option 開放
+        %option 密碼
+        %option 隱藏
+        %option 好友
+
