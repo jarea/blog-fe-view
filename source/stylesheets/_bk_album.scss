@@ -8,48 +8,7 @@
 }
 
 
-h2.heading {
-  @include border-radius(6px 6px 0 0);
-  background:#fd858d;
-  color:#fff;
-  font-size:15px;
-  padding:0 20px;
-  line-height:36px;
-  li{
-    line-height:36px;
-  }
-  .word{
-    float:left;
-    color:#fedddd;
-    a{
-      color:#fedddd;
-    }
-  }
-  .now{
-    color:#fff;
-  }
-}
-
 .tableAlbum{
-  // .edit{
-    // background: url("/images/edit.png") no-repeat scroll center center transparent;
-    // display: inline-block;
-    // height: 20px;
-    // margin-left: 15px;
-    // text-indent: -9999px;
-    // width: 20px;
-    // cursor:pointer;
-  // }
-  .info{
-    a{
-      text-indent:-9999px;
-      vertical-align:middle;
-      width:20px;
-      height:20px;
-      background:url(/images/info.png) no-repeat center;
-      display:inline-block;
-    }
-  }
   td{
     text-align:center;
   }
@@ -109,21 +68,6 @@ h2.heading {
     vertical-align:middle;
     color:#888;
     font-size:13px;
-  }
-  tfoot{
-    .pagination{
-      float:right;
-      margin-right:20px;
-      ul{
-        padding:0px;
-        a{
-          margin:3px;
-          border:none;
-          border-radius:0px;
-          padding:0 5px;
-        }
-      }
-    }
   }
   .albumStat{
     text-align:center;

@@ -84,7 +84,10 @@
           %td{:colspan =>"8"}
             .pagination
               %ul
-                %li=link_to "1", "#", :title => "1"
+                %li=link_to "第一頁", "#", :title => "第一頁"
+                %li=link_to "Prev", "#", :title => "Prev"
+                %li.active=link_to "1", "#", :title => "1"
                 %li=link_to "2", "#", :title => "2"
                 %li=link_to "3", "#", :title => "3"
-                %li=link_to "4", "#", :title => "4"     
+                %li=link_to "Next", "#", :title => "Next"
+                %li=link_to "最終頁", "#", :title => "最終頁"  
