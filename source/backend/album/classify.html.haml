@@ -47,21 +47,17 @@
           %tr.albumList
             %td
               %input{:type=>"checkbox"}
-            %td.classWord
-              國小同學會
-            %td.classWord
-              同學聚會
+            %td.classWord=link_to "北海道6天7夜吃不停之旅","#"
+            %td.classWord=link_to "美食旅遊","#"
             %td.nums
               3000
             %td.albumStat
-              %ul
-                %li.stat= image_tag(url("/images/icons/friends.png"),:alt=>"")
-                %li.nums 朋友    
+              %p 朋友    
             %td.albumSort
               .sortOption  
                 .sort=link_to image_tag(url("/images/icons/arrow_down.png"),:alt=>""),"#"
                 .sort=link_to image_tag(url("/images/icons/arrow_up.png"),:alt=>""),"#"
-            %td.edit=link_to "編輯","#"
+            %td.edit=link_to "編輯","#"   
       %tfoot
         %tr
           %td{:colspan =>"8"}

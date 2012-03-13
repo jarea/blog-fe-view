@@ -31,6 +31,15 @@ h2.heading {
 }
 
 .tableAlbum{
+  // .edit{
+    // background: url("/images/edit.png") no-repeat scroll center center transparent;
+    // display: inline-block;
+    // height: 20px;
+    // margin-left: 15px;
+    // text-indent: -9999px;
+    // width: 20px;
+    // cursor:pointer;
+  // }
   .info{
     a{
       text-indent:-9999px;
@@ -59,15 +68,6 @@ h2.heading {
   tfoot td {
     padding: 0 8px;
   }
-  td.edit a {
-    display:block;
-    background:url(/images/edit.png) no-repeat center;
-    width:20px;
-    height:20px;
-    text-indent:-9999px;
-    margin-left:15px;
-    vertical-align:middle;
-  }
   .check{
     vertical-align:middle;
     text-align:center;
@@ -93,10 +93,11 @@ h2.heading {
   .albumSort{
     vertical-align:middle;
     .sortOption{ 
-      .sort a{
-          float:left;
-          padding:0 10px;
-          text-align:center;
+      margin:0 auto;
+      text-align:center;
+      .sort{
+        display:inline-block;
+        padding:0 10px;
       }
     }
   }
@@ -104,7 +105,7 @@ h2.heading {
     padding:3px;
     border:1px solid #dcdcdc;
   }
-  td.edit, .nums{
+  .nums{
     vertical-align:middle;
     color:#888;
     font-size:13px;
@@ -114,7 +115,7 @@ h2.heading {
       float:right;
       margin-right:20px;
       ul{
-        padding:4px 0;
+        padding:0px;
         a{
           margin:3px;
           border:none;
@@ -127,12 +128,16 @@ h2.heading {
   .albumStat{
     text-align:center;
     li{
-      float:left;
+      display:inline-block;
       line-height:13px;
       padding:0 5px;
+    }
+    p{
+      background:url(/images/icons/friends.png) no-repeat;
+      line-height:12px;
     } 
   }
-  .classWord{
+  .classWord a{
     font-size:13px;
     color:#565656;
   }
@@ -210,11 +215,30 @@ li.albumTitle a{
       padding:0px 10px;
     } 
   }
+  .tableAlbum{ 
+    tr.mytr{
+      border-top:1px solid #e2e2e2;
+      border-bottom:1px solid #e2e2e2;
+      background:#ffeded;
+      background: -webkit-gradient(linear, 0 0, 0 bottom, from(#ffeded), to(#fedddd));
+      background: -webkit-linear-gradient(#ffeded, #fedddd);
+      background: -moz-linear-gradient(#ffeded, #fedddd);
+      background: -ms-linear-gradient(#ffeded, #fedddd);
+      background: -o-linear-gradient(#ffeded, #fedddd);
+      background: linear-gradient(#ffeded, #fedddd);
+      th{
+        padding:5px;
+      }
+    }
+  }
   .myspan{
     border-right:none;
   }
   th.move{
     float:right;
+  }
+  .myedit{
+    text-align:center;
   }
 }
 .editPics{
@@ -235,7 +259,7 @@ li.albumTitle a{
     background: url("/images/edit.png") no-repeat scroll center center transparent;
     display: inline-block;
     height: 20px;
-    margin-left: 15px;
+    margin-left:5px;
     text-indent: -9999px;
     width: 20px;
     cursor:pointer;
@@ -275,6 +299,7 @@ li.albumTitle a{
   .coverSet{
     margin:3px 0 3px 20px;
     display:block;
+    color:#383838;
   }
   .picName{
     text-align:center;
