@@ -61,3 +61,15 @@
     }
   }
 }
+
+form .section {
+  border:1px solid #ccc;
+  padding:20px;
+  margin:10px 0;
+  > ul {
+    margin-bottom:15px;
+    ul {
+      margin:10px 0 15px;
+    }
+  }
+}
