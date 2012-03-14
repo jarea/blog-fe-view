@@ -64,6 +64,13 @@ h2.heading {
   }
 }
 
+h3.heading {
+  background:url(/images/arrow_label.png) no-repeat left center;
+  padding-left:15px;
+  line-height:1.5em;
+  font-size:14px;
+}
+
 .frame {
   background:#fff;
   @include border-radius(6px);
