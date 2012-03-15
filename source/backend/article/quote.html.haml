@@ -4,75 +4,85 @@
 
 =partial "/_partials/bk_menu"
 
-.frame.quote
-  %h2.heading 引用管理表
-  .inner
-    .toolbar
-      %ul.blankLine
-        %li.btn=link_to "檢舉廣告引用", "#", :title => "檢舉廣告引用"
-        %li.btn.delete=link_to "刪除", "#", :title => "刪除"
-    %table.table.table-striped
-      %thead
-        %tr
-          %th
-            %input{:type => "checkbox"}
-          %th 
-            引用時間
-            %span.arrow=link_to "", "#"
-          %th
-            文章標題
-            %span.arrow=link_to "", "#"
-          %th
-            引用來源
-            %span.arrow=link_to "", "#"
-      %tbody
-        %tr
-          %td
-            %input{:type => "checkbox"}
-          %td 2012.01.12 14:00:00
-          %td.title 這是一首簡單的小情歌
-          %td http://fgplay.mooo.com/welcome
-        %tr
-          %td
-            %input{:type => "checkbox"}
-          %td 2012.01.19 14:00:00
-          %td.title 歲月靜好
-          %td http://fgplay.mooo.com/welcome
-        %tr
-          %td
-            %input{:type => "checkbox"}
-          %td 2012.01.28 14:00:00
-          %td.title 我親愛的偏執狂
-          %td http://fgplay.mooo.com/welcome
-        %tr
-          %td
-            %input{:type => "checkbox"}
-          %td 2012.01.12 14:00:00
-          %td.title 這是一首簡單的小情歌
-          %td http://fgplay.mooo.com/welcome
-        %tr
-          %td
-            %input{:type => "checkbox"}
-          %td 2012.01.19 14:00:00
-          %td.title 歲月靜好
-          %td http://fgplay.mooo.com/welcome
-        %tr
-          %td
-            %input{:type => "checkbox"}
-          %td 2012.01.28 14:00:00
-          %td.title 我親愛的偏執狂
-          %td http://fgplay.mooo.com/welcome
-      %tfoot
-        %tr
-          %td{:colspan => "4"}
-            %span.total
-              引用數（3）
-            .pagination
-              %ul
-                %li=link_to "第一頁", "#", :title => "第一頁"
-                %li=link_to "Prev", "#", :title => "Prev"
-                %li.active=link_to "1", "#", :title => "1"
-                %li=link_to "2", "#", :title => "2"
-                %li=link_to "3", "#", :title => "3"
-                %li=link_to "Next", "#", :title => "Next"
-                %li=link_to "最終頁", "#", :title => "最終頁"
+.span10
+  .frame.quote
+    %h2.heading 
+      %ul
+        %li
+          .word=link_to "後台首頁"
+          %span.word  / 
+        %li
+          .word=link_to "文章管理"
+          %span.word  / 
+        %li.now 引用管理列表
+    .inner
+      .toolbar
+        %ul.blankLine
+          %li.btn=link_to "檢舉廣告引用", "#", :title => "檢舉廣告引用"
+          %li.btn.delete=link_to "刪除", "#", :title => "刪除"
+      %table.table.table-striped
+        %thead
+          %tr
+            %th
+              %input{:type => "checkbox"}
+            %th 
+              引用時間
+              %span.arrow=link_to "", "#"
+            %th
+              文章標題
+              %span.arrow=link_to "", "#"
+            %th
+              引用來源
+              %span.arrow=link_to "", "#"
+        %tbody
+          %tr
+            %td
+              %input{:type => "checkbox"}
+            %td 2012.01.12 14:00:00
+            %td.title 這是一首簡單的小情歌
+            %td http://fgplay.mooo.com/welcome
+          %tr
+            %td
+              %input{:type => "checkbox"}
+            %td 2012.01.19 14:00:00
+            %td.title 歲月靜好
+            %td http://fgplay.mooo.com/welcome
+          %tr
+            %td
+              %input{:type => "checkbox"}
+            %td 2012.01.28 14:00:00
+            %td.title 我親愛的偏執狂
+            %td http://fgplay.mooo.com/welcome
+          %tr
+            %td
+              %input{:type => "checkbox"}
+            %td 2012.01.12 14:00:00
+            %td.title 這是一首簡單的小情歌
+            %td http://fgplay.mooo.com/welcome
+          %tr
+            %td
+              %input{:type => "checkbox"}
+            %td 2012.01.19 14:00:00
+            %td.title 歲月靜好
+            %td http://fgplay.mooo.com/welcome
+          %tr
+            %td
+              %input{:type => "checkbox"}
+            %td 2012.01.28 14:00:00
+            %td.title 我親愛的偏執狂
+            %td http://fgplay.mooo.com/welcome
+        %tfoot
+          %tr
+            %td{:colspan => "4"}
+              %span.total
+                引用數（3）
+              .pagination
+                %ul
+                  %li=link_to "第一頁", "#", :title => "第一頁"
+                  %li=link_to "Prev", "#", :title => "Prev"
+                  %li.active=link_to "1", "#", :title => "1"
+                  %li=link_to "2", "#", :title => "2"
+                  %li=link_to "3", "#", :title => "3"
+                  %li=link_to "Next", "#", :title => "Next"
+                  %li=link_to "最終頁", "#", :title => "最終頁"
+  
