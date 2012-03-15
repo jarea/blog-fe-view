@@ -15,20 +15,7 @@
       %ul.btn-group
         %li.btn=link_to "新增分類", "#", :title => "新增分類"
         %li.btn=link_to "全站分類", "#", :title => "全站分類"
-        %li.btn.dropdown-toggle
-          %a{"data-toggle" => "dropdown", :href => "#"}
-            狀態
-            %span.arrow
-          %ul.dropdown-menu
-            %li=link_to "開放", "#", :title => "開放"
-            %li=link_to "密碼", "#", :title => "密碼"
-            %li=link_to "隱藏", "#", :title => "隱藏"
-            %li=link_to "好友", "#", :title => "好友"
         %li.btn.delete=link_to "刪除", "#", :title => "刪除"
-      :javascript
-        $(function () {
-        $('.dropdown-toggle').dropdown()
-        })
     =partial "/_partials/bk_add"
     %table.table.table-striped
       %thead
@@ -38,7 +25,6 @@
           %th 個人分類名稱
           %th 全站分類名稱
           %th 文章篇數
-          %th 狀態
           %th
             分類順序
             %span.info=link_to "說明", "#", :title => "說明"
@@ -50,7 +36,6 @@
           %td 閑情所寄
           %td 音樂
           %td 100
-          %td 禁止回應
           %th 
             .sortOption  
               .sort=link_to image_tag(url("/images/icons/arrow_down.png"),:alt=>""),"#"
@@ -62,7 +47,6 @@
           %td 夢裏落花
           %td 日記
           %td 100
-          %td 限好友
           %th 
             .sortOption  
               .sort=link_to image_tag(url("/images/icons/arrow_down.png"),:alt=>""),"#"
@@ -74,7 +58,6 @@
           %td 猶記多情
           %td 創作
           %td 20
-          %td 開放
           %th 
             .sortOption  
               .sort=link_to image_tag(url("/images/icons/arrow_down.png"),:alt=>""),"#"
@@ -86,7 +69,6 @@
           %td 閑情所寄
           %td 音樂
           %td 38
-          %td 禁止回應
           %th 
             .sortOption  
               .sort=link_to image_tag(url("/images/icons/arrow_down.png"),:alt=>""),"#"
@@ -98,7 +80,6 @@
           %td 夢裏落花
           %td 日記
           %td 209
-          %td 限好友
           %th 
             .sortOption  
               .sort=link_to image_tag(url("/images/icons/arrow_down.png"),:alt=>""),"#"
@@ -110,7 +91,6 @@
           %td 猶記多情
           %td 創作
           %td 100
-          %td 開放
           %th 
             .sortOption  
               .sort=link_to image_tag(url("/images/icons/arrow_down.png"),:alt=>""),"#"
@@ -118,7 +98,7 @@
           %td.edit=link_to "編輯", "#", :title => "編輯"
       %tfoot
         %tr
-          %td{:colspan => "7"}
+          %td{:colspan => "6"}
             %span.total
               文章數（3）
             .pagination

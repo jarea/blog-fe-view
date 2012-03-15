@@ -21,7 +21,7 @@
           狀態
           %span.arrow=link_to "","#"
         %li.btn.delete=link_to "","#"
-    =partial "/_partials/add_newalbum"
+    =partial "/_partials/bk_add"
   .inner
     %table.table.tableAlbum
       %thead
@@ -35,8 +35,6 @@
           %th
             相片數
           %th
-            狀態
-          %th
             相本順序
             %span.info=link_to "說明","#"
           %th
@@ -49,9 +47,7 @@
             %td.classWord=link_to "北海道6天7夜吃不停之旅","#"
             %td.classWord=link_to "美食旅遊","#"
             %td.nums
-              3000
-            %td.albumStat
-              %p 朋友    
+              3000  
             %td.albumSort
               .sortOption  
                 .sort=link_to image_tag(url("/images/icons/arrow_down.png"),:alt=>""),"#"
