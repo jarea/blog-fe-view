@@ -1,15 +1,17 @@
-#main-album
+#main-singleAalbum
   =partial "/_partials/album_funcs"
-  .userTitle 天真無邪賴小美的相簿  共100本
-  .albums
+  .albumTitle ~北海道6天7夜吃不停之旅~
+  .albumInfo  
+    .albumIntro 札幌拉麵歐伊西-北海道吃不停玩不停&手滑敗不停雪拼行
+    .picNums 共100張 照片
+  .pictures
     -4.times do
       %ul
         -4.times do
-          %li.album
-            .albumCover=link_to image_tag(lorem.image("140"), :alt=>""),"/user/single_album.html", :title=>"北海道美食之旅", :class=>"albumImg"
-            %a{:href=>"/user/single_album.html"}
-              .albumName ~北海道6天7夜吃不停之旅~
-              .albumNums 100張照片
+          %li.pics
+            .picsHead=link_to image_tag(lorem.image("140"), :alt=>""),"#", :title=>"DCM001"
+            %a{:href=>"#"}
+              .picName DCM001 
   .pagination
     %ul
       %li=link_to "第一頁","#"
