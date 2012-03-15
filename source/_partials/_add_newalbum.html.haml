@@ -3,6 +3,7 @@
   %tr
     %th 相本名稱
     %th 相本敘述
+    %th 個人分類
     %th 全站分類
     %th 狀態
     %th.submit{:rowspan => "2"} 
@@ -13,6 +14,8 @@
       %input{:type => "text"}
     %td
       %textarea.input2{:type => "text", :row=>"3"}
+    %td
+      %input{:type => "text", :class => "span2"}
     %td
       %select.span2
         %option 不分類
