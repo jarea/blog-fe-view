@@ -37,14 +37,14 @@
             %label
               文章開放狀態
             %select{:class => "input-small"}
-              %option 請選擇
+              %option 開放
         .part.time
           %label 發表時間
           %ul
-            %li
+            %li.radio
               %input{:type => "radio"} 
                 現在時間
-            %li
+            %li.radio
               %input{:type => "radio"}
                 自訂時間
               %ul
@@ -72,36 +72,33 @@
           %label
             同步發表
           %ul
-            %li
+            %li.radio
               %input{:type => "radio"}
                 不同步
-            %li
+            %li.radio
               %input{:type => "radio"}
                 同步
                 %ul
-                  %li
-                    %input{:type => "radio"}
-                      Facebook
-                  %li
-                    %input{:type => "radio"}
-                      Pixnet
-                  %li
-                    %input{:type => "radio"}
-                      無名小站
+                  %li.radio.inline
+                    %input{:type => "radio"}= image_tag("/images/facebook_logo_s.png", :alt => "Facebook")
+                  %li.radio.inline
+                    %input{:type => "radio"}= image_tag("/images/pixnet_logo_s.png", :alt => "Pixnet")
+                  %li.radio.inline
+                    %input{:type => "radio"}= image_tag("/images/wretch_logo_s.png", :alt => "無名小站")
         .part.comment
           %label
             回應設定
           %ul
-            %li
+            %li.radio.inline
               %input{:type => "radio"}
                 完全開放
-            %li
+            %li.radio.inline
               %input{:type => "radio"}
                 只允許會員留言
-            %li
+            %li.radio.inline
               %input{:type => "radio"}
                 只允許好友留言
-            %li
+            %li.radio.inline
               %input{:type => "radio"}
                 不允許留言
         .part.tag

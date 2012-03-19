@@ -13,9 +13,11 @@
         %li.now 個人分類管理
     .inner
       .toolbar
+        %p.btn=link_to "新增分類", "#", :title => "新增分類"
         %ul.btn-group
-          %li.btn=link_to "新增分類", "#", :title => "新增分類"
-          %li.btn=link_to "全站分類", "#", :title => "全站分類"
+          %li.btn
+            =link_to "全站分類", "#", :title => "全站分類"
+            %span.arrow
           %li.btn.delete=link_to "刪除", "#", :title => "刪除"
       =partial "/_partials/bk_add"
       %table.table.table-striped
@@ -34,8 +36,8 @@
           %tr
             %td
               %input{:type => "checkbox"}
-            %td 閑情所寄
-            %td 音樂
+            %td 未分類
+            %td 未分類
             %td 100
             %th 
               .sortOption  
@@ -101,14 +103,5 @@
           %tr
             %td{:colspan => "6"}
               %span.total
-                文章數（3）
-              .pagination
-                %ul
-                  %li=link_to "第一頁", "#", :title => "第一頁"
-                  %li=link_to "Prev", "#", :title => "Prev"
-                  %li.active=link_to "1", "#", :title => "1"
-                  %li=link_to "2", "#", :title => "2"
-                  %li=link_to "3", "#", :title => "3"
-                  %li=link_to "Next", "#", :title => "Next"
-                  %li=link_to "最終頁", "#", :title => "最終頁"
+                分類數（6）
   

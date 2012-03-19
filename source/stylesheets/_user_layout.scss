@@ -1,6 +1,7 @@
 .user {
   #toolbar {
     @include clearfix;
+    @include background-image(linear-gradient(top, #eee, #bbb));
     margin:0;
     .function, .link {
       position:static;

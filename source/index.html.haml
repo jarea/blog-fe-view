@@ -26,7 +26,7 @@
             %br
             你現在是
             %a=link_to "部落客", "#", :title => "部落客"
-          %ul
+          %ul.function
             %li
               .newPostBtn
                 %img{:src => "images/new_post_icon.png"}
@@ -35,12 +35,10 @@
               .backend
                 %img{:src => "images/backend_icon.png"}
                 %a=link_to "管理後台", "#", :title => "管理後台"
-          .links
-            %a=link_to "回我的網誌", "#", :title => "回我的網誌"
-            │
-            %a=link_to "暫做(0)", "#", :title => "暫做(0)"
-            │
-            %a=link_to "暫做(0)", "#", :title => "暫做(0)"
+          %ul.links
+            %li=link_to "回我的網誌", "#", :title => "回我的網誌"
+            %li=link_to "暫做(0)", "#", :title => "暫做(0)"
+            %li.last=link_to "暫做(0)", "#", :title => "暫做(0)"
           .notice
             %img{:src => "images/notice_icon.png"}
             .text
@@ -76,4 +74,3 @@
   =partial "section_main"
   #section_ad
     .ad
-      =link_to image_tag( lorem.image("620x90"), :alt => "" ), "#"
