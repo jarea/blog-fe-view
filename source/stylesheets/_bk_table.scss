@@ -97,6 +97,11 @@ span.arrow {
   background:url(/images/arrow_dropdown.png) no-repeat center;
   width:16px;
   height:16px;
+  a {
+    @include inline-block;
+    width:16px;
+    height:16px;
+  }
 }
 
 .sortOption{ 

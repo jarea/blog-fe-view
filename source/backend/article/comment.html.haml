@@ -21,7 +21,7 @@
         #home.tab-pane.active
           .toolbar
             %p.btn.btn-admin=link_to "加入管理者黑名單", "#", :title => "加入管理者黑名單"
-            %ul
+            %ul.btn-group
               %li.btn=link_to "設定黑名單", "#", :title => "設定黑名單"
               %li.btn=link_to "檢舉廣告留言", "#", :title => "檢舉廣告留言"
               %li.btn
@@ -46,6 +46,8 @@
                     %p 2012/01/05 23:29
                     =image_tag( lorem.image("90"), :alt => "" )
                     %p.name=lorem.name
+                    %p.uid
+                      = image_tag("/images/stars.png", :alt => "")
                   %td.text
                     %p.heading 留言標題標題標題標題標題
                     %p.text

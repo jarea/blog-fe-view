@@ -17,18 +17,18 @@
         %li.now 引用管理列表
     .inner
       .toolbar
-        %ul.blankLine
+        %ul.blankLine.btn-group
           %li.btn=link_to "檢舉廣告引用", "#", :title => "檢舉廣告引用"
           %li.btn.delete=link_to "刪除", "#", :title => "刪除"
       %table.table.table-striped
         %thead
           %tr
-            %th
+            %th{:style => "width:5%;"}
               %input{:type => "checkbox"}
-            %th 
+            %th{:style => "width:15%;"}
               引用時間
               %span.arrow=link_to "", "#"
-            %th
+            %th{:style => "width:55%;"}
               文章標題
               %span.arrow=link_to "", "#"
             %th
@@ -40,37 +40,37 @@
               %input{:type => "checkbox"}
             %td 2012.01.12 14:00:00
             %td.title 這是一首簡單的小情歌
-            %td http://fgplay.mooo.com/welcome
+            %td=link_to "引用部落格標題","#", :title => "引用部落格標題"
           %tr
             %td
               %input{:type => "checkbox"}
             %td 2012.01.19 14:00:00
             %td.title 歲月靜好
-            %td http://fgplay.mooo.com/welcome
+            %td=link_to "引用部落格標題","#", :title => "引用部落格標題"
           %tr
             %td
               %input{:type => "checkbox"}
             %td 2012.01.28 14:00:00
             %td.title 我親愛的偏執狂
-            %td http://fgplay.mooo.com/welcome
+            %td=link_to "引用部落格標題","#", :title => "引用部落格標題"
           %tr
             %td
               %input{:type => "checkbox"}
             %td 2012.01.12 14:00:00
             %td.title 這是一首簡單的小情歌
-            %td http://fgplay.mooo.com/welcome
+            %td=link_to "引用部落格標題","#", :title => "引用部落格標題"
           %tr
             %td
               %input{:type => "checkbox"}
             %td 2012.01.19 14:00:00
             %td.title 歲月靜好
-            %td http://fgplay.mooo.com/welcome
+            %td=link_to "引用部落格標題","#", :title => "引用部落格標題"
           %tr
             %td
               %input{:type => "checkbox"}
             %td 2012.01.28 14:00:00
             %td.title 我親愛的偏執狂
-            %td http://fgplay.mooo.com/welcome
+            %td=link_to "引用部落格標題","#", :title => "引用部落格標題"
         %tfoot
           %tr
             %td{:colspan => "4"}

@@ -50,9 +50,8 @@ form {
       }
     }
     .comment ul {
-      @include clearfix;
       li {
-        float:left; margin-right:40px;
+        margin-right:40px;
       }
     }
   }

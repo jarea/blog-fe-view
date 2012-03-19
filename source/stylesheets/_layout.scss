@@ -8,12 +8,7 @@
   height:35px;
   margin-bottom:10px;
   background: #ffb608;
-  background: -webkit-gradient(linear, 0 0, 0 bottom, from(#ffd266), to(#ffb608));
-  background: -webkit-linear-gradient(#ffd266, #ffb608);
-  background: -moz-linear-gradient(#ffd266, #ffb608);
-  background: -ms-linear-gradient(#ffd266, #ffb608);
-  background: -o-linear-gradient(#ffd266, #ffb608);
-  background: linear-gradient(#ffd266, #ffb608);
+  @include background-image(linear-gradient(top, #ffd266, #ffb608));
   a {
     color:#fff;
   }
@@ -100,6 +95,13 @@
 #navi {
   @include clearfix;
   padding-bottom:30px;
+  > li.focus {
+    @include background-image(linear-gradient(top, #fff, #fedddd));
+    border-top:4px solid #ac3c3c;
+    > a {
+      color:#ac3c3c;
+    }
+  }
   > li {
     > a {
       display:block;
@@ -120,12 +122,7 @@
     border-bottom:1px solid #ddd;
     border-top:4px solid #a6a6a6;
     background: #eee;
-    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#fefefe), to(#eee));
-    background: -webkit-linear-gradient(#fefefe, #eee);
-    background: -moz-linear-gradient(#fefefe, #eee);
-    background: -ms-linear-gradient(#fefefe, #eee);
-    background: -o-linear-gradient(#fefefe, #eee);
-    background: linear-gradient(#fefefe, #eee);
+    @include background-image(linear-gradient(top, #fefefe, #eee));
     &:hover {
       border-top:4px solid #ff8c00;
       background:url(/images/bg-navi_hover.png);

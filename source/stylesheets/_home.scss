@@ -86,7 +86,7 @@
             overflow:hidden;
             white-space:nowrap;
           }
-          ul {
+          ul.function {
             li {
               float:left;
               margin:0px;
@@ -116,15 +116,24 @@
               }
             }
           }
-        .links {
+        ul.links {
           margin-left:100px;
-          a {
-            color:#666666;
-            text-decoration: none;
+          li.last {
+            border:none;
           }
-          a:hover {
-            color:#005580;
-            text-decoration: underline;
+          li {
+            @include inline-block;
+            border-right:1px solid #999;
+            margin-right:5px;
+            padding-right:5px;
+            a {
+              color:#666;
+              text-decoration: none;
+              &:hover {
+                color:#005580;
+                text-decoration: underline;
+              }
+            }
           }
         }
       .notice {

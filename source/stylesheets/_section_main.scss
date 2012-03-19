@@ -69,22 +69,25 @@
   }
 }
 
-.content{
-  display:block;
-  float:left;
-  width:280px;
-  height:100px;
-  padding:10px 10px 15px 5px;
-  border-bottom:1px dashed #ffcc66;
-}
+
 
 .maincontent{
-  height:830px;
   padding-left:10px;
   border:1px solid #dcdcdc;
   @include border-top-right-radius(6px);
   @include border-bottom-right-radius(6px);
   @include border-bottom-left-radius(6px);
+  ul {
+    @include clearfix;
+  }
+  .content{
+    display:block;
+    float:left;
+    width:280px;
+    height:100px;
+    padding:10px 10px 15px 5px;
+    border-bottom:1px dashed #ffcc66;
+  }
 }
  
 .rankImg{
@@ -106,7 +109,6 @@
   width:20px;
   float:left;
   line-height:53px;
-  margin-top:30px;
   margin-right:5px;
   text-align:center;
 }
@@ -137,6 +139,7 @@
 }
 .lookmore{
   margin-top:5px;
+  @include clearfix;
   a{
     font-size:10px;
     display:block;
@@ -189,7 +192,7 @@
 .postSubTitle{
   margin-top:5px;
   a{
-    padding-left:10px;
+    padding-left:5px;
     color:#fff;
     display:inline-block;
     width:68px;  
@@ -273,8 +276,6 @@
 
 .SidebarC{
   @include clearfix;
-  float:right;
-  height:670px;
   padding:5px 5px 10px 5px;
   border:1px solid #dcdcdc;
   @include border-bottom-left-radius(6px);
@@ -303,8 +304,7 @@
 }
 
 .sidebar_content{
-  float:left;
-  display:block;
+  @include clearfix;
   padding:10px 5px 10px 0px;
   border-bottom:1px dashed #ffcc66;
 }

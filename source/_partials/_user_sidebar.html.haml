@@ -2,17 +2,16 @@
   .inner
     .block.profile
       .inner
-        %h3 個人資訊
         .section
           %ul
-            %li 
-              部落格標題標題標題
-              %span.edit=link_to "編輯內容", "#", :title => "編輯內容"
-            %li=image_tag( lorem.image("130x100"), :alt => "")
             %li 
               暱稱：
               = lorem.name
               %span.edit=link_to "編輯內容", "#", :title => "編輯內容"
+            %li=image_tag( lorem.image("130x100"), :alt => "")
+          %ul.function
+            %li.rss=link_to "RSS訂閱", "#", :title => "RSS訂閱", :class => "btn"
+            %li=link_to "關注格主", "#", :title => "關注格主", :class => "btn"
         .section
           %ul.link
             %li=link_to "首頁", "#", :title => "首頁"
@@ -21,9 +20,6 @@
             %li=link_to "個人Fashion Show", "#", :title => "個人Fashion Show"
             %li=link_to "私密留言", "#", :title => "私密留言"
             %li=link_to "信箱", "#", :title => "信箱"
-          %ul.function
-            %li=link_to "RSS訂閱", "#", :title => "RSS訂閱", :class => "btn"
-            %li=link_to "我要關注", "#", :title => "我要關注", :class => "btn"
         .section_calendar
           月曆
     .block.article
