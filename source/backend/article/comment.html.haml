@@ -45,11 +45,13 @@
                   %td 
                     %p 2012/01/05 23:29
                     =image_tag( lorem.image("90"), :alt => "" )
-                    %p.name=lorem.name
+                    %p.name
+                      %a{:href => "#", :title => ""}
+                        =lorem.name
                     %p.uid
                       = image_tag("/images/stars.png", :alt => "")
                   %td.text
-                    %p.heading 留言標題標題標題標題標題
+                    %p.heading=link_to "留言標題標題標題標題標題", "#", :title => "留言標題標題標題標題標題"
                     %p.text
                       高達80％的亞洲女性都希望自己有更加白皙的肌膚，如何快速又有效的達到美白，歐蕾大中華區公關協理候天姿告訴我們，在短時間內為肌膚提供大量營養液，就能加強護理；護理時間集中、護膚成分濃度高，透過超強滲透力，就能讓肌膚明顯獲得改善。
                     %textarea{:placeholder => "請在此輸入回覆"}

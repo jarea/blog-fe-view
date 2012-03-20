@@ -25,9 +25,6 @@
     }
   }
   table {
-    .name, .heading {
-      color:#9a9929
-    }
     td.text {
       text-align:left;
       .heading {
@@ -43,7 +40,7 @@
       }
       .function {
         @include clearfix;
-        margin-top:5px;
+        margin-top:10px;
         padding-top:10px;
         border-top:1px dotted #ccc;
         ul {
