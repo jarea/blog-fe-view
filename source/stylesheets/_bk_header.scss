@@ -1,0 +1,49 @@
+$bk-header-bg-color: #fd858d;
+
+$hd-color:           #fff;
+$link-color:         #fff;
+$link-hover-color:   #fff;
+$link-focus-color:   false;
+$link-active-color:  false;
+$link-visited-color: false;
+
+#header {
+  position: relative;
+  width: 100%;
+  height: 80px;
+  background-color: $bk-header-bg-color;
+  overflow: hidden;
+  a {
+    @include link-colors($link-color, $link-hover-color, $link-focus-color, $link-active-color, $link-visited-color);
+  }
+  .logo{
+    float: left;
+    margin: 14px 0 0 20px;
+  }
+  .user-links{
+    position: absolute;
+    right: 10px;
+    bottom: 8px;
+    color: $hd-color;
+    li{
+      @include inline-block;
+      margin-right:5px;
+      a {
+        padding:0 0 0 20px;
+      }
+    }
+    li.first {
+      margin:0;
+    }
+  }
+}
+
+#hd {
+  margin-bottom:20px;
+  .welcome {
+    background:#fedddd;
+    color:$hd-color;
+    text-align:center;
+    padding:5px 0;
+  }
+}

@@ -1,0 +1,128 @@
+.user #bd .inner{
+  @include clearfix;
+}
+.user {
+  .user_index {
+    @include clearfix;
+  }
+  #main {
+    float:left;
+    width:700px;
+    .entry {
+      padding:20px;
+      border-bottom:1px dotted #ffc06d;
+      h2 {
+        span {
+          @include inline-block;
+          width:87px;
+          height:20px;
+          background:url(/images/icon-hot.png) no-repeat;
+          text-indent:-9999px;
+          margin-left:10px;
+        }
+      }
+      .date {
+        text-align:right;
+        color:#ccc;
+      }
+      img {
+        margin:15px 0;
+      }
+      .more {
+        margin:5px 0;
+      }
+      .count {
+        @include clearfix;
+        li {
+          float:right;
+          margin-left:5px;
+          padding-left:5px;
+        }
+        .comment {
+          border-left:1px solid #ccc;
+        }
+      }
+    }
+  }
+  .sidebar {
+    float:right;
+    width:220px;
+    background:#fff5db;
+    padding:0 10px;
+    a {
+      color:#666;
+    }
+    h3 {
+      color:#fff;
+      font-size:13px;
+      padding:0 10px;
+      margin:0 0 10px -15px;
+      @include inline-block;
+      @include border-radius(0 0 6px 6px);
+      background: #ffb608;
+      @include background-image(linear-gradient(top, #ffd266, #ffb608));
+    }
+    .block {
+      > .inner {
+        padding:0 15px 10px 15px;
+        border-bottom:1px dotted #ffc06d;
+      }
+      li {
+        margin:5px 0;
+      }
+    }
+    .block.profile {
+      .inner {
+        padding:0;
+      }
+      h3 {
+        margin-left:0;
+      }
+      .edit {
+        @include inline-block;
+        width:28px;
+        height:20px;
+        a {
+          @extend .edit;
+          background:url(/images/icon-edit.png) center no-repeat;
+          text-indent:-9999px;
+        }
+      }
+      .section {
+        padding:5px 15px;
+        border-bottom:1px dotted #ffc06d;
+      }
+      .section_calendar {
+        padding:5px 15px;
+      }
+      .function {
+        @include clearfix;
+        li {
+          float:left;
+          margin-right:10px;
+        }
+      }
+    }
+    .category {
+      li {
+        background:url(/images/icon-category.png) no-repeat 0 5px;
+        padding-left:15px;
+      }
+    }
+    .view {
+      dl {
+        @include clearfix;
+        dt, dd {
+          float:left;
+        }
+        dt {
+          clear:left;
+        }
+      }
+      .inner {
+        border:none;
+        padding-bottom:50px;
+      }
+    }
+  }
+}

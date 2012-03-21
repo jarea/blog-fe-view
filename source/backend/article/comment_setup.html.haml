@@ -1,0 +1,44 @@
+=partial "/_partials/bk_menu"
+
+.span10
+  .frame.comment.setup
+    %h2.heading 
+      %ul
+        %li
+          .word=link_to "後台首頁"
+          %span.word  / 
+        %li
+          .word=link_to "文章管理"
+          %span.word  / 
+        %li.now 回應管理
+    .inner
+      %ul.nav.nav-tabs
+        %li
+          %a{:href => "#all"} 所有留言
+        %li.active
+          %a{:href => "#setup"} 回應設定
+      .tab-content
+        #all.tab-pane
+        #setup.tab-pane.active
+          %h3.heading 寄信通知我
+          %form
+            .section
+              %ul
+                %li.radio
+                  %input{:type => "radio"} 我要通知
+                  %ul
+                    %li.checkbox
+                      %input{:type => "checkbox"} 我的部落格有新留言時
+                    %li.checkbox
+                      %input{:type => "checkbox"} 我在別人的部落格留言有被回覆
+                    %li.checkbox
+                      %input{:type => "checkbox"} 我在別人的部落格留言後有新增留言
+                %li.radio
+                  %input{:type => "radio"} 不要通知
+              %p.submit
+                %input{:type => "submit", :value => "確定", :class => "btn"}
+
+      :javascript
+        $(function () {
+        $('.nav-tabs').tab()
+        })

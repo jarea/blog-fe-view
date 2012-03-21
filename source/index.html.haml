@@ -1,0 +1,76 @@
+#bd
+  #section_top
+    #promo
+      .main_ad
+        .inner
+          .img
+            =image_tag( lorem.image("400x300"), :alt => "" )
+            .gray
+            %h2=link_to "不敗的選擇！紅色系穿搭特輯～～", "#", :title => "不敗的選擇！紅色系穿搭特輯～～"
+          .words
+            %h2=link_to "不敗的選擇！紅色系穿搭特輯～～", "#", :title => "不敗的選擇！紅色系穿搭特輯～～"
+            %p 
+              話說保養妝是霧面粉嫩的效果，因為我是超乾肌，喜歡擦完保養品後臉超油亮滋潤的fu，不太習慣擦完保養品後臉上還是乾爽的感覺，所以我個人是不會每天都用這個保養妝。
+              %br
+              話說保養妝是霧面粉嫩的效果，因為我是超乾肌，喜歡擦完保養品後臉超油亮滋潤的fu。
+      .ad
+        =link_to image_tag( lorem.image("620x90"), :alt => "" ), "#"
+    .sidebar
+      .block
+        .admin
+          .avatar
+            =link_to image_tag( lorem.image("91x91"), :alt => "" ), "#"
+          .welcome
+            Hi
+            %a=link_to "賴小美賴小美賴小美賴小美賴小", "#", :title => "賴小美賴小美賴小美賴小美賴小"
+            %br
+            你現在是
+            %a=link_to "部落客", "#", :title => "部落客"
+          %ul.function
+            %li
+              .newPostBtn
+                %img{:src => "images/new_post_icon.png"}
+                %a=link_to "發表新文章", "#", :title => "發表新文章"
+            %li
+              .backend
+                %img{:src => "images/backend_icon.png"}
+                %a=link_to "管理後台", "#", :title => "管理後台"
+          %ul.links
+            %li=link_to "回我的網誌", "#", :title => "回我的網誌"
+            %li=link_to "暫做(0)", "#", :title => "暫做(0)"
+            %li.last=link_to "暫做(0)", "#", :title => "暫做(0)"
+          .notice
+            %img{:src => "images/notice_icon.png"}
+            .text
+              %a=link_to "內容內容內容內容內容內容內容內容內容內容", "#", :title => "內容內容內容內容內容內容內容內容內容內容"
+      .block.mTop
+        .hot
+          .subject
+            %p
+              熱門精選
+          %ul
+            %li
+              .img{:style => "width: 120px; height: 90px;"}
+                =link_to image_tag( lorem.image("120x90"), :alt => "" ), "#"
+              .word
+                .title
+                  %a=link_to "閃光節！情人不該去的地", "#", :title => "閃光節！情人不該去的地方"
+                .intro
+                今天是情人節，甜甜蜜蜜的小倆口都想好要去哪裡慶祝佳節了嗎？....
+            %li
+              .img{:style => "width: 120px; height: 90px;"}
+                =link_to image_tag( lorem.image("120x90"), :alt => "" ), "#"
+              .word
+                .title
+                  %a=link_to "閃光節！情人不該去的地", "#", :title => "閃光節！情人不該去的地方"
+                .intro
+                今天是情人節，甜甜蜜蜜的小倆口都想好要去哪裡慶祝佳節了嗎？....
+  #section_text_ad
+    %ul
+      %li=link_to "日本開架市場銷售No.1", "#", :title => "日本開架市場銷售No.1"
+      %li=link_to "日本開架市場銷售No.1", "#", :title => "日本開架市場銷售No.1"
+      %li=link_to "日本開架市場銷售No.1", "#", :title => "日本開架市場銷售No.1"
+      %li=link_to "日本開架市場銷售No.1", "#", :title => "日本開架市場銷售No.1" 
+  =partial "section_main"
+  #section_ad
+    .ad

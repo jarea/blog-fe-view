@@ -1,0 +1,255 @@
+#main-article{
+  float:left;
+  width:700px;
+}
+#articleHead{
+  margin-top:10px;
+  padding:10px 20px 10px 10px;
+  .headTitle{
+    float:left;
+    .articleTitle{
+      font-size:18px;
+      color:#286bcc;
+      float:left;
+      line-height:20px;
+      padding-right:10px;
+    }
+    .hotImg{
+      float:left;
+      display:inline-block;
+      width:87px;
+      height:20px;
+      background: url(/images/hotarticle.png) no-repeat;
+    }
+  }
+  .postTime{
+    color:#b4b4b4;
+    float:right;
+    li{
+      float:left;
+    }
+  }
+}
+
+#main-article{
+  .articleShare{
+    clear:both;
+    padding:10px 0 30px 10px;
+    li{
+      float:left;
+      margin-right:5px;
+      .shareWord{
+        color:#666;
+        line-height:21px;
+      }
+      .shareFb{
+        float:left;
+        width:68px;
+        height:21px;
+      }
+      .shareGg{
+        width:60px;
+        height:21px;  
+      }
+    }
+  }  
+}
+
+#articleBottom{
+  .catLinks{
+    @include clearfix;
+    padding:20px 10px;
+    dl{
+      float:left;
+      width:50%;
+      dt{
+        float:left;
+        color:#969696;
+      }
+    }
+  }
+  .posted {
+    @include clearfix;
+    margin:0 0 10px 10px;
+    ul {
+      float:left;
+    }
+    li {
+      @include inline-block;
+      border-right:1px solid #999;
+      margin-right:5px;
+      padding-right:5px;
+    }
+    dl {
+      float:right;
+    }
+    dt,dd {
+      @include inline-block;
+    }
+    dd {
+      margin-right:10px;
+    }
+  }
+  .tags{
+    display:inline-block;
+    width:98%;
+    padding:5px;
+    background-color:#f0f0f0;
+    border:1px solid #dcdcdc;
+    
+    .tagImg{
+      font-size:11px;
+      line-height:20px;
+      color:#666;
+      width:64px;
+      height:20px;
+      float:left;
+      padding-left:7px;
+      background: url(/images/tag_bg.png) no-repeat;
+      display:block;
+    }
+    .tagWord{
+      li{
+        color:#613d1a;
+        float:left;
+        a{
+          color:#613d1a;
+        }
+      }
+    }
+  }
+  .moreArticles{
+    p{
+      padding:10px;
+      color:#969696;
+    }
+    .article{
+      @include clearfix;
+      padding-bottom:20px;
+      li{
+        float:left;
+        width:110px;  
+        padding:5px 15px 5px 10px;
+        border-right:1px dashed #ffc57f;
+        &:hover{
+          background-color:#f0f0f0;
+        }
+        a{
+          .pic{
+            text-align:center;
+            img{
+              padding:3px;
+              border:1px solid #dcdcdc;
+            } 
+          }
+        }
+      }
+    }
+  }
+  .copyLink{
+    margin:10px 0;
+    .inputLink{
+      width:580px;
+      margin-right:10px;
+    }
+    button{
+      color:#5a5a5a;
+      font-size:11px;
+      line-height:17px;
+    }
+  }  
+}
+
+#articleContent{
+  img{
+    border:1px solid #dcdcdc;
+    margin:10px;
+  }
+  .mainContent{
+    padding:0 0 50px 0;
+    .paragraph{
+      padding:10px;
+      color:#666;
+      p{
+        line-height:22px;
+      }
+    }
+  }
+}
+ 
+#articleReply{
+  .reply{
+    ul{
+      padding:5px 0px 20px 0px;
+    }
+    li{
+      float:left;
+      margin-right:10px;
+    }
+    .replyFb{
+      @include border-radius(3px);
+      background-color:#1b48a8;
+      padding:10px;
+      width:100px;
+      a{
+        text-align:center;
+        color:#fff;
+        display:block;
+      }
+    }
+    .replyMe{
+      @extend .replyFb;
+      background-color:#6b6b6b;
+    }
+    .replyComments{
+      padding:20px 0;
+    }
+  }
+} 
+
+li.comments{
+  color:#5a5a5a;
+  padding:20px 10px 5px 20px;
+  margin-bottom:10px;
+  background:#f0f0f0;
+  width:95%;
+  .leftSide{
+    float:left;
+    margin-right:20px;
+    img{
+      padding:3px;
+      border:1px solid #DCDCDC;
+    }
+    .stars{
+      text-align:center;
+      img{
+        border:none;
+      }
+    }
+  }
+  .rightSide{
+    .replyContent{
+      float:left;
+      .replied{
+        width:440px;
+        margin:10px 0 10px 30px;
+        padding:20px;
+        background:#fff;
+        border:1px solid #dcdcdc;
+      }
+    }
+    .userInfo{
+      clear:both;
+      padding:10px 0px 5px 5px;
+      float:right;
+      li{
+        float:left;
+        color:#969696;
+      }
+    }
+    .stair{
+      float:right;
+      padding-right:10px;
+    }
+  }
+}  

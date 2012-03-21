@@ -1,0 +1,71 @@
+$color:#fffbf7;
+
+#menu{
+  padding:0 20px 20px 20px;
+  li{
+    padding:5px 0;
+    a{
+      color:#903232;
+      text-decoration:none;
+      font-size:13px;
+      display:inline-block;
+      line-height:12px;
+      height:15px;
+      width:100px;
+      margin:5px 0;
+      padding:5px 5px 5px 30px;
+      &:hover{
+        color:#fff;
+        background:#903232;
+      }
+    }
+  }
+  li.copy{
+    border-top:1px dashed #c2c2c2;
+    border-bottom:1px dashed #c2c2c2;
+    padding:10px 0;
+  }
+  .tab-content{
+    background-color:#fff;
+  }
+  .tab-pane{
+    padding-top:10px;
+    border-top:1px solid #DDD;
+    border-right:1px solid #DDD;
+    @include border-top-right-radius(6px); 
+  }
+  ul.albumManage{
+    @include border-radius(6px);
+    border:1px solid #903232;
+    li.manage{
+      @include border-top-left-radius(6px);
+      @include border-top-right-radius(6px);
+      background:#903232;
+      a{
+        background: url(/images/icons/album_hover.png) no-repeat;
+        color:#fff;
+        text-decoration:none;
+        font-size:13px;
+      }
+    }
+    li.albumSub a{
+      width:100px;
+      text-align:left;
+      padding:0 5px;
+      &:hover{
+        width:100px;
+        height:15px;
+        color:#903232;
+        background:#f4eaea;
+      }
+    }
+  }
+}
+
+.textbox{
+  width:100px;
+}
+.open > .dropdown-toggle, .dropdown.open > .dropdown-toggle{
+  background-color:darken($color, 20%);  
+}
+

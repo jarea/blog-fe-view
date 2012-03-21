@@ -1,0 +1,232 @@
+#albumEdit .inner{
+  clear:both;
+  padding:0px 20px 20px 20px;
+}
+
+
+.tableAlbum{
+  td{
+    text-align:center;
+  }
+  thead th{
+    border-right:1px solid #eee;
+    text-align:center;
+    color:#903232;
+  }
+  .tbody{
+    padding:20px 0;
+    border-bottom:1px solid #e4e4e4;
+  }
+  tfoot td, thead tr {
+    background:url(/images/bg_table.png) repeat-x center;
+  }
+  tfoot td {
+    padding: 0 8px;
+  }
+  .check{
+    vertical-align:middle;
+    text-align:center;
+  }
+  .albumInfo{
+    width:50%;
+    li{
+      float:left;
+      padding-right:5px;
+    }
+    li.stat a{
+      width:18px;
+      height:15px;
+    }
+   
+    .albumDescribe{
+      color:#565656;
+      margin-top:20px;
+      padding:5px 0;
+      text-align:left;
+    }
+  }
+  .albumCover{
+    padding:3px;
+    border:1px solid #dcdcdc;
+  }
+  .nums{
+    vertical-align:middle;
+    color:#888;
+    font-size:13px;
+  }
+  .albumStat{
+    text-align:center;
+    li{
+      display:inline-block;
+      line-height:13px;
+      padding:0 5px;
+    }
+    p{
+      background:url(/images/icons/friends.png) no-repeat;
+      line-height:12px;
+    } 
+  }
+  .classWord a{
+    font-size:13px;
+    color:#565656;
+  }
+  tr.albumList{
+    padding:10px 8px;
+  }
+}
+.table td{
+  vertical-align:middle;
+}
+li.albumTitle a{
+  color:#9a9929;
+  font-size:15px;
+}
+
+/* -以下是新增相本區的樣式- */
+
+.addNewAlbum{
+  padding:20px 20px 0px 20px;
+  .buttons{
+    margin:10px 0 60px 0;
+    .btnRight{
+      float:right;
+      .btnStat{
+        margin-right:10px;
+        a{
+          color:#000;
+        }
+      }
+    }
+    li{
+      float:left;
+    }
+  }
+  .btn.delete{
+    background:url(/images/delete.png) no-repeat center #eae9e9;
+    text-indent:-9999px;
+    width:15px;
+    height:18px;
+    border: 1px solid #ccc;
+    &:hover {
+      background-color:#eee;
+    }
+  }
+  table.add th{
+    background:#dbb3b3;
+    color:#fff;
+    text-align:center;
+  }
+  table.add th.submit, td{
+    background:#f8f3f3;
+    vertical-align:middle;
+  }
+}  
+
+/* -以下是edit_pics頁面的樣式- */
+
+#albumEdit{
+  .statSel{
+    width:100px;
+    margin:3px;
+  }
+  .selectAlbum{
+    width:auto;
+    margin:3px;
+  }
+  .tableAlbum{
+    thead th{
+      padding:0px 10px;
+    } 
+  }
+  .tableAlbum{ 
+    tr.mytr{
+      border-top:1px solid #e2e2e2;
+      border-bottom:1px solid #e2e2e2;
+      background:#ffeded;
+      background: -webkit-gradient(linear, 0 0, 0 bottom, from(#ffeded), to(#fedddd));
+      background: -webkit-linear-gradient(#ffeded, #fedddd);
+      background: -moz-linear-gradient(#ffeded, #fedddd);
+      background: -ms-linear-gradient(#ffeded, #fedddd);
+      background: -o-linear-gradient(#ffeded, #fedddd);
+      background: linear-gradient(#ffeded, #fedddd);
+      th{
+        padding:5px;
+      }
+    }
+  }
+  .myspan{
+    border-right:none;
+  }
+  th.move{
+    float:right;
+  }
+  .myedit{
+    text-align:center;
+  }
+}
+.editPics{
+  padding:10px 20px;
+  border-bottom:1px solid #e4e4e4;
+  height:100px;
+  li.stat{
+    float:left;
+    padding-right:5px;
+  }
+  .editTitle{
+    float:left; 
+    a{
+      font-size:18px;
+    }
+  }
+  .edit{
+    background: url("/images/edit.png") no-repeat scroll center center transparent;
+    display: inline-block;
+    height: 20px;
+    margin-left:5px;
+    text-indent: -9999px;
+    width: 20px;
+    cursor:pointer;
+  }
+  .albumdescribe{
+    float:left;
+    color:#565656;
+    width:85%;
+    padding:10px 0;
+  }
+  .albumnums{
+    float:right;
+    color:#b2b2b2;
+    margin:50px 0 20px 0;
+  }
+}
+
+.albumContent{
+  ul.albumRow{
+    height:200px;
+    padding:10px 0 30px 0;
+    border-bottom:1px dashed #cfcfcf;
+  }
+  li{
+    float:left;
+    padding:20px;
+    margin:10px;
+    background:#fafafa;
+    @include border-radius(6px);
+    border:1px solid #e1e1e1;
+  }
+  .check{
+    margin-bottom:10px;
+    float:left;
+  }
+  .coverSet{
+    margin:3px 0 3px 20px;
+    display:block;
+    color:#383838;
+  }
+  .picName{
+    text-align:center;
+    a{
+      color:#888;
+    }
+  }
+}

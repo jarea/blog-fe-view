@@ -1,0 +1,50 @@
+.user {
+  #toolbar {
+    @include clearfix;
+    @include background-image(linear-gradient(top, #eee, #bbb));
+    margin:0;
+    .function, .link {
+      position:static;
+    }
+    .function {
+      float:left;
+      background:url(/images/bg-user_function.png) no-repeat left bottom;
+      padding:8px 200px 7px 0;
+      color:#666;
+      a {
+        color:#666;
+      }
+      li {
+        border-right:1px solid #666;
+      }
+      li.first {
+        padding-left:30px;
+      }
+    }
+    .link {
+      float:right;
+      padding:8px;
+    }
+  }
+  #hd .banner {
+    height:400px;
+    background:url(/images/bg-banner.png) no-repeat;
+    color:#fff;
+    position:relative;
+    a {
+      color:#fff;
+    }
+    h1 {
+      position:absolute;
+      width:400px;
+      top:100px;
+      left:30px;
+    }
+    p.disc {
+      position:absolute;
+      width:400px;
+      top:150px;
+      left:30px;
+    }
+  }
+}

@@ -1,0 +1,107 @@
+=partial "/_partials/bk_menu"
+
+.span10
+  .frame.category
+    %h2.heading 
+      %ul
+        %li
+          .word=link_to "後台首頁"
+          %span.word  / 
+        %li
+          .word=link_to "文章管理"
+          %span.word  / 
+        %li.now 個人分類管理
+    .inner
+      .toolbar
+        %p.btn.btn-admin=link_to "新增分類", "#", :title => "新增分類"
+        %ul.btn-group
+          %li.btn
+            =link_to "全站分類", "#", :title => "全站分類"
+            %span.arrow
+          %li.btn.delete=link_to "刪除", "#", :title => "刪除"
+      =partial "/_partials/bk_add"
+      %table.table.table-striped
+        %thead
+          %tr
+            %th
+              %input{:type => "checkbox"}
+            %th 個人分類名稱
+            %th 全站分類名稱
+            %th 文章篇數
+            %th
+              分類順序
+              %span.info=link_to "說明", "#", :title => "說明"
+            %th 編輯
+        %tbody
+          %tr
+            %td
+              %input{:type => "checkbox"}
+            %td 未分類
+            %td 未分類
+            %td 100
+            %th 
+              .sortOption  
+                .sort=link_to image_tag(url("/images/icons/arrow_down.png"),:alt=>""),"#"
+                .sort=link_to image_tag(url("/images/icons/arrow_up.png"),:alt=>""),"#"
+            %td.edit=link_to "編輯", "#", :title => "編輯"
+          %tr
+            %td
+              %input{:type => "checkbox"}
+            %td 夢裏落花
+            %td 日記
+            %td 100
+            %th 
+              .sortOption  
+                .sort=link_to image_tag(url("/images/icons/arrow_down.png"),:alt=>""),"#"
+                .sort=link_to image_tag(url("/images/icons/arrow_up.png"),:alt=>""),"#"
+            %td.edit=link_to "編輯", "#", :title => "編輯"
+          %tr
+            %td
+              %input{:type => "checkbox"}
+            %td 猶記多情
+            %td 創作
+            %td 20
+            %th 
+              .sortOption  
+                .sort=link_to image_tag(url("/images/icons/arrow_down.png"),:alt=>""),"#"
+                .sort=link_to image_tag(url("/images/icons/arrow_up.png"),:alt=>""),"#"
+            %td.edit=link_to "編輯", "#", :title => "編輯"
+          %tr
+            %td
+              %input{:type => "checkbox"}
+            %td 閑情所寄
+            %td 音樂
+            %td 38
+            %th 
+              .sortOption  
+                .sort=link_to image_tag(url("/images/icons/arrow_down.png"),:alt=>""),"#"
+                .sort=link_to image_tag(url("/images/icons/arrow_up.png"),:alt=>""),"#"
+            %td.edit=link_to "編輯", "#", :title => "編輯"
+          %tr
+            %td
+              %input{:type => "checkbox"}
+            %td 夢裏落花
+            %td 日記
+            %td 209
+            %th 
+              .sortOption  
+                .sort=link_to image_tag(url("/images/icons/arrow_down.png"),:alt=>""),"#"
+                .sort=link_to image_tag(url("/images/icons/arrow_up.png"),:alt=>""),"#"
+            %td.edit=link_to "編輯", "#", :title => "編輯"
+          %tr
+            %td
+              %input{:type => "checkbox"}
+            %td 猶記多情
+            %td 創作
+            %td 100
+            %th 
+              .sortOption  
+                .sort=link_to image_tag(url("/images/icons/arrow_down.png"),:alt=>""),"#"
+                .sort=link_to image_tag(url("/images/icons/arrow_up.png"),:alt=>""),"#"
+            %td.edit=link_to "編輯", "#", :title => "編輯"
+        %tfoot
+          %tr
+            %td{:colspan => "6"}
+              %span.total
+                分類數（6）
+  

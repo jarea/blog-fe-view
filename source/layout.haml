@@ -1,0 +1,79 @@
+!!! 5
+%html
+  %head
+    %meta{:charset => "utf-8"}
+    = stylesheet_link_tag 'main'
+    = stylesheet_link_tag 'bootstrap-fe.css'
+    = javascript_include_tag 'bootstrap.min.js'
+    -# = javascript_include_tag("http://twitter.github.com/bootstrap/assets/js/bootstrap-tab.js")
+    -# = javascript_include_tag("https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js")
+  %body
+    #toolbar
+      .inner
+        %ul.link
+          %li=link_to "回首頁", "#", :title => "回首頁", :class => "home"
+          %li=link_to "簡體版", "#", :title => "簡體版"
+          %li=link_to "部落格首頁", "#", :title => "部落格首頁"
+          %li.last=link_to "回討論區", "#", :title => "回討論區"
+        %ul.function
+          %li 
+            Hi~
+            =lorem.name
+          %li 您有0則新留言
+          %li.last=link_to "登出", "#", :title => "登出"
+    #hd
+      #header
+        %p#logo=link_to "FashionGuide部落格", "#", :title => "FashionGuide部落格" 
+        .search
+          %ul
+            %li=link_to "部落格", "#", :title => "部落格"
+            %li=link_to "內容", "#", :title => "內容"
+            %li=link_to "暱稱", "#", :title => "暱稱"
+            %li.last=link_to "商品心得快查", "#", :title => "商品心得快查"
+          %p
+            %input{:type => "text"}
+            %input{:type => "submit", :value => "搜尋" }
+          %dl
+            %dt 熱門：
+            %dd
+              %ul
+                %li=link_to "聖誕節", "#", :title => "聖誕節"
+                %li=link_to "美女心機", "#", :title => "美女心機"
+                %li=link_to "穿搭防身術", "#", :title => "穿搭防身術"
+                %li=link_to "2012", "#", :title => "2012"
+        .ad=link_to image_tag( lorem.image("385x85"), :alt => "" ), "#"
+      %ul#navi
+        %li.first.focus=link_to "TOP100", "#", :title => "TOP100"
+        %li.focus=link_to "專欄精選", "#", :title => "專欄精選"
+        %li=link_to "綜合", "#", :title => "綜合"
+        %li=link_to "流行彩妝", "#", :title => "流行彩妝"
+        %li.active
+          =link_to "美容保養", "#", :title => "美容保養"
+          %ul
+            %li=link_to "時尚潮流", "#", :title => "時尚潮流"
+            %li=link_to "生活休閒", "#", :title => "生活休閒"
+            %li=link_to "美食旅遊", "#", :title => "美食旅遊"
+            %li.last=link_to "醫學美容", "#", :title => "醫學美容"
+        %li=link_to "時尚潮流", "#", :title => "時尚潮流"
+        %li=link_to "生活休閒", "#", :title => "生活休閒"
+        %li=link_to "美食旅遊", "#", :title => "美食旅遊"
+        %li=link_to "醫學美容", "#", :title => "醫學美容"
+    #bd
+      = yield
+    #ft
+      .inner
+        %ul
+          %li=link_to "回首頁", "/", :title => "回首頁"
+          %li=link_to "設成首頁", "#", :title => "設成首頁"
+          %li=link_to "簡體版", "#", :title => "簡體版"
+          %li=link_to "服務台", "#", :title => "服務台"
+          %li=link_to "修改會員資料", "#", :title => "修改會員資料"
+          %li=link_to "加入會員", "#", :title => "加入會員"
+          %li=link_to "新手上路", "#", :title => "新手上路"
+          %li=link_to "廣告刊登", "#", :title => "廣告刊登"
+          %li=link_to "贈獎須知", "#", :title => "贈獎須知"
+          %li=link_to "服務條款", "#", :title => "服務條款"
+          %li=link_to "SITEMAP", "#", :title => "SITEMAP"
+          %li.last=link_to "人才招募", "#", :title => "人才招募"
+        %p
+          風尚數位科技股份有限公司版權所有 2012 FashionGuide All Right Reserved

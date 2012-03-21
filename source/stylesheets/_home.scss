@@ -1,0 +1,229 @@
+#section_top {
+  @include clearfix;
+  #promo {
+    float:left;
+    width:620px;
+  }
+  .sidebar {
+    width:320px;
+    float:right;
+  }
+}
+
+#promo {
+  .inner {
+    @include clearfix;
+    @include border-radius(6px);
+    border:1px solid #ccc;
+    padding:10px;
+  }
+  .main_ad {
+    .words {
+      float:right;
+      width:190px;
+      h2 {
+        @include border-radius(4px);
+        background:#faf8f2;
+        font-size:18px;
+        line-height:20px;
+        padding:10px;
+      }
+      p {
+        margin:10px 0;
+        line-height:1.3em;
+      }
+    }
+    .img {
+      float:left;
+      position:relative;
+      width:400px;
+      height:300px;
+      .gray {
+        position:absolute;
+        bottom:0;
+        left:0;
+        width:400px;
+        height:50px;
+        background:rgba(0,0,0,0.4);
+      }
+      h2 {
+        position:absolute;
+        left:10px;
+        bottom:10px;
+        font-size:18px;
+        a {
+          color:#fff;
+        }
+      }
+    }
+  }
+  .ad {
+    margin:10px 0;
+  }
+}
+
+/*以下魚丸寫的*/
+#bd {
+  #section_top {
+    .sidebar {
+      float:right;
+      width:320px;
+      .block {
+        border:1px solid #CCCCCC;
+        border-radius:6px;
+        overflow:hidden;
+        padding:10px;
+        .admin {
+          .avatar {
+            float:left;
+            position:relative;
+            height:91px;
+            width:91px;
+          }
+          .welcome {
+            float:right;
+            width:195px;
+            overflow:hidden;
+            white-space:nowrap;
+          }
+          ul.function {
+            li {
+              float:left;
+              margin:0px;
+              width:103px;
+              height:37px;
+              .newPostBtn {
+                float:left;
+                height:18px;
+                width:90px;
+                border:1px solid #aecff1;
+                border-radius:5px;
+                overflow:hidden;
+                margin:8px;
+                padding:3px;
+                @include background-image(linear-gradient(top, #f5faff, #e2f0ff));
+              }
+              .backend {
+                float:left;
+                height:18px;
+                width:78px;
+                border:1px solid #aecff1;
+                border-radius:5px;
+                overflow:hidden;
+                margin:8px;
+                padding:3px;
+                @include background-image(linear-gradient(top, #f5faff, #e2f0ff));
+              }
+            }
+          }
+        ul.links {
+          margin-left:100px;
+          li.last {
+            border:none;
+          }
+          li {
+            @include inline-block;
+            border-right:1px solid #999;
+            margin-right:5px;
+            padding-right:5px;
+            a {
+              color:#666;
+              text-decoration: none;
+              &:hover {
+                color:#005580;
+                text-decoration: underline;
+              }
+            }
+          }
+        }
+      .notice {
+        overflow:hidden;
+        white-space:nowrap;
+        float:left;
+        img {
+          margin-top:10px;
+          float:left;
+          display:inline;
+        }
+        .text {
+          float:right;
+          display:inline;
+          width:250px;
+          margin-top:10px;
+          a {
+            color:#666666;
+            text-decoration: none;
+          }
+          a:hover {
+            color:#005580;
+            text-decoration: underline;
+          }
+            }
+          }
+        }
+      }
+      .block {
+        .hot {
+          .subject {
+            border-radius:6px 6px 0 0;
+            height:30px;
+            margin:-10px;
+            @include background-image(linear-gradient(top, #ffd369, #ffb502));
+            p {
+              position:relative;
+              top:5px;
+              left:10px;
+              color:white;
+              font-size:16px;
+            }
+          }
+          ul {
+            padding:20px 0px;
+            height:195px;
+            li {
+              width:300px;
+              height:107px;
+              display:block;
+              .img {
+                padding:3px;
+                border:1px solid #CCCCCC;
+                background-color:white;
+                float:left;
+              }
+              .word {
+                float:right;
+                width:165px;
+                .title {
+                padding:5px 0;
+                font-size:15px;
+                }
+                .intro {
+                  padding:5px;
+                }
+              }
+            }
+          }
+        }
+      }
+    .mTop {
+      margin-top:15px;
+    }
+    }
+  }
+}
+/*以上魚丸寫的*/
+
+#section_text_ad{
+  ul{
+    padding:5px;
+    li{
+      float:left;
+      margin-left:60px;
+      padding-bottom:10px;
+      a{
+        font-size:15px;
+      }
+    }  
+  }
+}
+

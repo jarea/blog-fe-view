@@ -1,0 +1,71 @@
+=partial "/_partials/bk_menu"
+
+.span10
+  .frame.album
+    %h2.heading
+      %ul
+        %li
+          .word=link_to "後台首頁"
+          %span.word  / 
+        %li
+          .word=link_to "相簿管理"
+          %span.word  / 
+        %li.now 編輯相本
+    .addNewAlbum
+      %ul.buttons
+        %li.btn.btn-admin 新增相本
+        %ul.btnRight
+          %li.btn.btnStat
+            狀態
+            %span.arrow=link_to "","#"
+          %li.btn.delete=link_to "","#"
+      =partial "/_partials/add_newalbum"
+    .inner
+      %table.table.tableAlbum
+        %thead
+          %tr
+            %th
+              %input{:type=>"checkbox"}
+            %th
+              相本封面
+            %th
+              標題&描述
+            %th.order
+              相本順序
+              %span.info=link_to "說明","#"
+            %th
+              相片數
+            %th
+              編輯
+        -5.times do
+          %tbody
+            %tr
+              %td.check
+                %input{:type=>"checkbox"}
+              %td.cover=link_to image_tag(lorem.image("100"), :alt=>"", :class=>"albumCover"),"#"
+              %td.albumInfo
+                %ul
+                  %li.stat= image_tag(url("/images/icons/hide.png"),:alt=>"")
+                  %li.albumTitle=link_to "Happy Birthday ~","#"
+                .albumDescribe 
+                  我一定是平時不經易的把其中一個誰逼瘋了，才獲得這樣口味無敵驚奇的生日蛋糕，很窩心（？！）謝謝創意團隊與執行製作團隊的禮物。感動到無以言喻了！
+              %td
+                .sortOption  
+                  .sort=link_to image_tag(url("/images/icons/arrow_down.png"),:alt=>""),"#"
+                  .sort=link_to image_tag(url("/images/icons/arrow_up.png"),:alt=>""),"#"
+              %td.nums 2207
+              %td.edit=link_to "編輯","#"
+        %tfoot
+          %tr
+            %td{:colspan =>"8"}
+              .pagination
+                %ul
+                  %li=link_to "第一頁", "#", :title => "第一頁"
+                  %li=link_to "Prev", "#", :title => "Prev"
+                  %li.active=link_to "1", "#", :title => "1"
+                  %li=link_to "2", "#", :title => "2"
+                  %li=link_to "3", "#", :title => "3"
+                  %li=link_to "Next", "#", :title => "Next"
+                  %li=link_to "最終頁", "#", :title => "最終頁"
+
+  

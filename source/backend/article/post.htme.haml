@@ -1,0 +1,118 @@
+=partial "/_partials/bk_menu"
+
+.span10
+  .frame.post
+    %h2.heading
+      %ul
+        %li
+          .word=link_to "後台首頁"
+          %span.word  / 
+        %li.now 發表文章
+    .inner
+      %form
+        .title
+          .section
+            %label
+              文章標題
+              %span *
+            %input{:type => "text" , :class => "input-xxlarge"}
+          .top
+            %input{:type => "checkbox"}
+              我要置頂
+            %span.info=link_to "說明", "#", :title => "說明"
+        .category
+          .section
+            %label
+              文章全站分類
+              %span *
+            %select{:class => "input-medium"}
+              %option 請選擇
+          .section
+            %label
+              個人文章分類
+            %select{:class => "input-medium"}
+              %option 不分類
+            %input{:type => "button", :value => "新增", :class => "btn"}
+          .section
+            %label
+              文章開放狀態
+            %select{:class => "input-small"}
+              %option 開放
+        .part.time
+          %label 發表時間
+          %ul
+            %li.radio
+              %input{:type => "radio"} 
+                現在時間
+            %li.radio
+              %input{:type => "radio"}
+                自訂時間
+              %ul
+                %li
+                  %select{:class => "input-small"}
+                    %option 請選擇
+                  年
+                %li  
+                  %select{:class => "input-small"}
+                    %option 請選擇
+                  月
+                %li  
+                  %select{:class => "input-small"}
+                    %option 請選擇
+                  日
+                %li  
+                  %select{:class => "input-small"}
+                    %option 請選擇
+                  時
+                %li  
+                  %select{:class => "input-small"}
+                    %option 請選擇
+                  分
+        .part.sync
+          %label
+            同步發表
+          %ul
+            %li.radio
+              %input{:type => "radio"}
+                不同步
+            %li.radio
+              %input{:type => "radio"}
+                同步
+                %ul
+                  %li.radio.inline
+                    %input{:type => "radio"}= image_tag("/images/facebook_logo_s.png", :alt => "Facebook")
+                  %li.radio.inline
+                    %input{:type => "radio"}= image_tag("/images/pixnet_logo_s.png", :alt => "Pixnet")
+                  %li.radio.inline
+                    %input{:type => "radio"}= image_tag("/images/wretch_logo_s.png", :alt => "無名小站")
+        .part.comment
+          %label
+            回應設定
+          %ul
+            %li.radio.inline
+              %input{:type => "radio"}
+                完全開放
+            %li.radio.inline
+              %input{:type => "radio"}
+                只允許會員留言
+            %li.radio.inline
+              %input{:type => "radio"}
+                只允許好友留言
+            %li.radio.inline
+              %input{:type => "radio"}
+                不允許留言
+        .part.tag
+          %label
+            文章標籤
+            %span.info=link_to "說明", "#", :title => "說明"
+          %input{:type => "text" , :class => "span11"}
+        .part.quote
+          %label
+            引用通知
+            %span.info=link_to "說明", "#", :title => "說明"
+          %input{:type => "text" , :class => "span11"}
+        .submit
+          %input{:type => "submit" , :class => "btn btn-danger", :value => "發表文章"}
+          %input{:type => "submit" , :class => "btn btn-info", :value => "預覽文章"}
+          %input{:type => "submit" , :class => "btn btn-warning", :value => "儲存草稿"}
+          %input{:type => "submit" , :class => "btn btn-cancel", :value => "取消"}
