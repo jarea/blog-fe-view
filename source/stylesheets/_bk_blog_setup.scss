@@ -1,0 +1,44 @@
+li.subTitle{
+  float:left;
+  margin-right:20px;
+}
+.aboutMe, .basicSetup, .advancedSetup{
+  @include clearfix;
+  .section{
+    padding:10px;
+    .word{
+      margin-right:10px;
+      float:left;
+      line-height:28px;
+    }
+  }
+}
+
+.saving{
+  padding:10px;
+}
+
+.myData{
+  .myPics, .myInfo{
+    float:left;
+  }
+  .mybtn li{
+    padding:10px;
+  }
+}
+
+.myPics{
+  text-align:center;
+  .headImg{
+    border:1px solid #dcdcdc;
+    margin-top:10px;
+    .changeImg{
+      border-top:1px solid #dcdcdc;
+      padding:10px 0;
+    }
+  }
+  .myStat{
+    padding:10px 0;
+    color:#a6a543;
+  }
+}
