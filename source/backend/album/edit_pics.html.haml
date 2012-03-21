@@ -1,93 +1,101 @@
 =partial "/_partials/bk_menu"
 
-.frame.album#albumEdit
-  %h2.heading
-    %ul
-      %li
-        .word=link_to "後台首頁"
-        %span.word  / 
-      %li
-        .word=link_to "相簿管理"
-        %span.word  /
-      %li
-        .word=link_to "編輯相本"
-        %span.word  / 
-      %li.now 編輯相片
-  .addNewAlbum
-    %ul.buttons
-      %li.btn.btn-admin 上傳相片
-      %ul.btnRight
-        %li.btn.btnStat=link_to "全選","#"
-        %li.btn.btnStat=link_to "編輯相片","#"
-        %li.btn.btnStat=link_to "設為封面","#"
-        %li.btn.delete=link_to "","#"
-  .inner
-    %table.table.tableAlbum
-      %thead
-        %tr.mytr
-          %th.span3
-            相簿狀態
-            %select.statSel
-              %option 密碼
-              %option 開放
-              %option 隱藏
-              %option 好友       
-          %th.span3.myspan
-            全站分類
-            %select.statSel
-              %option 不分類
-              %option 開放
-              %option 隱藏
-              %option 好友       
-          %th.move
-            移動相片至
-            %select.selectAlbum
-              %option 2012生日快樂
-              %option 2011生日快樂
-              %option 2010生日快樂     
-            %span.info=link_to "說明","#"   
-    .editPics
+.span10
+  .frame.album#albumEdit
+    %h2.heading
       %ul
-        %li.stat= image_tag(url("/images/icons/hide.png"),:alt=>"")
-        %li.albumTitle.editTitle=link_to "Happy Birthday~~","#"
-        %li.edit=link_to "編輯","#"
-      .albumdescribe 
-        我一定是平時不經易的把其中一個誰逼瘋了，才獲得這樣口味無敵驚奇的生日蛋糕，很窩心（？！）謝謝創意團隊與執行製作團隊的禮物。感動到無以言喻了！
-      .albumnums
-        共300張相片
-    .albumContent
-      %ul.albumRow
         %li
-          .check
-            %input{:type=>"checkbox"}
-          .coverSet
-            封面相片
-          .picImg=link_to image_tag(lorem.image("100"), :alt=>""),"#"
-          .picName=link_to "IMG_1234","#"
-        -5.times do
+          .word=link_to "後台首頁"
+          %span.word  / 
+        %li
+          .word=link_to "相簿管理"
+          %span.word  /
+        %li
+          .word=link_to "編輯相本"
+          %span.word  / 
+        %li.now 編輯相片
+    .addNewAlbum
+      %ul.buttons
+        %li.btn.btn-admin 上傳相片
+        %ul.btnRight
+          %li.btn.btnStat=link_to "全選","#"
+          %li.btn.btnStat=link_to "編輯相片","#"
+          %li.btn.btnStat=link_to "設為封面","#"
+          %li.btn.delete=link_to "","#"
+    .inner
+      %table.table.tableAlbum
+        %thead
+          %tr.mytr
+            %th.span3
+              相簿狀態
+              %select.statSel
+                %option 密碼
+                %option 開放
+                %option 隱藏
+                %option 好友
+            %th.span3.myspan
+              全站分類
+              %select.statSel
+                %option 不分類
+                %option 開放
+                %option 隱藏
+                %option 好友 
+            %th.span3.myspan
+              個人分類
+              %select.statSel
+                %option 不分類
+                %option 開放
+                %option 隱藏
+                %option 好友    
+            %th.move
+              移動相片至
+              %select.selectAlbum
+                %option 2012生日快樂
+                %option 2011生日快樂
+                %option 2010生日快樂     
+              %span.info=link_to "說明","#"   
+      .editPics
+        %ul
+          %li.stat= image_tag(url("/images/icons/hide.png"),:alt=>"")
+          %li.albumTitle.editTitle=link_to "Happy Birthday~~","#"
+          %li.edit=link_to "編輯","#"
+        .albumdescribe 
+          我一定是平時不經易的把其中一個誰逼瘋了，才獲得這樣口味無敵驚奇的生日蛋糕，很窩心（？！）謝謝創意團隊與執行製作團隊的禮物。感動到無以言喻了！
+        .albumnums
+          共300張相片
+      .albumContent
+        %ul.albumRow
           %li
             .check
               %input{:type=>"checkbox"}
+            .coverSet
+              封面相片
             .picImg=link_to image_tag(lorem.image("100"), :alt=>""),"#"
             .picName=link_to "IMG_1234","#"
-      -2.times do
-        %ul.albumRow
-          -6.times do
+          -5.times do
             %li
               .check
                 %input{:type=>"checkbox"}
               .picImg=link_to image_tag(lorem.image("100"), :alt=>""),"#"
               .picName=link_to "IMG_1234","#"
-    %table.table.tableAlbum
-      %tfoot
-        %tr
-          %td{:colspan =>"8"}
-            .pagination
-              %ul
-                %li=link_to "第一頁", "#", :title => "第一頁"
-                %li=link_to "Prev", "#", :title => "Prev"
-                %li.active=link_to "1", "#", :title => "1"
-                %li=link_to "2", "#", :title => "2"
-                %li=link_to "3", "#", :title => "3"
-                %li=link_to "Next", "#", :title => "Next"
-                %li=link_to "最終頁", "#", :title => "最終頁"  
+        -2.times do
+          %ul.albumRow
+            -6.times do
+              %li
+                .check
+                  %input{:type=>"checkbox"}
+                .picImg=link_to image_tag(lorem.image("100"), :alt=>""),"#"
+                .picName=link_to "IMG_1234","#"
+      %table.table.tableAlbum
+        %tfoot
+          %tr
+            %td{:colspan =>"8"}
+              .pagination
+                %ul
+                  %li=link_to "第一頁", "#", :title => "第一頁"
+                  %li=link_to "Prev", "#", :title => "Prev"
+                  %li.active=link_to "1", "#", :title => "1"
+                  %li=link_to "2", "#", :title => "2"
+                  %li=link_to "3", "#", :title => "3"
+                  %li=link_to "Next", "#", :title => "Next"
+                  %li=link_to "最終頁", "#", :title => "最終頁"

@@ -20,8 +20,7 @@
             Hi~
             =lorem.name
           %li 您有0則新留言
-          %li=link_to "登出", "#", :title => "登出"
-          %li.last=link_to "Facebook登入", "#", :title => "Facebook登入"
+          %li.last=link_to "登出", "#", :title => "登出"
     #hd
       #header
         %p#logo=link_to "FashionGuide部落格", "#", :title => "FashionGuide部落格" 
@@ -44,8 +43,8 @@
                 %li=link_to "2012", "#", :title => "2012"
         .ad=link_to image_tag( lorem.image("385x85"), :alt => "" ), "#"
       %ul#navi
-        %li.first=link_to "TOP100", "#", :title => "TOP100"
-        %li=link_to "專欄精選", "#", :title => "專欄精選"
+        %li.first.focus=link_to "TOP100", "#", :title => "TOP100"
+        %li.focus=link_to "專欄精選", "#", :title => "專欄精選"
         %li=link_to "綜合", "#", :title => "綜合"
         %li=link_to "流行彩妝", "#", :title => "流行彩妝"
         %li.active

@@ -39,11 +39,19 @@
           此分類下一篇:
           %dd
             %a{:href=>"#"} 穿搭。師大夜市不要消失之戰利品穿搭文
-      %ul.quote
-        %li=link_to "引用(100)","#"
-        %li
-          |
-        %li=link_to "回覆(1000)","#"
+    .posted
+      %ul
+        %li 
+          %a{:href => "#"}
+            = lorem.name
+          於23:10發表
+        %li=link_to "引用(10)", "#", :title => "引用"
+        %li=link_to "回覆(20)", "#", :title => "回覆"
+      %dl
+        %dt 當日人次：
+        %dd 123
+        %dt 累積人次：
+        %dd 123214
     .tags
       .tagImg 文字標籤
       .tagWord
@@ -53,8 +61,12 @@
           %li=link_to "美妝","#"
           %li 、
           %li=link_to "旅遊","#"
+    .copyLink
+      %input{:name=>"textArea", :type=>"text", :class=>"inputLink"}
+      %button.btn
+        複製引用網址
     .moreArticles
-      %p 閱讀相關文章：
+      %p 你或許對以下文章有興趣：
       .article
         %ul
           -5.times do
@@ -63,21 +75,13 @@
                 .pic= image_tag lorem.image("90", :alt=>"")
                 .word
                   保養 | ~素顏~也有好氣色！美妝品血淚試用心得分享！
-    .copyLink
-      %input{:name=>"textArea", :type=>"text", :class=>"inputLink"}
-      %button
-        複製引用網址
+    
   #articleReply
     .replyHead
       .reply
         %ul
           %li.replyFb=link_to "Facebook回應","#"
           %li.replyMe=link_to "我要回應","#"
-          %ul.member
-            %li= image_tag(url("/images/stars.png"), :alt=>"")
-            %li=link_to "會員年資","#"
-            %li=link_to "發言資歷","#"
-            %li=link_to "UID非會員","#"
         .replyComments
           %ul
             %li.comments

@@ -26,8 +26,8 @@ form {
       }
     }
     .top {
-      float:right;
-      margin-top:5px;
+      float:left;
+      margin:5px 0 0 10px;
     }
     .category {
       .section {
@@ -50,9 +50,8 @@ form {
       }
     }
     .comment ul {
-      @include clearfix;
       li {
-        float:left; margin-right:40px;
+        margin-right:40px;
       }
     }
   }

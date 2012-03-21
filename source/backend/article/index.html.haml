@@ -1,139 +1,176 @@
 =partial "/_partials/bk_menu"
 
-.frame.manage-list
-  %h2.heading 
-    %ul
-      %li
-        .word=link_to "後台首頁"
-        %span.word  / 
-      %li
-        .word=link_to "文章管理"
-        %span.word  / 
-      %li.now 文章列表
-  .inner
-    .toolbar
-      .form-search
-        %form
-          %input{:class => "search-query"}
-          %input{:type =>"submit", :value => "search", :class => "btn"}
-      %span.info=link_to "說明", "#", :title => "說明"
-      %ul.btn-group
-        %li.btn=link_to "匯出", "#", :title => "匯出"
-        %li.btn=link_to "設全站分類", "#", :title => "設全站分類"
-        %li.btn=link_to "設個人分類", "#", :title => "設個人分類"
-        %li.btn=link_to "設文章狀態", "#", :title => "設文章狀態"
-        %li.btn=link_to "設定回應", "#", :title => "設定回應"
-        %li.btn=link_to "置頂", "#", :title => "置頂"
-        %li.btn.delete=link_to "刪除", "#", :title => "刪除"
-      %span.select 
-        顯示篇數
-        %select
-          %option 10
-          %option 20
-          %option 50
-    %table.table.table-striped
-      %thead
-        %tr
-          %th
-            %input{:type => "checkbox"}
-          %th 
-            日期
-            %span.arrow=link_to "", "#"
-          %th
-            標題
-            %span.arrow=link_to "", "#"
-          %th
-            全站分類
-            %span.arrow=link_to "", "#"
-          %th
-            個人分類
-            %span.arrow=link_to "", "#"
-          %th
-            文章狀態
-            %span.arrow=link_to "", "#"
-          %th
-            回應
-            %span.arrow=link_to "", "#"
-          %th 回應數
-          %th 編輯
-      %tbody
-        %tr
-          %td
-            %input{:type => "checkbox"}
-          %td 2012.01.12
-          %td.title 這是一首簡單的小情歌
-          %td 音樂
-          %td 閑情所寄
-          %td 開放
-          %td 禁止回應
-          %td 10
-          %td.edit=link_to "編輯", "#", :title => "編輯"
-        %tr
-          %td
-            %input{:type => "checkbox"}
-          %td 2012.01.19
-          %td.title 歲月靜好
-          %td 日記
-          %td 夢裏落花
-          %td 隱藏
-          %td 限好友
-          %td 1
-          %td.edit=link_to "編輯", "#", :title => "編輯"
-        %tr
-          %td
-            %input{:type => "checkbox"}
-          %td 2012.01.28
-          %td.title 我親愛的偏執狂
-          %td 創作
-          %td 猶記多情
-          %td 密碼
-          %td 開放
-          %td 20
-          %td.edit=link_to "編輯", "#", :title => "編輯"
-        %tr
-          %td
-            %input{:type => "checkbox"}
-          %td 2012.01.12
-          %td.title 這是一首簡單的小情歌
-          %td 音樂
-          %td 閑情所寄
-          %td 開放
-          %td 禁止回應
-          %td 0
-          %td.edit=link_to "編輯", "#", :title => "編輯"
-        %tr
-          %td
-            %input{:type => "checkbox"}
-          %td 2012.01.19
-          %td.title 歲月靜好
-          %td 日記
-          %td 夢裏落花
-          %td 隱藏
-          %td 限好友
-          %td 10
-          %td.edit=link_to "編輯", "#", :title => "編輯"
-        %tr
-          %td
-            %input{:type => "checkbox"}
-          %td 2012.01.28
-          %td.title 我親愛的偏執狂
-          %td 創作
-          %td 猶記多情
-          %td 密碼
-          %td 開放
-          %td 19
-          %td.edit=link_to "編輯", "#", :title => "編輯"
-      %tfoot
-        %tr
-          %td{:colspan => "9"}
-            %span.total
-              文章數（3）
-            .pagination
-              %ul
-                %li=link_to "第一頁", "#", :title => "第一頁"
-                %li=link_to "Prev", "#", :title => "Prev"
-                %li.active=link_to "1", "#", :title => "1"
-                %li=link_to "2", "#", :title => "2"
-                %li=link_to "3", "#", :title => "3"
-                %li=link_to "Next", "#", :title => "Next"
-                %li=link_to "最終頁", "#", :title => "最終頁"
+.span10
+  .frame.manage-list
+    %h2.heading 
+      %ul
+        %li
+          .word=link_to "後台首頁"
+          %span.word  / 
+        %li
+          .word=link_to "文章管理"
+          %span.word  / 
+        %li.now 文章列表
+    .inner
+      .toolbar
+        .form-search
+          %form
+            %input{:class => "search-query"}
+            %input{:type =>"submit", :value => "search", :class => "btn"}
+        %span.info=link_to "說明", "#", :title => "說明"
+        %ul.btn-group
+          %li.btn=link_to "匯出", "#", :title => "匯出"
+          %li.btn=link_to "設全站分類", "#", :title => "設全站分類"
+          %li.btn=link_to "設個人分類", "#", :title => "設個人分類"
+          %li.btn=link_to "設文章狀態", "#", :title => "設文章狀態"
+          %li.btn=link_to "設定回應", "#", :title => "設定回應"
+          %li.btn=link_to "置頂", "#", :title => "置頂"
+          %li.btn.delete=link_to "刪除", "#", :title => "刪除"
+        %span.select 
+          顯示篇數
+          %select
+            %option 10
+            %option 20
+            %option 50
+      %table.table.table-striped
+        %thead
+          %tr
+            %th
+              %input{:type => "checkbox"}
+            %th 
+              日期
+              %span.arrow=link_to "", "#"
+            %th
+              標題
+              %span.arrow=link_to "", "#"
+            %th
+              全站分類
+              %span.arrow=link_to "", "#"
+            %th
+              個人分類
+              %span.arrow=link_to "", "#"
+            %th
+              文章狀態
+              %span.arrow=link_to "", "#"
+            %th
+              回應
+              %span.arrow=link_to "", "#"
+            %th 回應數
+            %th 編輯
+        %tbody
+          %tr
+            %td
+              %input{:type => "checkbox"}
+            %td 
+              2012.01.12
+              %br
+              23:21
+            %td.title 
+              =link_to "這是一首簡單的小情歌", "#"
+              %span.preview
+                =link_to "Preview", "#"
+            %td 音樂
+            %td 閑情所寄
+            %td 開放
+            %td 禁止回應
+            %td 10
+            %td.edit=link_to "編輯", "#", :title => "編輯"
+          %tr
+            %td
+              %input{:type => "checkbox"}
+            %td 
+              2012.01.19
+              %br
+              23:21
+            %td.title 
+              =link_to "歲月靜好", "#"
+              %span.preview
+                =link_to "Preview", "#"
+            %td 日記
+            %td 夢裏落花
+            %td 隱藏
+            %td 限好友
+            %td 1
+            %td.edit=link_to "編輯", "#", :title => "編輯"
+          %tr
+            %td
+              %input{:type => "checkbox"}
+            %td 
+              2012.01.28
+              %br
+              23:21
+            %td.title 
+              =link_to "我親愛的偏執狂", "#"
+              %span.preview
+                =link_to "Preview", "#"
+            %td 創作
+            %td 猶記多情
+            %td 密碼
+            %td 開放
+            %td 20
+            %td.edit=link_to "編輯", "#", :title => "編輯"
+          %tr
+            %td
+              %input{:type => "checkbox"}
+            %td 
+              2012.01.12
+              %br
+              23:21
+            %td.title 
+              =link_to "這是一首簡單的小情歌", "#"
+              %span.preview
+                =link_to "Preview", "#"
+            %td 音樂
+            %td 閑情所寄
+            %td 開放
+            %td 禁止回應
+            %td 0
+            %td.edit=link_to "編輯", "#", :title => "編輯"
+          %tr
+            %td
+              %input{:type => "checkbox"}
+            %td 
+              2012.01.19
+              %br
+              23:21
+            %td.title 
+              =link_to "歲月靜好", "#"
+              %span.preview
+                =link_to "Preview", "#"
+            %td 日記
+            %td 夢裏落花
+            %td 隱藏
+            %td 限好友
+            %td 10
+            %td.edit=link_to "編輯", "#", :title => "編輯"
+          %tr
+            %td
+              %input{:type => "checkbox"}
+            %td 
+              2012.01.28
+              %br
+              23:21
+            %td.title 
+              =link_to "我親愛的偏執狂", "#"
+              %span.preview
+                =link_to "Preview", "#"
+            %td 創作
+            %td 猶記多情
+            %td 密碼
+            %td 開放
+            %td 19
+            %td.edit=link_to "編輯", "#", :title => "編輯"
+        %tfoot
+          %tr
+            %td{:colspan => "9"}
+              %span.total
+                文章數（3）
+              .pagination
+                %ul
+                  %li=link_to "第一頁", "#", :title => "第一頁"
+                  %li=link_to "Prev", "#", :title => "Prev"
+                  %li.active=link_to "1", "#", :title => "1"
+                  %li=link_to "2", "#", :title => "2"
+                  %li=link_to "3", "#", :title => "3"
+                  %li=link_to "Next", "#", :title => "Next"
+                  %li=link_to "最終頁", "#", :title => "最終頁"

@@ -8,7 +8,7 @@
       .maincontent{:class => "tab-content"}
         #hot.active{:class => "tab-pane"}
           %ul
-            -12.times do
+            -10.times do
               %li.content
                 .rankImg{:class=>"icons-graybg"} 01
                 .head=link_to image_tag(lorem.image("90"), :alt=>"", :class=> "headImg"), "#"
@@ -20,7 +20,7 @@
           = partial "_partials/pagination"
         #article{:class => "tab-pane"}
           %ul
-            -12.times do
+            -10.times do
               %li{:class=>"content"}
                 .rankImg{:class=>"icons-graybg"} 01
                 .head=link_to image_tag(lorem.image("90"), :alt=>"", :class => "headImg"), "#"
@@ -32,7 +32,7 @@
           = partial "_partials/pagination"
         #recent{:class => "tab-pane"}
           %ul
-            -12.times do
+            -10.times do
               %li{:class=>"content"}
                 .rankImg{:class=>"icons-graybg"} 01
                 .head=link_to image_tag(lorem.image("90"), :alt=>"", :class=> "headImg"), "#"
@@ -48,8 +48,9 @@
           %li
             .head=link_to image_tag(lorem.image("120x90"), :alt=>"", :class=> "headImg"), "#"
             .subpost
-              .postSubTitle=link_to "主標題", "#", :title=>"主標題", :class=>"icons-title_flag"
-              .postContent=link_to "惠妮驟逝瑪麗亞凱莉淚崩!!張善為祭祖遭沖天炮炸傷!!", "#", :title=>"主標題"
+              .postSubTitle=link_to "主標題題", "#", :title=>"主標題", :class=>"icons-title_flag"
+              .postContent=link_to "惠妮驟逝瑪麗亞凱莉...", "#", :title=>"主標題"
+              .postContent=link_to "張善為祭祖遭沖天炮...", "#", :title=>"主標題"
               .lookmore=link_to "看更多", "#", :title=>"看更多", :class=>"icons-lookmore"
   .sidebar
     .block.rank{:class => "tabbable"}
@@ -64,11 +65,11 @@
             -5.times do
               %li{:class=>"sidebar_content"}
                 .numImg{:class=>"icons-crownbg"} 01
-                .head=link_to image_tag(lorem.image("90"), :alt=>"", :class=> "headImg"), "#"
+                .head=link_to image_tag(lorem.image("70"), :alt=>"", :class=> "headImg"), "#"
                 .post
-                  .postTitle=link_to "保養 | 素顏也有好氣色","#", :title=>""
-                  .postInfo=link_to "臉部保養|TOP100|FG小編","#", :title=>""
-                  .postContent 這篇很心機!!!!只擦保養品看起來就有上妝的修飾效果…
+                  .postTitle=link_to "保養 | 素顏也有好氣色素顏也有好氣色素顏也有好氣色","#", :title=>""
+                  .postInfo=link_to "FG小編","#", :title=>""
+                  .postContent 累積人氣指數：9999
                 .lookmore=link_to "看更多","#", :title=>"看更多", :class=>"icons-lookmore"
           .stat
             %ul

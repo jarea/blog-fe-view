@@ -1,63 +1,60 @@
 =partial "/_partials/bk_menu"
 
-.frame.album
-  %h2.heading
-    %ul
-      %li
-        .word=link_to "後台首頁"
-        %span.word  / 
-      %li
-        .word=link_to "相簿管理"
-        %span.word  / 
-      %li.now 相簿分類設定
-  .addNewAlbum
-    %ul.buttons
-      %li.btn.btn-admin 新增相本
-      %ul.btnRight
-        %li.btn.btnStat
-          全站分類
-          %span.arrow=link_to "","#"
-        %li.btn.btnStat
-          狀態
-          %span.arrow=link_to "","#"
-        %li.btn.delete=link_to "","#"
-    =partial "/_partials/add_newalbum"
-  .inner
-    %table.table.tableAlbum
-      %thead
-        %tr
-          %th
-            %input{:type=>"checkbox"}
-          %th
-            相本名稱
-          %th
-            所屬全站分類
-          %th
-            相片數
-          %th
+.span10
+  .frame.album
+    %h2.heading
+      %ul
+        %li
+          .word=link_to "後台首頁"
+          %span.word  / 
+        %li
+          .word=link_to "相簿管理"
+          %span.word  / 
+        %li.now 相簿分類設定
+    .addNewAlbum
+      %ul.buttons
+        %li.btn.btn-admin 新增相本
+        %ul.btnRight
+          %li.btn.btnStat
+            全站分類
+            %span.arrow=link_to "","#"
+          %li.btn.btnStat
             狀態
-          %th
-            相本順序
-            %span.info=link_to "說明","#"
-          %th
-            編輯
-      -7.times do
-        %tbody
-          %tr.albumList
-            %td
+            %span.arrow=link_to "","#"
+          %li.btn.delete=link_to "","#"
+      =partial "/_partials/bk_add"
+    .inner
+      %table.table.tableAlbum
+        %thead
+          %tr
+            %th
               %input{:type=>"checkbox"}
-            %td.classWord=link_to "北海道6天7夜吃不停之旅","#"
-            %td.classWord=link_to "美食旅遊","#"
-            %td.nums
-              3000
-            %td.albumStat
-              %p 朋友    
-            %td.albumSort
-              .sortOption  
-                .sort=link_to image_tag(url("/images/icons/arrow_down.png"),:alt=>""),"#"
-                .sort=link_to image_tag(url("/images/icons/arrow_up.png"),:alt=>""),"#"
-            %td.edit=link_to "編輯","#"   
-      %tfoot
-        %tr
-          %td{:colspan =>"8"}
-            .pagination            
+            %th
+              相本名稱
+            %th
+              所屬全站分類
+            %th
+              相片數
+            %th
+              相本順序
+              %span.info=link_to "說明","#"
+            %th
+              編輯
+        -7.times do
+          %tbody
+            %tr.albumList
+              %td
+                %input{:type=>"checkbox"}
+              %td.classWord=link_to "北海道6天7夜吃不停之旅","#"
+              %td.classWord=link_to "美食旅遊","#"
+              %td.nums
+                3000  
+              %td.albumSort
+                .sortOption  
+                  .sort=link_to image_tag(url("/images/icons/arrow_down.png"),:alt=>""),"#"
+                  .sort=link_to image_tag(url("/images/icons/arrow_up.png"),:alt=>""),"#"
+              %td.edit=link_to "編輯","#"   
+        %tfoot
+          %tr
+            %td{:colspan =>"8"}
+              .pagination

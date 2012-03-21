@@ -3,6 +3,7 @@
   %tr
     %th 相本名稱
     %th 相本敘述
+    %th 個人分類
     %th 全站分類
     %th 狀態
     %th.submit{:rowspan => "2"} 
@@ -14,7 +15,9 @@
     %td
       %textarea.input2{:type => "text", :row=>"3"}
     %td
-      %select.span2
+      %input{:type => "text", :class => "span10"}
+    %td
+      %select.span12
         %option 不分類
         %option 流行彩妝
         %option 美容保養
@@ -24,7 +27,7 @@
         %option 生活休閒
         %option 醫學美容
     %td
-      %select.span2
+      %select.span12
         %option 開放
         %option 密碼
         %option 隱藏

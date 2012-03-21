@@ -1,6 +1,7 @@
 .user {
   #toolbar {
     @include clearfix;
+    @include background-image(linear-gradient(top, #eee, #bbb));
     margin:0;
     .function, .link {
       position:static;
@@ -29,16 +30,21 @@
     height:400px;
     background:url(/images/bg-banner.png) no-repeat;
     color:#fff;
+    position:relative;
     a {
       color:#fff;
     }
     h1 {
-      padding:100px 0 0 20px;
+      position:absolute;
       width:400px;
+      top:100px;
+      left:30px;
     }
-    p {
-      padding:10px 20px;
+    p.disc {
+      position:absolute;
       width:400px;
+      top:150px;
+      left:30px;
     }
   }
 }

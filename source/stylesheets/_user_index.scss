@@ -12,7 +12,6 @@
       padding:20px;
       border-bottom:1px dotted #ffc06d;
       h2 {
-        font-size:18px;
         span {
           @include inline-block;
           width:87px;
@@ -61,12 +60,7 @@
       @include inline-block;
       @include border-radius(0 0 6px 6px);
       background: #ffb608;
-      background: -webkit-gradient(linear, 0 0, 0 bottom, from(#ffd266), to(#ffb608));
-      background: -webkit-linear-gradient(#ffd266, #ffb608);
-      background: -moz-linear-gradient(#ffd266, #ffb608);
-      background: -ms-linear-gradient(#ffd266, #ffb608);
-      background: -o-linear-gradient(#ffd266, #ffb608);
-      background: linear-gradient(#ffd266, #ffb608);
+      @include background-image(linear-gradient(top, #ffd266, #ffb608));
     }
     .block {
       > .inner {

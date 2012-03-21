@@ -25,9 +25,6 @@
     }
   }
   table {
-    .name, .heading {
-      color:#9a9929
-    }
     td.text {
       text-align:left;
       .heading {
@@ -43,7 +40,7 @@
       }
       .function {
         @include clearfix;
-        margin-top:5px;
+        margin-top:10px;
         padding-top:10px;
         border-top:1px dotted #ccc;
         ul {
@@ -62,14 +59,24 @@
   }
 }
 
-form .section {
-  border:1px solid #ccc;
-  padding:20px;
-  margin:10px 0;
-  > ul {
-    margin-bottom:15px;
-    ul {
-      margin:10px 0 15px;
+.comment.setup {
+  form .section {
+    border:1px solid #ccc;
+    padding:20px;
+    margin:10px 0;
+    > ul {
+      margin-bottom:15px;
+      ul {
+        margin:10px 0 15px;
+      }
     }
   }
+}
+
+.preview a {
+  @include inline-block;
+  width:22px;
+  height:15px;
+  text-indent:-9999px;
+  background:url(/images/preview.png) center top no-repeat;
 }
