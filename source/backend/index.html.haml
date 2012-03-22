@@ -1,0 +1,239 @@
+=partial "/_partials/bk_menu"
+
+.span10
+  .frame.index
+    %h2.heading 後台首頁
+    .inner
+      .official_message
+        .heading
+          = image_tag("/images/heading-message.png", :alt => "站方消息")
+        %table.table
+          %thead
+            %tr
+              %th 時間
+              %th 作者
+              %th 標題
+              %th 內容
+          %tbody
+            %tr
+              %td 2012/03/08  19:00  
+              %td FG小編
+              %td= link_to "【公告】新增OOO功能，讓小編帶你一次上手！", "#", :title => "" 
+              %td 妳沒作夢妳沒作夢妳沒作夢妳沒作夢......
+            %tr
+              %td 三天前  
+              %td FG小編
+              %td= link_to "【公告】新增OOO功能，讓小編帶你一次上手！", "#", :title => "" 
+              %td 妳沒作夢妳沒作夢妳沒作夢妳沒作夢......
+          %tfoot
+            %tr
+              %td{:colspan => "4"}
+                %p= link_to "看更多", "#", :title => "看更多", :class => "icons-lookmore"
+      .data
+        %ul.link
+          %li 數據集合首頁
+          %li= link_to "廣告點擊狀態", "#", :title => "廣告點擊狀態"
+          %li= link_to "系統監測狀態", "#", :title => "系統監測狀態"
+          %li= link_to "部落客排行", "#", :title => "部落客排行"
+          %li= link_to "文章排行", "#", :title => "文章排行"
+        .inner
+          %dl
+            %dt 
+              %span 1
+              一般部落客：
+            %dd
+              %ul
+                %li
+                  今日加入
+                  %span 10
+                %li 
+                  累計共
+                  %span 20935
+                %li 
+                  今日文章
+                  %span 119
+                %li
+                  回應數
+                  %span 1232
+                %li
+                  文章總數
+                  %span 32543
+                %li
+                  回應總數
+                  %span 341902
+            %dt 
+              %span 2
+              TOP100：
+            %dd
+              %ul
+                %li 
+                  累計共
+                  %span 209
+                %li 
+                  今日文章
+                  %span 11
+                %li
+                  回應數
+                  %span 123
+                %li
+                  文章總數
+                  %span 3254
+                %li
+                  回應總數
+                  %span 34190
+            %dt 
+              %span 3
+              小編：
+            %dd
+              %ul
+                %li 
+                  累計共
+                  %span 209
+                %li 
+                  今日文章
+                  %span 11
+                %li
+                  回應數
+                  %span 123
+                %li
+                  文章總數
+                  %span 3254
+                %li
+                  回應總數
+                  %span 34190
+              %ul
+                %li 
+                  FG部落客累計共
+                  %span 21092
+                %li
+                  文章總數
+                  %span 2112410
+            %dt
+              %span 4
+            %dd
+              %ul
+                %li
+                  TOP待審核
+                  %span 1
+                %li
+                  廣告檢舉新增
+                  %span 102
+            %dt
+              %span 5
+            %dd 
+              目前正進行
+              = link_to "9", "#", :title => ""
+              個活動
+      .row-fluid
+        .span6
+          .section.notify
+            %h3.heading 通知
+            .inner
+              %ul
+                %li.icons-notify-message
+                  您有
+                  = link_to "1", "#", :title => "1"
+                  則新留言
+                %li.icons-notify-friends
+                  %a{:href => "#", :title => ""}
+                    = lorem.name
+                  將您加為好友
+                %li.icons-notify-quote
+                  %a{:href => "#", :title => ""}
+                    = lorem.name
+                  引用了您的文章：
+                  = link_to "文章標題標題標題標題", "#", :title => ""
+          .section.admin
+            %h3.heading 快速功能
+            .inner
+              %ul
+                %li= link_to image_tag("/images/admin-release.png", :alt => "發佈公告"), "#", :title => "發佈公告"
+                %li= link_to image_tag("/images/admin-add_blogger.png", :alt => "加入部落客"), "#", :title => "加入部落客"
+                %li= link_to image_tag("/images/admin-upload.png", :alt => "上傳照片"), "#", :title => "上傳照片"
+                %li= link_to image_tag("/images/admin-post.png", :alt => "快速發文"), "#", :title => "快速發文"
+          .section.album
+            %h3.heading 相簿資訊
+            .inner
+              %dl
+                %dt 狀態：
+                %dd 
+                  開放 
+                  %span.btn.btn-cancel= link_to "修改", "#", :title => "修改"
+                %dt 相本數量：
+                %dd= link_to "共609本", "#", :title => "共609本"
+              %dl.state
+                %dt 公開：
+                %dd 132本
+                %dt 隱藏：
+                %dd 12本
+                %dt 密碼：
+                %dd 2本
+              %dl
+                %dt 相片數量：
+                %dd= link_to "共27866張", "#", :title => "共27866張"
+        .span6
+          .section.profile
+            %h3.heading 個人資訊
+            .inner
+              %p.welcome
+                Hi
+                = lorem.name
+                ，你現在是
+                = link_to "部落客", "#", :title => "部落客"
+              .uid
+                = image_tag("/images/stars.png")
+              .information
+                .img
+                  = image_tag( lorem.image("140"), :alt => "" )
+                  %p= link_to "我要變更頭像", "#", :title => "我要變更頭像"
+                .function
+                  %p 
+                    你目前有
+                    = link_to "1000", "#", :title => "1000"
+                    位朋友
+                  %p= link_to image_tag("/images/button-upgrade.png"), "#", :title => "免費升級"
+                  %ul
+                    %li= link_to image_tag("/images/button-about.png"), "#", :title => "關於我"
+                    %li= link_to image_tag("/images/button-nickname.png"), "#", :title => "變更暱稱"
+                    %li= link_to image_tag("/images/button-email.png"), "#", :title => "客服信箱"
+                    %li= link_to image_tag("/images/button-gbook.png"), "#", :title => "我的留言板"
+              %dl
+                %dt 我正在參加的活動：
+                %dd= link_to "活動名稱活動名稱活動名稱", "#", :title => ""
+                %dt 我的信箱：
+                %dd
+                  abcdefg@aaabbbccc.com
+                  %span.btn.btn-cancel
+                    = link_to "修改", "#", :title => "修改"
+          .section.blog
+            %h3.heading 部落格資訊
+            .inner
+              %dl
+                %dt 名稱：
+                %dd 
+                  = link_to "部落格名稱名稱名稱名稱", "#", :title => ""
+                  %span （開啟中）
+                  %span.btn.btn-cancel= link_to "修改", "#", :title => "修改"
+                %dt 全站分類：
+                %dd 
+                  = link_to "美食旅遊", "#", :title => "美食旅遊"
+                  %span.btn.btn-cancel= link_to "修改", "#", :title => "修改"
+                %dt 文章：
+                %dd 
+                  = link_to "共609篇", "#", :title => "共609篇"
+              %dl.state
+                %dt 公開：
+                %dd 1321篇
+                %dt 隱藏：
+                %dd 122篇
+                %dt 密碼：
+                %dd 298篇
+                %dt 草稿：
+                %dd 100篇
+              %dl
+                %dt 留言：
+                %dd= link_to "共76篇（本日12篇）", "#", :title => "共76篇（本日12篇）"
+                %dt 引用：
+                %dd= link_to "共1001篇", "#", :title => "共1001篇"
+                %dt 部落格分類：
+                %dd= link_to "流行時尚", "#", :title => "流行時尚"
