@@ -1,0 +1,144 @@
+=partial "/_partials/bk_menu"
+
+.span10
+  .frame.post
+    %h2.heading
+      %ul
+        %li
+          .word=link_to "後台首頁"
+          %span.word  / 
+        %li
+          .word=link_to "部落格設定"
+          %span.word  /
+        %li.now 基本/進階設定 
+    .inner
+      %form
+        .aboutMe.part
+          .title
+            %label
+              關於我
+          .myData.row-fluid
+            .myPics.span2
+              .headImg
+                .myImg=image_tag(lorem.image("140"), :alt=>"")
+                .changeImg=link_to "我要變更頭像","#"
+              .myStat
+                %span 部落客
+                .stars= image_tag(url("/images/stars.png"), :alt=>"")
+              .submit.mybtn
+                %ul
+                  %li=link_to image_tag("/images/button-email.png"), "#", :title=>"客服信箱"
+                  %li=link_to image_tag("/images/button-gbook.png"), "#", :title=>"我的留言板"
+            .myInfo.span9
+              .section
+                %ul
+                  %li.subTitle 關於我介紹
+                  %li.radio.inline
+                    %input{:type=>"radio"}開啟
+                  %li.radio.inline
+                    %input{:type=>"radio"}關閉
+              .section
+                .word 暱稱
+                %input{:type=>"text", :class=>"span10"}
+              .section
+                .word Mail
+                %input{:type=>"text", :class=>"span9"}
+                %input{:type=>"button", :class=>"btn", :value=>"變更信箱"}
+              .section
+                .word 性別
+                %select.input-small
+                  %option 女
+                  %option 男
+              .section
+                .word 星座
+                %select.input-small
+                  %option 雙魚
+                  %option 水瓶
+              .section
+                .word 我喜歡
+                %input{:type=>"text", :class=>"span10"}
+              .section
+                .word 關於我
+                %textarea{:type=>"text", :class=>"span10", :row=>"3"}
+        .basicSetup.part
+          .title
+            %label
+              一般設定
+          .section
+            .word 部落格名稱
+            %input{:type=>"text", :class=>"span10"}  
+          .section
+            .word 部落格敘述
+            %textarea{:type=>"text", :class=>"span10", :row=>"3"}
+          .section
+            .word 部落格全站分類
+            %select.input-small
+              %option 不分類
+          .section
+            %ul
+              %li.subTitle 部落格狀態
+              %li.radio.inline
+                %input{:type=>"radio"}開啟
+              %li.radio.inline
+                %input{:type=>"radio"}關閉
+          .section
+            %ul
+              %li.subTitle 部落格鎖右鍵
+              %li.radio.inline
+                %input{:type=>"radio"}開啟滑鼠按右鍵
+              %li.radio.inline
+                %input{:type=>"radio"}禁止滑鼠按右鍵
+          .section
+            %ul
+              %li.subTitle 首頁顯示摘要
+              %li.radio.inline
+                %input{:type=>"radio"}顯示文章前三行摘要
+              %li.radio.inline
+                %input{:type=>"radio"}顯示全文
+          .section
+            .word 首頁及每頁顯示文章篇數
+            %select.input-small
+              %option 10
+              %option 5
+        .advancedSetup.part
+          .title
+            %label
+              進階設定
+          .section
+            .word 網誌關鍵字
+            %span.info
+              %a{:href=>"#", :title=>"說明"}說明
+            %input{:type=>"text", :class=>"span10"}  
+          .section
+            %ul
+              %li.subTitle RSS狀態
+              %li.radio.inline
+                %input{:type=>"radio"}開啟
+              %li.radio.inline
+                %input{:type=>"radio"}關閉
+          .section
+            %ul
+              %li.subTitle 顯示相關文章
+              %span.info
+                %a{:href=>"#", :title=>"說明"}說明
+              %li.radio.inline
+                %input{:type=>"radio"}顯示全站相關文章
+              %li.radio.inline
+                %input{:type=>"radio"}顯示自己相關文章
+          .section
+            %ul
+              %li.subTitle 文章引用狀態
+              %li.radio.inline
+                %input{:type=>"radio"}開啟
+              %li.radio.inline
+                %input{:type=>"radio"}關閉
+          .section
+            %ul
+              %li.subTitle 月曆狀態(Top)
+              %li.radio.inline
+                %input{:type=>"radio"}開啟
+              %li.radio.inline
+                %input{:type=>"radio"}關閉
+        .submit.saving
+          %input{:type=>"button", :class=>"btn", :value=>"儲存"}
+          %input{:type=>"button", :class=>"btn", :value=>"取消"}        
