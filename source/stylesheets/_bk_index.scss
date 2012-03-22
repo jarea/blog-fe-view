@@ -1,0 +1,158 @@
+.frame.index {
+  .official_message {
+    .heading {
+      text-align:center;
+    }
+    table {
+      thead  {
+        tr {
+          background:none;
+          border-top:1px solid #ddd;
+        }
+        th:last-child {
+          border:none;
+        }
+      }
+      tfoot {
+        td {
+          background:none;
+          padding:10px 0;
+        }
+        p {
+          text-align:right;
+          a {
+            @include inline-block;
+            height:19px;
+            font-size:11px;
+            padding:0 15px 0 10px;;
+          }
+        }
+      }
+    }
+  }
+  .data {
+    border:1px solid #ccc;
+    @include border-radius(6px);
+    color:#666;
+    margin-bottom:20px;
+    .link {
+      border-bottom:1px solid #ccc;
+      padding:20px;  
+    }
+    li {
+      @include inline-block;
+      border-right:1px solid #ddd;
+      padding-right:5px;
+      margin-right:5px;
+      &:last-child {
+        border:none;
+      }
+      span {
+        color:#b3b25e;
+      }
+    }
+    dt,dd {
+      float:left;
+      margin:5px 0;
+    }
+    dt {
+      clear:left;
+      span {
+        @include inline-block;
+        @include border-radius(20px);
+        background:#eee;
+        padding:0 5px;
+        margin-right:5px;
+        color:#000;
+      }
+    }
+  }
+  .section {
+    border-bottom:1px solid #fee5e5;
+    margin-bottom:20px;
+  }
+  .section.notify {
+    li {
+      height:22px;
+      line-height:22px;
+      margin:10px 0;
+      padding:0 0 10px 35px;
+      border-bottom:1px dotted #ccc;
+    }
+  }
+  .section.admin {
+    li {
+      @include inline-block;
+    }
+  }
+  .section.album, .section.blog {
+    dt,dd {
+      float:left;
+      margin:5px 0;
+      line-height:30px;
+    }
+    dt {
+      clear:left;
+    }
+    dd {
+      color:#b3b25e;
+    }
+    .state {
+      @include clearfix;
+      @include border-radius(6px);
+      width:90%;
+      border:1px solid #ccc;
+      padding:10px 20px;
+      dt {
+        clear:none; 
+        line-height:1em;
+      }
+      dd {
+        border-right:1px solid #ccc;
+        line-height:1em;
+        margin-right:5px;
+        padding-right:5px;
+        &:last-child {
+          border:none;
+        }
+      }
+    }
+  }
+  .section.profile {
+    .information {
+      @include clearfix;
+    }
+    .img, .function {
+      float:left;
+    }
+    .img {
+      border:1px solid #ccc;
+      padding:10px;
+      text-align:center;
+    }
+    .function {
+      padding:0 10px;
+      p + p {
+        margin:10px 0 5px;
+      }
+      ul {
+        @include clearfix;
+        width:250px;
+        li {
+          float:left;
+        }
+      }
+    }
+    dl {
+      @include clearfix;
+      margin-top:20px;
+      dt,dd {
+        float:left;
+        line-height:30px;
+      }
+      dt {
+        clear:left;
+      }
+    }
+  }
+}
