@@ -20,17 +20,15 @@
           .myData.row-fluid
             .myPics.span2
               .headImg
-                .myImg=image_tag(lorem.image("120"), :alt=>"")
+                .myImg=image_tag(lorem.image("140"), :alt=>"")
                 .changeImg=link_to "我要變更頭像","#"
               .myStat
                 %span 部落客
                 .stars= image_tag(url("/images/stars.png"), :alt=>"")
               .submit.mybtn
                 %ul
-                  %li
-                    %input{:type=>"button", :class=>"btn", :value=>"客服信箱"}
-                  %li
-                    %input{:type=>"button", :class=>"btn", :value=>"我的留言板"}
+                  %li=link_to image_tag("/images/button-email.png"), "#", :title=>"客服信箱"
+                  %li=link_to image_tag("/images/button-gbook.png"), "#", :title=>"我的留言板"
             .myInfo.span9
               .section
                 %ul
