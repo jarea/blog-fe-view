@@ -22,8 +22,11 @@ li.subTitle{
   .myPics, .myInfo{
     float:left;
   }
+  .myPics{
+    padding-left:10px;
+  }
   .mybtn li{
-    padding:10px;
+    padding:5px 10px;
   }
 }
 
@@ -36,9 +39,13 @@ li.subTitle{
       border-top:1px solid #dcdcdc;
       padding:10px 0;
     }
+    img{
+      padding:5px;
+      vertical-align:middle;
+    }
   }
   .myStat{
-    padding:10px 0;
+    padding:10px 0 20px 0;
     color:#a6a543;
   }
 }
