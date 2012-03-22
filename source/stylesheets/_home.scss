@@ -17,7 +17,7 @@
     border:1px solid #ccc;
     padding:10px;
   }
-  .main_ad {
+  .main_news {
     .words {
       float:right;
       width:190px;
@@ -57,7 +57,7 @@
       }
     }
   }
-  .ad {
+  .spread {
     margin:10px 0;
   }
 }
@@ -213,14 +213,15 @@
 }
 /*以上魚丸寫的*/
 
-#section_text_ad{
+#section_text_spread {
   ul{
     padding:5px;
-    li{
+    @include clearfix;
+    li {
       float:left;
       margin-left:60px;
       padding-bottom:10px;
-      a{
+      a {
         font-size:15px;
       }
     }  
