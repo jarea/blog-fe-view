@@ -20,7 +20,7 @@
           .myData.row-fluid
             .myPics.span2
               .headImg
-                =image_tag(lorem.image("150"), :alt=>"")
+                .myImg=image_tag(lorem.image("120"), :alt=>"")
                 .changeImg=link_to "我要變更頭像","#"
               .myStat
                 %span 部落客
@@ -31,7 +31,7 @@
                     %input{:type=>"button", :class=>"btn", :value=>"客服信箱"}
                   %li
                     %input{:type=>"button", :class=>"btn", :value=>"我的留言板"}
-            .myInfo.span10
+            .myInfo.span9
               .section
                 %ul
                   %li.subTitle 關於我介紹
