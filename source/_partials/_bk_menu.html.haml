@@ -8,30 +8,29 @@
       %li=link_to "匯入/備份","#", :title =>"匯入/備份", :class =>"backup"
       %li=link_to "樣式管理","#", :title =>"樣式管理", :class =>"template"
       %li=link_to "相簿管理","#", :title =>"相簿管理", :class =>"album"
-
+    
     %ul
       %li.actived=link_to "使用者首頁", "#", :title => "使用者首頁", :class => "userpage"
       %li.actived=link_to "發表文章", "#", :title => "發表文章", :class => "post"
-      %ul.listManage
-        %li.manage.active=link_to "文章管理", "#", :title =>"文章管理", :class =>"list"
-        %li.subList=link_to "文章列表", "#", :title =>"文章列表", :class =>""
-        %li.subList=link_to "回應管理", "#", :title =>"回應管理", :class =>""
-        %li.subList=link_to "引用管理", "#", :title =>"引用管理", :class =>""
-        %li.subList=link_to "個人分類管理", "#", :title =>"個人分類管理", :class =>""
-      %ul.listManage
-        %li.manage.active=link_to "部落格設定","#", :title =>"部落格設定", :class =>"setup"
-        %li.subList=link_to "側邊欄設定","#", :title =>"側邊欄設定", :class =>""
-        %li.subList=link_to "好友管理","#", :title =>"好友管理", :class =>""
-        %li.subList=link_to "黑名單管理","#", :title =>"黑名單管理", :class =>""
-      %ul.listManage
-        %li.manage.active=link_to "匯入/備份","#", :title =>"匯入/備份", :class =>"backup"
-        %li.subList=link_to "匯入","#", :title =>"匯入", :class =>""
-        %li.subList=link_to "備份","#", :title =>"備份", :class =>""
+      %li.actived
+        .title=link_to "文章管理", "#", :title =>"文章管理", :class =>"list"
+        .subList=link_to "文章列表", "#", :title =>"文章列表"
+        .subList=link_to "回應管理", "#", :title =>"回應管理"
+        .subList=link_to "引用管理", "#", :title =>"引用管理"
+        .subList=link_to "個人分類管理", "#", :title =>"個人分類管理"
+      %li.actived
+        .title=link_to "部落格設定","#", :title =>"部落格設定", :class =>"setup"
+        .subList=link_to "側邊欄設定","#", :title =>"側邊欄設定"
+        .subList=link_to "好友管理","#", :title =>"好友管理"
+        .subList.last=link_to "黑名單管理","#", :title =>"黑名單管理"
+      %li.actived
+        .title=link_to "匯入/備份","#", :title =>"匯入/備份", :class =>"backup"
+        .subList=link_to "匯入","#", :title =>"匯入"
+        .subList.last=link_to "備份","#", :title =>"備份"
       %li.actived=link_to "樣式管理","#", :title =>"樣式管理", :class =>"template"
-      %ul.listManage
-        %li.manage.active=link_to "相簿管理","#", :title =>"相簿管理",:class =>"album"
-        %li.subList=link_to "編輯相本","#"
-        %li.subList=link_to "相簿分類設定","#"
-        %li.subList=link_to "上傳影音或相片","#"
-
+      %li.actived
+        .title=link_to "相簿管理","#", :title =>"相簿管理",:class =>"album"
+        .subList=link_to "編輯相本","#", :title =>"編輯相本"
+        .subList=link_to "相簿分類設定","#", :title =>"相簿分類設定"
+        .subList.last=link_to "上傳影音或相片","#", :title =>"上傳影音或相片"
   
