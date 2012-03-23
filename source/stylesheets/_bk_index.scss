@@ -73,7 +73,6 @@
   }
   .section.notify {
     li {
-      height:22px;
       line-height:22px;
       margin:10px 0;
       padding:0 0 10px 35px;
@@ -119,6 +118,9 @@
     }
   }
   .section.profile {
+    .inner {
+      padding:20px 0 20px 20px;
+    }
     .information {
       @include clearfix;
     }
