@@ -2,11 +2,61 @@ $color:#fffbf7;
 
 #menu{
   padding:0 20px 20px 20px;
+  li.icons-album{
+    background-position:5px 10px;
+    &:hover{
+      background-position:5px 10px;
+    }
+  }
+  li.icons-template{
+    background-position:5px -1143px;
+    &:hover{
+      background-position:5px -1143px;
+    }
+  }
+  li.icons-backup{
+    background-position:5px -147px;
+    &:hover{
+      background-position:5px -147px;
+    }
+  }
+  li.icons-setup{
+    background-position:5px -1068px;
+    &:hover{
+      background-position:5px -1068px;
+    }
+  }
+  li.icons-list{
+    background-position:5px -598px;
+    &:hover{
+      background-position:5px -598px;
+    }
+  }
+  li.icons-post{
+    background-position:5px -992px;
+    &:hover{
+      background-position:5px -992px;
+    }
+  }
+  li.icons-userpage{
+    background-position:5px -1306px;
+    &:hover{
+      background-position:5px -1306px;
+    }
+  }
   li{
     margin-bottom:10px;
     padding:5px 0;
     &:hover{
+<<<<<<< HEAD
       margin-bottom:10px;
+=======
+      text-decoration:none;
+      color:#fff;
+      font-size:15px;
+      display:block;
+      background-color:#903232;
+>>>>>>> 修改sprite樣式
       @include border-radius(6px);
       background: #903232;
       a{
