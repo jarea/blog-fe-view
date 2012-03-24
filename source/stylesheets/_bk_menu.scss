@@ -2,70 +2,65 @@ $color:#fffbf7;
 
 #menu{
   padding:0 20px 20px 20px;
-  li.icons-album{
-    background-position:5px 10px;
-    &:hover{
-      background-position:5px 10px;
-    }
-  }
-  li.icons-template{
-    background-position:5px -1143px;
-    &:hover{
-      background-position:5px -1143px;
-    }
-  }
-  li.icons-backup{
-    background-position:5px -147px;
-    &:hover{
-      background-position:5px -147px;
-    }
-  }
-  li.icons-setup{
-    background-position:5px -1068px;
-    &:hover{
-      background-position:5px -1068px;
-    }
-  }
-  li.icons-list{
-    background-position:5px -598px;
-    &:hover{
-      background-position:5px -598px;
-    }
-  }
-  li.icons-post{
-    background-position:5px -992px;
-    &:hover{
-      background-position:5px -992px;
-    }
-  }
-  li.icons-userpage{
-    background-position:5px -1306px;
-    &:hover{
-      background-position:5px -1306px;
-    }
-  }
   li{
     margin-bottom:10px;
-    padding:5px 5px 5px 30px;
+    padding:5px 0;
     &:hover{
-      text-decoration:none;
-      color:#fff;
-      font-size:15px;
-      display:block;
-      background-color:#903232;
+      margin-bottom:10px;
       @include border-radius(6px);
+      background: #903232;
       a{
-        display:block;
-        font-size:15px;
         color:#fff;
-        text-decoration:none;
-      } 
+      }
+      .userpage{
+        background: url(/images/icons/userpage.png) 5px no-repeat;
+      }
+      .post{
+        background: url(/images/icons/post_hover.png) 5px no-repeat;
+      }
+      .list{
+        background: url(/images/icons/list_hover.png) 5px no-repeat;
+      }
+      .setup{
+        background: url(/images/icons/setup_hover.png) 5px no-repeat;
+      }
+      .backup{
+        background: url(/images/icons/backup_hover.png) 5px no-repeat;
+      }
+      .template{
+        background: url(/images/icons/template_hover.png) 5px no-repeat;
+      }
+      .album{
+        background: url(/images/icons/album_hover.png) 5px no-repeat;
+      }
     }
     a{
+      display: block;
       color:#903232;
+      text-decoration:none;
       font-size:15px;
-      display:block;
-      padding:5px 5px 5px 0px;
+      padding:5px 5px 5px 30px;
+    }
+    .userpage{
+      background: url(/images/icons/userpage.png) 5px no-repeat;
+    }
+    .post{
+      background: url(/images/icons/post.png) 5px no-repeat;
+    }
+    .list{
+      background: url(/images/icons/list.png) 5px no-repeat;
+    }
+    .setup{
+      background: url(/images/icons/setup.png) 5px no-repeat;
+    }
+    .backup{
+      background: url(/images/icons/backup.png) 5px no-repeat;
+    }
+    .template{
+      background: url(/images/icons/template.png) 5px no-repeat;
+    }
+    .album{
+      background: url(/images/icons/album.png) 5px no-repeat;
     }
   }
 }
@@ -75,7 +70,6 @@ $color:#fffbf7;
   li.actived{
     margin-bottom:10px;
     @include border-radius(6px);
-    border:1px solid #903232;
     background: #903232;
     a{
       color:#fff;
@@ -110,10 +104,10 @@ $color:#fffbf7;
     li.subList a{
       text-align:left;
       padding-left:5px;
-      line-height:20px;
+      // line-height:20px;
       display: block;
       &:hover{
-        line-height:20px;
+        // line-height:20px;
         color:#903232;
         background:#f4eaea;
         display: block;
@@ -144,6 +138,7 @@ $color:#fffbf7;
     background: url(/images/icons/album_hover.png) 5px no-repeat;
   }
 }
+
 
 
 .textbox{
