@@ -4,7 +4,6 @@ $color:#fffbf7;
   padding:0 20px 20px 20px;
   li{
     margin-bottom:10px;
-    padding:5px 0;
     &:hover{
       margin-bottom:10px;
       @include border-radius(6px);
@@ -63,82 +62,61 @@ $color:#fffbf7;
       background: url(/images/icons/album.png) 5px no-repeat;
     }
   }
-}
-  
-#menuOpen{
-  padding:0 20px 20px 20px;
   li.actived{
     margin-bottom:10px;
     @include border-radius(6px);
+    border:1px solid #903232;
     background: #903232;
     a{
       color:#fff;
-    }
-  }
-  li{
-    padding:5px 0;
-    a{
-      color:#903232;
-      text-decoration:none;
       font-size:15px;
-      display: block;
       padding:5px 5px 5px 30px;
     }
-  }
- 
-  ul.listManage{
-    @include border-radius(6px);
-    border:1px solid #903232;
-    margin-bottom:10px;
-    li.manage.active{
-      @include border-top-left-radius(6px);
-      @include border-top-right-radius(6px);
-      background:#903232;
+    .title{
+      background: #903232;
+      @include border-radius(6px);
       a{
-        display: block;
         color:#fff;
-        text-decoration:none;
-        font-size:15px;
-      } 
-    }
-    li.subList a{
-      text-align:left;
-      padding-left:5px;
-      // line-height:20px;
-      display: block;
-      &:hover{
-        // line-height:20px;
-        color:#903232;
-        background:#f4eaea;
-        display: block;
-        @include border-radius(0px);
-        border:none;
+        padding:5px 5px 5px 30px;
       }
-    } 
-  }
-  .userpage{
-    background: url(/images/icons/userpage.png) 5px no-repeat;
-  }
-  .post{
-    background: url(/images/icons/post_hover.png) 5px no-repeat;
-  }
-  .list{
-    background: url(/images/icons/list_hover.png) 5px no-repeat;
-  }
-  .setup{
-    background: url(/images/icons/setup_hover.png) 5px no-repeat;
-  }
-  .backup{
-    background: url(/images/icons/backup_hover.png) 5px no-repeat;
-  }
-  .template{
-    background: url(/images/icons/template_hover.png) 5px no-repeat;
-  }
-  .album{
-    background: url(/images/icons/album_hover.png) 5px no-repeat;
+    }
+    .subList{
+      background: #fffbf7;
+      a{
+        color:#903232;
+        padding:5px 5px 5px 10px;
+      }
+      &:hover{
+        background-color: #f4eaea;
+      }
+    }
+    .last{
+      @include border-bottom-left-radius(6px);
+      @include border-bottom-right-radius(6px);
+    }
+    .userpage{
+      background: url(/images/icons/userpage.png) 5px no-repeat;
+    }
+    .post{
+      background: url(/images/icons/post_hover.png) 5px no-repeat;
+    }
+    .list{
+      background: url(/images/icons/list_hover.png) 5px no-repeat;
+    }
+    .setup{
+      background: url(/images/icons/setup_hover.png) 5px no-repeat;
+    }
+    .backup{
+      background: url(/images/icons/backup_hover.png) 5px no-repeat;
+    }
+    .template{
+      background: url(/images/icons/template_hover.png) 5px no-repeat;
+    }
+    .album{
+      background: url(/images/icons/album_hover.png) 5px no-repeat;
+    }
   }
 }
-
 
 
 .textbox{
