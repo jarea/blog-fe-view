@@ -90,12 +90,13 @@ li.albumTitle a{
     margin:10px 0 60px 0;
     .rightBtns{
       float:right;
-      .btnStat{
-        a{
-          color:#000;
-        }
+      a{
+        color:#666;
       }
     }
+    // .btnStat a{
+      // color:#000;
+    // }
     li{
       float:left;
     }
@@ -124,11 +125,7 @@ li.albumTitle a{
 /* -以下是edit_pics頁面的樣式- */
 
 #albumEdit{
-  .statSel{
-    width:100px;
-    margin:3px;
-  }
-  .selectAlbum{
+  .statSel, .selectAlbum{
     width:auto;
     margin:3px;
   }
@@ -155,6 +152,9 @@ li.albumTitle a{
   }
   .myspan{
     border-right:none;
+  }
+  .statTitle{
+    display:inline-block;
   }
   th.move{
     float:right;
@@ -201,11 +201,13 @@ li.albumTitle a{
 
 .albumContent{
   ul.albumRow{
-    height:200px;
-    padding:10px 0 30px 0;
+    @include clearfix;
+    padding:10px 0 20px 0;
+    margin-bottom:20px;
     border-bottom:1px dashed #cfcfcf;
   }
   li{
+    @include clearfix;
     float:left;
     padding:20px;
     margin:10px;
@@ -221,6 +223,11 @@ li.albumTitle a{
     margin:3px 0 3px 20px;
     display:block;
     color:#383838;
+  }
+  .picImg{
+    img{
+      margin-top:5px;
+    }
   }
   .picName{
     text-align:center;

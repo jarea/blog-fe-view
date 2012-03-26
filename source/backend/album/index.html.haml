@@ -14,9 +14,9 @@
     .addNewAlbum
       %ul.buttons
         %li.btn.btn-admin 新增相本
-        %ul.btnRight
-          %li.btn.btnStat
-            狀態
+        %ul.btn-group.rightBtns
+          %li.btn
+            =link_to "狀態","#", :title=>"狀態"
             %span.arrow=link_to "","#"
           %li.btn.delete=link_to "","#"
       =partial "/_partials/add_newalbum"
