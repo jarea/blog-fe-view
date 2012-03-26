@@ -25,6 +25,7 @@ $side-gutter-width: $gutter-width;
 @import "section_main";
 @import "album";
 @import "article";
+@import "closed_view";
 
 body {
   font-family: $font-family;
