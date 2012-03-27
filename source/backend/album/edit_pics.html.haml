@@ -17,10 +17,9 @@
     .addNewAlbum
       %ul.buttons
         %li.btn.btn-admin 上傳相片
-        %ul.btnRight
+        %ul.btn-group.rightBtns
           %li.btn.btnStat=link_to "全選","#"
           %li.btn.btnStat=link_to "編輯相片","#"
-          %li.btn.btnStat=link_to "設為封面","#"
           %li.btn.delete=link_to "","#"
     .inner
       %table.table.tableAlbum
@@ -76,6 +75,7 @@
             %li
               .check
                 %input{:type=>"checkbox"}
+              .coverSet.btn 設為封面
               .picImg=link_to image_tag(lorem.image("100"), :alt=>""),"#"
               .picName=link_to "IMG_1234","#"
         -2.times do
@@ -84,6 +84,7 @@
               %li
                 .check
                   %input{:type=>"checkbox"}
+                .coverSet.btn 設為封面
                 .picImg=link_to image_tag(lorem.image("100"), :alt=>""),"#"
                 .picName=link_to "IMG_1234","#"
       %table.table.tableAlbum
