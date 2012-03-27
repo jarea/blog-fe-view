@@ -1,0 +1,166 @@
+#column
+  #column-main
+    .column-top.myblock.feature
+      .column-title 專欄
+      %p.title
+        不敗的選擇紅色穿搭特輯紅色穿搭特輯
+      .shareLinks
+        %ul
+          %li.shareWord 分享
+          %li.shareFb=link_to image_tag(url("/images/share_fb.png"), :alt=>""),"#"
+          %li.hareGg=link_to image_tag(url("/images/share_gg.png"), :alt=>""),"#"
+      .column-content
+        話說保養妝是霧面粉嫩的效果因為我是超乾肌喜歡擦完保養品後臉超油亮滋潤的fu不太習慣擦完保養品後臉上還是乾爽的感覺所以我個人是不會每天都用.......
+      #promo.main
+        .main_news
+          .inner
+            .mainimg
+              =link_to image_tag(lorem.image("310x300"), :alt=>""), "#", :title=>"不敗的選擇!紅色穿搭特輯紅色穿"
+              .gray
+              .imgword=link_to "不敗的選擇!紅色穿搭特輯紅色穿", "#"
+            .subimg
+              =link_to image_tag(lorem.image("230x180"), :alt=>""), "#", :title=>"不敗的選擇!紅色穿搭特輯"
+              .subcontent
+                .title=link_to "不敗的選擇!紅色穿搭特輯","#"
+                .word=link_to "這篇很心機!!!!只擦保養品看起來就有上妝的修飾效果話說保養妝是霧面粉嫩的...這篇很心機!只擦保養品看起來就有上妝的修飾效果...","#"
+        .second_news
+          .inner
+            .mainimg
+              =link_to image_tag(lorem.image("570x300"), :alt=>""), "#", :title=>"不敗的選擇!紅色穿搭特輯穿搭特輯"
+              .gray
+              .imgword=link_to "不敗的選擇!紅色穿搭特輯穿搭特輯","#"
+        .main_news   
+          .inner
+            .subimg.bottom
+              =link_to image_tag(lorem.image("230x180"), :alt=>""), "#", :title=>"不敗的選擇!紅色穿搭特輯"
+              .subcontent
+                .title=link_to "不敗的選擇!紅色穿搭特輯","#"
+                .word=link_to "這篇很心機!!!!只擦保養品看起來就有上妝的修飾效果話說保養妝是霧面粉嫩的...這篇很心機!只擦保養品看起來就有上妝的修飾效果...","#"
+            .mainimg
+              =link_to image_tag(lorem.image("310x300"), :alt=>""), "#", :title=>"不敗的選擇!紅色穿搭特輯紅色穿"
+              .gray
+              .imgword=link_to "不敗的選擇!紅色穿搭特輯紅色穿", "#"
+              
+    .column-bottom
+      %ul{:class =>"nav nav-tabs"}
+        %li.actvie=link_to "最新文章","#lastnewColumn", :title=>"最新文章", "data-toggle" => "tab"
+        %li=link_to "歷史專欄","#oldColumn", :title=>"近期熱門", "data-toggle" => "tab"
+      .column-content{:class => "tab-content"}
+        #lastnewColumn.active{:class => "tab-pane"}
+          %ul
+            -6.times do
+              %li.content
+                .head=link_to image_tag(lorem.image("90"), :alt=>"", :class=> "headImg"), "#"
+                .timeImg 2012/01/01
+                .postTitle=link_to "艾小小 試用 酵素之美 Enzyme Spring 法國香氛保濕禮盒","#"
+                .postContent 這篇很心機!!!!只擦保養品看起來就有上妝的修飾效果…
+                .lookmore=link_to "詳全文","#", :title=>"看更多", :class=>"icons-lookmore"
+          = partial "_partials/pagination"
+        #oldColumn{:class => "tab-pane"}
+          %ul
+            -6.times do
+              %li.content
+                .head=link_to image_tag(lorem.image("90"), :alt=>"", :class=> "headImg"), "#"
+                .timeImg 2012/01/01
+                .postTitle=link_to "艾小小 試用 酵素之美 Enzyme Spring 法國香氛保濕禮盒","#"
+                .postContent 這篇很心機!!!!只擦保養品看起來就有上妝的修飾效果…
+                .lookmore=link_to "詳全文","#", :title=>"看更多", :class=>"icons-lookmore"
+          = partial "_partials/pagination"
+    
+  .sidebar
+    .block.myblock
+      .admin
+        .avatar
+          =link_to image_tag( lorem.image("91x91"), :alt => "" ), "#"
+        .welcome
+          Hi
+          %a=link_to "賴小美賴小美賴小美賴小美賴小", "#", :title => "賴小美賴小美賴小美賴小美賴小"
+          %br
+          你現在是
+          %a=link_to "部落客", "#", :title => "部落客"
+        %ul.function
+          %li
+            .newPostBtn
+              %img{:src => "images/new_post_icon.png"}
+              %a=link_to "發表新文章", "#", :title => "發表新文章"
+          %li
+            .backend
+              %img{:src => "images/backend_icon.png"}
+              %a=link_to "管理後台", "#", :title => "管理後台"
+        %ul.links
+          %li=link_to "回我的網誌", "#", :title => "回我的網誌"
+          %li=link_to "暫做(0)", "#", :title => "暫做(0)"
+          %li.last=link_to "暫做(0)", "#", :title => "暫做(0)"
+        .notice
+          %img{:src => "images/notice_icon.png"}
+          .text
+            %a=link_to "內容內容內容內容內容內容內容內容內容內容", "#", :title => "內容內容內容內容內容內容內容內容內容內容"
+    .block.myblock
+      .hot
+        .subject
+          %p
+            熱門精選
+        %ul
+          %li
+            .img{:style => "width: 120px; height: 90px;"}
+              =link_to image_tag( lorem.image("120x90"), :alt => "" ), "#"
+            .word
+              .title
+                %a=link_to "閃光節！情人不該去的地", "#", :title => "閃光節！情人不該去的地方"
+              .intro
+              今天是情人節，甜甜蜜蜜的小倆口都想好要去哪裡慶祝佳節了嗎？....
+          %li
+            .img{:style => "width: 120px; height: 90px;"}
+              =link_to image_tag( lorem.image("120x90"), :alt => "" ), "#"
+            .word
+              .title
+                %a=link_to "閃光節！情人不該去的地", "#", :title => "閃光節！情人不該去的地方"
+              .intro
+              今天是情人節，甜甜蜜蜜的小倆口都想好要去哪裡慶祝佳節了嗎？....
+    .block.rank{:class => "tabbable"}
+      .clear.nav.nav-tabs
+        .ranking 本週人氣排行
+        %ul{:class=>"nav nav-tabs"}
+          %li.active.top=link_to "TOP 100","#top", "data-toggle" => "tab"
+          %li.bloger=link_to "部落客","#bloger", "data-toggle" => "tab"
+      .tab-content.SidebarC
+        #top.active{:class => "tab-pane"}
+          %ul
+            -5.times do
+              %li{:class=>"sidebar_content"}
+                .numImg{:class=>"icons-crownbg"} 01
+                .head=link_to image_tag(lorem.image("70"), :alt=>"", :class=> "headImg"), "#"
+                .post
+                  .postTitle=link_to "保養 | 素顏也有好氣色素顏也有好氣色素顏也有好氣色","#", :title=>""
+                  .postInfo=link_to "FG小編","#", :title=>""
+                  .postContent 累積人氣指數：9999
+                .lookmore=link_to "看更多","#", :title=>"看更多", :class=>"icons-lookmore"
+          .stat
+            %ul
+              %li.statTime 統計時間 101/01/01~101/01/01
+              %li.lookmore=link_to "看更多", "#", :title=>"看更多", :class=>"icons-lookmore"
+        #bloger{:class => "tab-pane"}
+          %ul
+            -5.times do
+              %li{:class=>"sidebar_content"}
+                .numImg{:class=>"icons-crownbg"} 01
+                .head=link_to image_tag(lorem.image("90"), :alt=>"", :class=> "headImg"), "#"
+                .post
+                  .postTitle=link_to "保養 | 素顏也有好氣色","#", :title=>""
+                  .postInfo=link_to "臉部保養|TOP100|FG小編","#", :title=>""
+                  .postContent 這篇很心機!!!!只擦保養品看起來就有上妝的修飾效果…
+                .lookmore=link_to "看更多","#", :title=>"看更多", :class=>"icons-lookmore"
+          .stat
+            %ul
+              %li.statTime 統計時間 101/01/01~101/01/01
+              %li.lookmore=link_to "看更多", "#", :title=>"看更多", :class=>"icons-lookmore"    
+    .block.news
+      %ul
+        %li.lastnews 最新訊息
+        %li.newsContent
+          %ul
+            -2.times do
+              %li
+                .newshead=link_to image_tag(lorem.image("165x150"),:alt=>"", :class=> "newsImg"),"#",:title=>""
+                -5.times do
+                  .postAdnews=link_to "免費試用超夯美妝新品","#",:title=>""
