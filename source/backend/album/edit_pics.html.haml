@@ -26,28 +26,21 @@
         %thead
           %tr.mytr
             %th.span3
-              相簿狀態
+              .statTitle 相簿狀態
               %select.statSel
                 %option 密碼
                 %option 開放
                 %option 隱藏
                 %option 好友
             %th.span3.myspan
-              全站分類
+              .statTitle 全站分類
               %select.statSel
                 %option 不分類
                 %option 開放
                 %option 隱藏
                 %option 好友 
-            %th.span3.myspan
-              個人分類
-              %select.statSel
-                %option 不分類
-                %option 開放
-                %option 隱藏
-                %option 好友    
             %th.move
-              移動相片至
+              .statTitle 移動相片至
               %select.selectAlbum
                 %option 2012生日快樂
                 %option 2011生日快樂
@@ -75,7 +68,7 @@
             %li
               .check
                 %input{:type=>"checkbox"}
-              .coverSet.btn 設為封面
+              .coverSet.btn 設為封面 
               .picImg=link_to image_tag(lorem.image("100"), :alt=>""),"#"
               .picName=link_to "IMG_1234","#"
         -2.times do
@@ -84,7 +77,7 @@
               %li
                 .check
                   %input{:type=>"checkbox"}
-                .coverSet.btn 設為封面
+                .coverSet.btn 設為封面  
                 .picImg=link_to image_tag(lorem.image("100"), :alt=>""),"#"
                 .picName=link_to "IMG_1234","#"
       %table.table.tableAlbum

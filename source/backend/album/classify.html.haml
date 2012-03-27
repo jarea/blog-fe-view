@@ -14,12 +14,12 @@
     .addNewAlbum
       %ul.buttons
         %li.btn.btn-admin 新增相本
-        %ul.btnRight
-          %li.btn.btnStat
-            全站分類
+        %ul.btn-group.rightBtns
+          %li.btn
+            =link_to "全站分類","#", :title=>"全站分類"
             %span.arrow=link_to "","#"
-          %li.btn.btnStat
-            狀態
+          %li.btn
+            =link_to "狀態","#", :title=>"狀態"
             %span.arrow=link_to "","#"
           %li.btn.delete=link_to "","#"
       =partial "/_partials/bk_add"
