@@ -84,6 +84,18 @@
         %ul
           %li.replyFb=link_to "Facebook回應","#"
           %li.replyMe=link_to "我要回應","#"
+        .reply_box
+          .img
+            = image_tag lorem.image("90", :alt => "")
+          .text
+            .name= link_to "回應人ID", "#", :title => "回應人ID"
+            .uid= image_tag(url("/images/stars.png"), :alt=>"")
+            %form
+              %textarea
+              .setup
+                %p.checkbox.inline
+                  %input{:type => "checkbox"} 悄悄話
+                %input{:type => "submit", :value => "送出", :class => "btn"}
         .replyComments
           %ul
             %li.comments

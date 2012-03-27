@@ -181,6 +181,7 @@
   .reply{
     ul{
       padding:5px 0px 20px 0px;
+      @include clearfix;
     }
     li{
       float:left;
@@ -206,6 +207,36 @@
     }
   }
 } 
+
+.reply_box {
+  @include clearfix;
+  @include border-radius(6px);
+  border:1px solid #ccc;
+  padding:20px;
+  .img, .text {
+    float:left;
+  }
+  .img {
+    margin-right:15px;
+  }
+  .text {
+    .name, .uid {
+      @include inline-block;
+      margin-right:10px;
+    }
+    form {
+      margin:0;
+    }
+    textarea {
+      width:530px;
+    }
+    .setup {
+      text-align:right;
+      margin-top:10px;
+    }
+  }
+}
+
 
 li.comments{
   color:#5a5a5a;
