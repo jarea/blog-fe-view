@@ -67,8 +67,21 @@
       %input{:name=>"textArea", :type=>"text", :class=>"inputLink"}
       %button.btn
         複製引用網址
+    .trackback
+      %h3 引用列表
+      %ul
+        -5.times do
+          %li
+            %ul
+              %li
+                = link_to "引用文章篇名引用文章篇名篇名篇名篇名", "#", :title => "引用文章篇名引用文章篇名篇名篇名篇名"
+              %li
+                by 
+                = link_to "引用者ID", "#", :title => "引用者ID"
+                引用本文
+              %li 於 2011.11.11
     .moreArticles
-      %p 你或許對以下文章有興趣：
+      %h3 你或許對以下文章有興趣：
       .article
         %ul
           -5.times do

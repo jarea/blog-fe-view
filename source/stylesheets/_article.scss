@@ -119,9 +119,9 @@
     }
   }
   .moreArticles{
-    p{
-      padding:10px;
-      color:#969696;
+    h3 {
+      padding:10px 0;
+      font-size:15px;
     }
     .article{
       @include clearfix;
@@ -176,7 +176,22 @@
     }
   }
 }
- 
+
+.trackback {
+  margin:10px 0;
+  h3 {
+    font-size:15px;
+    margin-bottom:10px;
+  }
+  > ul {
+    margin-left:10px;
+    ul > li {
+      @include inline-block;
+      color:#969696;
+    }
+  }
+}
+
 #articleReply{
   .reply{
     ul{
