@@ -142,16 +142,101 @@
 
 .column-bottom{
   @include clearfix;
-  .timeImg{
-    width:71px;
-    height:18px;
-    display:block;
-    background: url("/images/timebg.png") no-repeat;
+  .nav-tabs{
+    border-bottom:0px;
+    a{
+      color:#5a5a5a;
+      padding-left:20px;
+      padding-right:20px;
+      @include border-top-left-radius(6px);
+      @include border-top-right-radius(6px);
+      border:1px solid #dcdcdc;
+      background:#fff;
+      background: -webkit-gradient(linear, 0 0, 0 bottom, from(#fff), to(#ebebeb));
+      background: -webkit-linear-gradient(#fff, #ebebeb);
+      background: -moz-linear-gradient(#fff, #ebebeb);
+      background: -ms-linear-gradient(#fff, #ebebeb);
+      background: -o-linear-gradient(#fff, #ebebeb);
+      background: linear-gradient(#fff, #ebebeb);
+      &:hover{
+        color:#fff;
+        background:#ffb608;
+        background: -webkit-gradient(linear, 0 0, 0 bottom, from(#ffd266), to(#ffb608));
+        background: -webkit-linear-gradient(#ffd266, #ffb608);
+        background: -moz-linear-gradient(#ffd266, #ffb608);
+        background: -ms-linear-gradient(#ffd266, #ffb608);
+        background: -o-linear-gradient(#ffd266, #ffb608);
+        background: linear-gradient(#ffd266, #ffb608);
+      }
+    }
+    li{
+      margin-bottom:-1px;
+    }
+    li.active a{
+      color:#fff;
+      background:#ffb608;
+      background: -webkit-gradient(linear, 0 0, 0 bottom, from(#ffd266), to(#ffb608));
+      background: -webkit-linear-gradient(#ffd266, #ffb608);
+      background: -moz-linear-gradient(#ffd266, #ffb608);
+      background: -ms-linear-gradient(#ffd266, #ffb608);
+      background: -o-linear-gradient(#ffd266, #ffb608);
+      background: linear-gradient(#ffd266, #ffb608);
+    }
   }
-  li{
-    border-bottom:1px dashed #ffc57f;
-    padding:10px 5px;
-    float:left;
+  .nav{
+    margin-bottom:0px;
+  }
+  .postTitle{
+    padding:10px 5px 5px 5px;
+    .time{
+      @include clearfix;
+      font-size:11px;
+      padding:0 0 0 5px;
+      float:left;
+      width:71px;
+      height:20px;
+      display:block;
+      line-height:18px;
+      background: url("/images/timebg.png") no-repeat;
+    }
+  }
+  .lookmore a{
+    width:58px;
+    display:block;
+    float:right;
+  }
+  .pagicontent{
+    li.pagiview{
+      border-bottom:1px dashed #ffc57f;
+      padding:10px 5px 5px 5px;
+    }
+    padding:5px 10px 10px 10px;
+    border:1px solid #dcdcdc;
+    @include border-top-right-radius(6px);
+    @include border-bottom-left-radius(6px);
+    @include border-bottom-right-radius(6px);
+    .pagination{
+      margin:0 0 10px 0;
+      text-align:center;
+      ul{
+        @include clearfix;
+        box-shadow:none;
+        a{
+          color:#666;
+          padding:2px 10px;
+          margin:0 5px;
+          border:1px solid #ffcc66;
+          &:hover{
+            background-color:#ffcc66;
+            color:#fff;
+          }
+        }
+        .active a{
+          background-color:#ffcc66;
+          color:#fff;
+        }
+      }
+    }
   }
 }
 
