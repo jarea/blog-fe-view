@@ -43,17 +43,19 @@
               
     .column-bottom
       %ul{:class =>"nav nav-tabs"}
-        %li.actvie=link_to "最新文章","#lastnewColumn", :title=>"最新文章", "data-toggle" => "tab"
+        %li.active=link_to "最新文章","#lastnewColumn", :title=>"最新文章", "data-toggle" => "tab"
         %li=link_to "歷史專欄","#oldColumn", :title=>"近期熱門", "data-toggle" => "tab"
-      .column-content{:class => "tab-content"}
+      .pagicontent{:class => "tab-content"}
         #lastnewColumn.active{:class => "tab-pane"}
           %ul
             -6.times do
-              %li.content
+              %li.content.pagiview
                 .head=link_to image_tag(lorem.image("90"), :alt=>"", :class=> "headImg"), "#"
-                .timeImg 2012/01/01
-                .postTitle=link_to "艾小小 試用 酵素之美 Enzyme Spring 法國香氛保濕禮盒","#"
-                .postContent 這篇很心機!!!!只擦保養品看起來就有上妝的修飾效果…
+                .postTitle
+                  .time 2012/01/01
+                  .title=link_to "艾小小 試用 酵素之美 Enzyme Spring 法國香氛保濕禮盒","#"
+                  .postContent 
+                    這篇很心機!!!!只擦保養品看起來就有上妝的修飾效果…只擦保養品看起來就有上妝的修飾效果話說保養妝是霧面粉嫩的...因為我是超乾肌喜歡擦完保養品後臉超油亮滋潤的fu不太習慣擦完保養品後臉...
                 .lookmore=link_to "詳全文","#", :title=>"看更多", :class=>"icons-lookmore"
           = partial "_partials/pagination"
         #oldColumn{:class => "tab-pane"}
@@ -63,7 +65,8 @@
                 .head=link_to image_tag(lorem.image("90"), :alt=>"", :class=> "headImg"), "#"
                 .timeImg 2012/01/01
                 .postTitle=link_to "艾小小 試用 酵素之美 Enzyme Spring 法國香氛保濕禮盒","#"
-                .postContent 這篇很心機!!!!只擦保養品看起來就有上妝的修飾效果…
+                .postContent 
+                  這篇很心機!!!!只擦保養品看起來就有上妝的修飾效果…只擦保養品看起來就有上妝的修飾效果話說保養妝是霧面粉嫩的...因為我是超乾肌喜歡擦完保養品後臉超油亮滋潤的fu不太習慣擦完保養品後臉...
                 .lookmore=link_to "詳全文","#", :title=>"看更多", :class=>"icons-lookmore"
           = partial "_partials/pagination"
     
