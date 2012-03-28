@@ -1,3 +1,5 @@
+=partial "/_partials/user_banner"
+
 #main-article
   #articleHead
     .headTitle
@@ -65,8 +67,21 @@
       %input{:name=>"textArea", :type=>"text", :class=>"inputLink"}
       %button.btn
         複製引用網址
+    .trackback
+      %h3 引用列表
+      %ul
+        -5.times do
+          %li
+            %ul
+              %li
+                = link_to "引用文章篇名引用文章篇名篇名篇名篇名", "#", :title => "引用文章篇名引用文章篇名篇名篇名篇名"
+              %li
+                by 
+                = link_to "引用者ID", "#", :title => "引用者ID"
+                引用本文
+              %li 於 2011.11.11
     .moreArticles
-      %p 你或許對以下文章有興趣：
+      %h3 你或許對以下文章有興趣：
       .article
         %ul
           -5.times do
@@ -82,6 +97,18 @@
         %ul
           %li.replyFb=link_to "Facebook回應","#"
           %li.replyMe=link_to "我要回應","#"
+        .reply_box
+          .img
+            = image_tag lorem.image("90", :alt => "")
+          .text
+            .name= link_to "回應人ID", "#", :title => "回應人ID"
+            .uid= image_tag(url("/images/stars.png"), :alt=>"")
+            %form
+              %textarea
+              .setup
+                %p.checkbox.inline
+                  %input{:type => "checkbox"} 悄悄話
+                %input{:type => "submit", :value => "送出", :class => "btn"}
         .replyComments
           %ul
             %li.comments

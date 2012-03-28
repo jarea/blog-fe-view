@@ -26,25 +26,26 @@
       padding:8px;
     }
   }
-  #hd .banner {
-    height:400px;
-    background:url(/images/bg-banner.png) no-repeat;
+}
+
+#bd .banner {
+  height:400px;
+  background:url(/images/bg-banner.png) no-repeat;
+  color:#fff;
+  position:relative;
+  a {
     color:#fff;
-    position:relative;
-    a {
-      color:#fff;
-    }
-    h1 {
-      position:absolute;
-      width:400px;
-      top:100px;
-      left:30px;
-    }
-    p.disc {
-      position:absolute;
-      width:400px;
-      top:150px;
-      left:30px;
-    }
+  }
+  h1 {
+    position:absolute;
+    width:400px;
+    top:100px;
+    left:30px;
+  }
+  p.disc {
+    position:absolute;
+    width:400px;
+    top:150px;
+    left:30px;
   }
 }

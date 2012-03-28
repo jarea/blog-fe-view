@@ -1,0 +1,20 @@
+=partial "/_partials/user_banner"
+
+.user_category
+  #main
+    .inner
+      %h2 文章分類：分類名稱分類名稱分類名稱分類名稱分類名稱
+      %table.table.table-striped
+        %thead
+          %tr
+            %th{:width => "20%"} 日期
+            %th{:width => "50%"} 文章標題
+            %th{:width => "30%"} 發表人
+        %tbody
+          -20.times do
+            %tr
+              %td.date 2011.11.11
+              %td= link_to "文章標題標題標題文章標題文章標題文章標題文章標題", "#", :title => "文章標題標題標題文章標題文章標題文章標題文章標題"
+              %td.author= link_to "發表人ID", "#", :title => "發表人ID"
+  
+  = partial "/_partials/user_sidebar"
